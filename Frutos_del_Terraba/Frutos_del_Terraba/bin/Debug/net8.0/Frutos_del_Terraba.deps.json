@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Frutos_del_Terraba/1.0.0": {
+        "runtime": {
+          "Frutos_del_Terraba.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Frutos_del_Terraba/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
