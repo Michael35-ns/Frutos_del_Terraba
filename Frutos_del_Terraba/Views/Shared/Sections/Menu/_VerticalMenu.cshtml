@@ -1,0 +1,175 @@
+@{
+  TempData.Keep();
+  string? currentPage = ViewContext.HttpContext.Request.Path;
+}
+
+<aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+    <div class="app-brand demo text-center">
+        <a asp-controller="Dashboards" asp-action="Index" class="app-brand-link d-flex flex-column align-items-center">
+            <div class="brand-container d-flex flex-column align-items-center">
+                <img src="https://i.pinimg.com/736x/54/eb/f6/54ebf62f4080b4542025c183603ac598.jpg"
+                     alt="Logo" class="brand-logo mb-3">
+                <span class="app-brand-text fw-bold text-wrap text-center">
+                    Frutos del Térraba
+                </span>
+            </div>
+        </a>
+    </div>
+  @* ! Full version menu-items *@
+  <ul class="menu-inner py-1">
+    <!-- Productos -->
+    <li class='menu-item@(currentPage.EndsWith("/") || currentPage.StartsWith("/Dashboards") ? " active open" : "")'>
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="ri-box-3-line"></i>
+        <div>Productos</div>
+      </a>
+      <ul class="menu-sub">
+                <li class='menu-item@(currentPage == "/Academy/Dashboard" ? " active" : "")'>
+                    <a href="#" target="_blank" class="menu-link">
+                        <div>Ver Productos</div>
+                        </a>
+                </li>
+                <li class='menu-item@(currentPage == "/Academy/Dashboard" ? " active" : "")'>
+                    <a href="#" target="_blank" class="menu-link">
+                        <div>Agregar Productos</div>
+                    </a>
+                </li>
+                <li class='menu-item@(currentPage == "/Academy/Dashboard" ? " active" : "")'>
+                    <a href="#" target="_blank" class="menu-link">
+                        <div>Editar Productos</div>
+                    </a>
+                </li>
+      </ul>
+    </li>
+    <!-- Pedidos -->
+    <li class='menu-item@(currentPage.StartsWith("/LayoutExamples") ? " active open" : "")'>
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="ri-draft-line"></i>
+        <div> Pedidos</div>
+      </a>
+      <ul class="menu-sub">
+
+        <li class='menu-item@(currentPage == "/LayoutExamples/WithoutMenu" ? " active" : "")'>
+          <a asp-controller="LayoutExamples" asp-action="WithoutMenu" class="menu-link">
+            <div>Ver Pedidos</div>
+          </a>
+        </li>
+        <li class='menu-item@(currentPage == "/LayoutExamples/WithoutNavbar" ? " active" : "")'>
+          <a asp-controller="LayoutExamples" asp-action="WithoutNavbar" class="menu-link">
+            <div>Hacer Pedido</div>
+          </a>
+        </li>
+        <li class='menu-item@(currentPage == "/LayoutExamples/Container" ? " active" : "")'>
+          <a asp-controller="LayoutExamples" asp-action="Container" class="menu-link">
+            <div>Editar Pedido</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+        <!-- Distribución-->
+    <li class='menu-item@(currentPage.StartsWith("/FrontPages") ? " active open" : "")'>
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="ri-caravan-line"></i>
+        <div>Distribución</div>
+      </a>
+      <ul class="menu-sub">
+        <li class='menu-item@(currentPage == "/FrontPages/LandingPage" ? " active" : "")'>
+          <a href="#" class="menu-link" target="_blank">
+                        <div>Ver Distribuciones</div>
+          </a>
+        </li>
+        <li class='menu-item@(currentPage == "/FrontPages/PricingPage" ? " active" : "")'>
+          <a href="#" class="menu-link" target="_blank">
+                        <div>Nuevo Envío</div>
+          </a>
+        </li>
+        <li class='menu-item@(currentPage == "/FrontPages/PaymentPage" ? " active" : "")'>
+          <a href="#" class="menu-link" target="_blank">
+                        <div>Historial de Distribuciones</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+        <!-- Inventario-->
+        <li class='menu-item@(currentPage.StartsWith("/FrontPages") ? " active open" : "")'>
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="ri-stock-line"></i>
+                <div>Inventario</div>
+            </a>
+            <ul class="menu-sub">
+                <li class='menu-item@(currentPage == "/FrontPages/LandingPage" ? " active" : "")'>
+                    <a href="#" class="menu-link" target="_blank">
+                        <div>Ver Inventario</div>
+                    </a>
+                </li>
+                <li class='menu-item@(currentPage == "/FrontPages/PricingPage" ? " active" : "")'>
+                    <a href="#" class="menu-link" target="_blank">
+                        <div>Añadir Producto al Inventario</div>
+                    </a>
+                </li>
+                <li class='menu-item@(currentPage == "/FrontPages/PaymentPage" ? " active" : "")'>
+                    <a href="#" class="menu-link" target="_blank">
+                        <div>Ajustes de Inventario</div>
+                    </a>
+                </li>
+                <li class='menu-item@(currentPage == "/FrontPages/PaymentPage" ? " active" : "")'>
+                    <a href="#" class="menu-link" target="_blank">
+                        <div>Alertas de Stock</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- Proveedores-->
+        <li class='menu-item@(currentPage.StartsWith("/FrontPages") ? " active open" : "")'>
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="ri-group-line"></i>
+                <div>Proveedores</div>
+            </a>
+            <ul class="menu-sub">
+                <li class='menu-item@(currentPage == "/FrontPages/LandingPage" ? " active" : "")'>
+                    <a href="#" class="menu-link" target="_blank">
+                        <div>Ver Proveedores</div>
+                    </a>
+                </li>
+                <li class='menu-item@(currentPage == "/FrontPages/PricingPage" ? " active" : "")'>
+                    <a href="#" class="menu-link" target="_blank">
+                        <div>Añadir Proveedores</div>
+                    </a>
+                </li>
+                <li class='menu-item@(currentPage == "/FrontPages/PaymentPage" ? " active" : "")'>
+                    <a href="#" class="menu-link" target="_blank">
+                        <div>Historial de Pedidos a Proveedores</div>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+        <!-- Reportes-->
+        <li class='menu-item@(currentPage.StartsWith("/FrontPages") ? " active open" : "")'>
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="ri-bar-chart-grouped-line"></i>
+                <div>Reportes</div>
+            </a>
+            <ul class="menu-sub">
+                <li class='menu-item@(currentPage == "/FrontPages/LandingPage" ? " active" : "")'>
+                    <a href="#" class="menu-link" target="_blank">
+                        <div>Ver Reportes</div>
+                    </a>
+                </li>
+                <li class='menu-item@(currentPage == "/FrontPages/PricingPage" ? " active" : "")'>
+                    <a href="#" class="menu-link" target="_blank">
+                        <div>Generar Reporte</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+    <li class="menu-header mt-7">
+      <span class="menu-header-text">Apps &amp; Pages</span>
+    </li>
+
+
+  </ul>
+
+</aside>
+<!-- / Menu -->
