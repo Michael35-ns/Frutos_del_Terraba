@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Frutos_del_Terraba.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250210024748_Primera migración con todos los modelos listos")]
-    partial class Primeramigracióncontodoslosmodeloslistos
+    [Migration("20250210174736_InicialCreate")]
+    partial class InicialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,11 +35,13 @@ namespace Frutos_del_Terraba.Migrations
 
                     b.Property<string>("Descripcion")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(70)
+                        .HasColumnType("nvarchar(70)");
 
                     b.HasKey("Id_categoria");
 
@@ -65,19 +67,14 @@ namespace Frutos_del_Terraba.Migrations
 
                     b.Property<string>("Observaciones")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PedidoId_pedido")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductoId_producto")
-                        .HasColumnType("int");
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
 
                     b.HasKey("Id_detalle");
 
-                    b.HasIndex("PedidoId_pedido");
+                    b.HasIndex("Id_pedido");
 
-                    b.HasIndex("ProductoId_producto");
+                    b.HasIndex("Id_producto");
 
                     b.ToTable("DetallesPedidos");
                 });
@@ -95,17 +92,15 @@ namespace Frutos_del_Terraba.Migrations
 
                     b.Property<string>("Destino")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<int>("Id_inventario")
                         .HasColumnType("int");
 
-                    b.Property<int>("InventarioId_inventario")
-                        .HasColumnType("int");
-
                     b.HasKey("Id_distribucion");
 
-                    b.HasIndex("InventarioId_inventario");
+                    b.HasIndex("Id_inventario");
 
                     b.ToTable("Distribuciones");
                 });
@@ -124,12 +119,9 @@ namespace Frutos_del_Terraba.Migrations
                     b.Property<int>("Id_producto")
                         .HasColumnType("int");
 
-                    b.Property<int>("ProductoId_producto")
-                        .HasColumnType("int");
-
                     b.HasKey("Id_inventario");
 
-                    b.HasIndex("ProductoId_producto");
+                    b.HasIndex("Id_producto");
 
                     b.ToTable("Inventarios");
                 });
@@ -151,12 +143,9 @@ namespace Frutos_del_Terraba.Migrations
                     b.Property<int>("Id_usuario")
                         .HasColumnType("int");
 
-                    b.Property<int>("ProveedorId_proveedor")
-                        .HasColumnType("int");
-
                     b.HasKey("Id_pedido");
 
-                    b.HasIndex("ProveedorId_proveedor");
+                    b.HasIndex("Id_proveedor");
 
                     b.ToTable("Pedidos");
                 });
@@ -169,22 +158,20 @@ namespace Frutos_del_Terraba.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_producto"));
 
-                    b.Property<int>("CategoriaId_categoria")
-                        .HasColumnType("int");
-
                     b.Property<int>("Id_categoria")
                         .HasColumnType("int");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(70)
+                        .HasColumnType("nvarchar(70)");
 
                     b.Property<int>("Stock")
                         .HasColumnType("int");
 
                     b.HasKey("Id_producto");
 
-                    b.HasIndex("CategoriaId_categoria");
+                    b.HasIndex("Id_categoria");
 
                     b.ToTable("Productos");
                 });
@@ -197,13 +184,20 @@ namespace Frutos_del_Terraba.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_proveedor"));
 
+                    b.Property<string>("Apellidos")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(70)
+                        .HasColumnType("nvarchar(70)");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(70)
+                        .HasColumnType("nvarchar(70)");
 
                     b.Property<string>("Telefono")
                         .IsRequired()
@@ -233,14 +227,12 @@ namespace Frutos_del_Terraba.Migrations
 
                     b.Property<string>("Motivo")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ProductoId_producto")
-                        .HasColumnType("int");
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
 
                     b.HasKey("Id_reporte");
 
-                    b.HasIndex("ProductoId_producto");
+                    b.HasIndex("Id_producto");
 
                     b.ToTable("Reportes");
                 });
@@ -249,13 +241,13 @@ namespace Frutos_del_Terraba.Migrations
                 {
                     b.HasOne("Frutos_del_Terraba.Models.Pedido", "Pedido")
                         .WithMany()
-                        .HasForeignKey("PedidoId_pedido")
+                        .HasForeignKey("Id_pedido")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Frutos_del_Terraba.Models.Producto", "Producto")
                         .WithMany()
-                        .HasForeignKey("ProductoId_producto")
+                        .HasForeignKey("Id_producto")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -268,7 +260,7 @@ namespace Frutos_del_Terraba.Migrations
                 {
                     b.HasOne("Frutos_del_Terraba.Models.Inventario", "Inventario")
                         .WithMany()
-                        .HasForeignKey("InventarioId_inventario")
+                        .HasForeignKey("Id_inventario")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -279,7 +271,7 @@ namespace Frutos_del_Terraba.Migrations
                 {
                     b.HasOne("Frutos_del_Terraba.Models.Producto", "Producto")
                         .WithMany()
-                        .HasForeignKey("ProductoId_producto")
+                        .HasForeignKey("Id_producto")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -290,7 +282,7 @@ namespace Frutos_del_Terraba.Migrations
                 {
                     b.HasOne("Frutos_del_Terraba.Models.Proveedor", "Proveedor")
                         .WithMany()
-                        .HasForeignKey("ProveedorId_proveedor")
+                        .HasForeignKey("Id_proveedor")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -301,7 +293,7 @@ namespace Frutos_del_Terraba.Migrations
                 {
                     b.HasOne("Frutos_del_Terraba.Models.Categoria", "Categoria")
                         .WithMany()
-                        .HasForeignKey("CategoriaId_categoria")
+                        .HasForeignKey("Id_categoria")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -312,7 +304,7 @@ namespace Frutos_del_Terraba.Migrations
                 {
                     b.HasOne("Frutos_del_Terraba.Models.Producto", "Producto")
                         .WithMany()
-                        .HasForeignKey("ProductoId_producto")
+                        .HasForeignKey("Id_producto")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

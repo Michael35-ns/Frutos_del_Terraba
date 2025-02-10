@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Frutos_del_Terraba.Migrations
 {
     /// <inheritdoc />
-    public partial class Primeramigracióncontodoslosmodeloslistos : Migration
+    public partial class InicialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,8 +17,8 @@ namespace Frutos_del_Terraba.Migrations
                 {
                     Id_categoria = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Nombre = table.Column<string>(type: "nvarchar(70)", maxLength: 70, nullable: false),
+                    Descripcion = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -31,9 +31,10 @@ namespace Frutos_del_Terraba.Migrations
                 {
                     Id_proveedor = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Nombre = table.Column<string>(type: "nvarchar(70)", maxLength: 70, nullable: false),
+                    Apellidos = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     Telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Email = table.Column<string>(type: "nvarchar(70)", maxLength: 70, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -46,17 +47,16 @@ namespace Frutos_del_Terraba.Migrations
                 {
                     Id_producto = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Id_categoria = table.Column<int>(type: "int", nullable: false),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Nombre = table.Column<string>(type: "nvarchar(70)", maxLength: 70, nullable: false),
                     Stock = table.Column<int>(type: "int", nullable: false),
-                    CategoriaId_categoria = table.Column<int>(type: "int", nullable: false)
+                    Id_categoria = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Productos", x => x.Id_producto);
                     table.ForeignKey(
-                        name: "FK_Productos_Categorias_CategoriaId_categoria",
-                        column: x => x.CategoriaId_categoria,
+                        name: "FK_Productos_Categorias_Id_categoria",
+                        column: x => x.Id_categoria,
                         principalTable: "Categorias",
                         principalColumn: "Id_categoria",
                         onDelete: ReferentialAction.Cascade);
@@ -69,16 +69,15 @@ namespace Frutos_del_Terraba.Migrations
                     Id_pedido = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Id_usuario = table.Column<int>(type: "int", nullable: false),
-                    Id_proveedor = table.Column<int>(type: "int", nullable: false),
                     Fecha = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    ProveedorId_proveedor = table.Column<int>(type: "int", nullable: false)
+                    Id_proveedor = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Pedidos", x => x.Id_pedido);
                     table.ForeignKey(
-                        name: "FK_Pedidos_Proveedores_ProveedorId_proveedor",
-                        column: x => x.ProveedorId_proveedor,
+                        name: "FK_Pedidos_Proveedores_Id_proveedor",
+                        column: x => x.Id_proveedor,
                         principalTable: "Proveedores",
                         principalColumn: "Id_proveedor",
                         onDelete: ReferentialAction.Cascade);
@@ -90,16 +89,15 @@ namespace Frutos_del_Terraba.Migrations
                 {
                     Id_inventario = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Id_producto = table.Column<int>(type: "int", nullable: false),
                     Cantidad = table.Column<int>(type: "int", nullable: false),
-                    ProductoId_producto = table.Column<int>(type: "int", nullable: false)
+                    Id_producto = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Inventarios", x => x.Id_inventario);
                     table.ForeignKey(
-                        name: "FK_Inventarios_Productos_ProductoId_producto",
-                        column: x => x.ProductoId_producto,
+                        name: "FK_Inventarios_Productos_Id_producto",
+                        column: x => x.Id_producto,
                         principalTable: "Productos",
                         principalColumn: "Id_producto",
                         onDelete: ReferentialAction.Cascade);
@@ -111,18 +109,17 @@ namespace Frutos_del_Terraba.Migrations
                 {
                     Id_reporte = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Id_producto = table.Column<int>(type: "int", nullable: false),
                     Cantidad_reportada = table.Column<int>(type: "int", nullable: false),
-                    Motivo = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Motivo = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: false),
                     Fecha = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    ProductoId_producto = table.Column<int>(type: "int", nullable: false)
+                    Id_producto = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Reportes", x => x.Id_reporte);
                     table.ForeignKey(
-                        name: "FK_Reportes_Productos_ProductoId_producto",
-                        column: x => x.ProductoId_producto,
+                        name: "FK_Reportes_Productos_Id_producto",
+                        column: x => x.Id_producto,
                         principalTable: "Productos",
                         principalColumn: "Id_producto",
                         onDelete: ReferentialAction.Cascade);
@@ -134,25 +131,23 @@ namespace Frutos_del_Terraba.Migrations
                 {
                     Id_detalle = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Id_pedido = table.Column<int>(type: "int", nullable: false),
-                    Id_producto = table.Column<int>(type: "int", nullable: false),
                     Cantidad = table.Column<int>(type: "int", nullable: false),
-                    Observaciones = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PedidoId_pedido = table.Column<int>(type: "int", nullable: false),
-                    ProductoId_producto = table.Column<int>(type: "int", nullable: false)
+                    Observaciones = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: false),
+                    Id_pedido = table.Column<int>(type: "int", nullable: false),
+                    Id_producto = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_DetallesPedidos", x => x.Id_detalle);
                     table.ForeignKey(
-                        name: "FK_DetallesPedidos_Pedidos_PedidoId_pedido",
-                        column: x => x.PedidoId_pedido,
+                        name: "FK_DetallesPedidos_Pedidos_Id_pedido",
+                        column: x => x.Id_pedido,
                         principalTable: "Pedidos",
                         principalColumn: "Id_pedido",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_DetallesPedidos_Productos_ProductoId_producto",
-                        column: x => x.ProductoId_producto,
+                        name: "FK_DetallesPedidos_Productos_Id_producto",
+                        column: x => x.Id_producto,
                         principalTable: "Productos",
                         principalColumn: "Id_producto",
                         onDelete: ReferentialAction.Cascade);
@@ -164,56 +159,55 @@ namespace Frutos_del_Terraba.Migrations
                 {
                     Id_distribucion = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Id_inventario = table.Column<int>(type: "int", nullable: false),
-                    Destino = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Destino = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Cantidad = table.Column<int>(type: "int", nullable: false),
-                    InventarioId_inventario = table.Column<int>(type: "int", nullable: false)
+                    Id_inventario = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Distribuciones", x => x.Id_distribucion);
                     table.ForeignKey(
-                        name: "FK_Distribuciones_Inventarios_InventarioId_inventario",
-                        column: x => x.InventarioId_inventario,
+                        name: "FK_Distribuciones_Inventarios_Id_inventario",
+                        column: x => x.Id_inventario,
                         principalTable: "Inventarios",
                         principalColumn: "Id_inventario",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_DetallesPedidos_PedidoId_pedido",
+                name: "IX_DetallesPedidos_Id_pedido",
                 table: "DetallesPedidos",
-                column: "PedidoId_pedido");
+                column: "Id_pedido");
 
             migrationBuilder.CreateIndex(
-                name: "IX_DetallesPedidos_ProductoId_producto",
+                name: "IX_DetallesPedidos_Id_producto",
                 table: "DetallesPedidos",
-                column: "ProductoId_producto");
+                column: "Id_producto");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Distribuciones_InventarioId_inventario",
+                name: "IX_Distribuciones_Id_inventario",
                 table: "Distribuciones",
-                column: "InventarioId_inventario");
+                column: "Id_inventario");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Inventarios_ProductoId_producto",
+                name: "IX_Inventarios_Id_producto",
                 table: "Inventarios",
-                column: "ProductoId_producto");
+                column: "Id_producto");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Pedidos_ProveedorId_proveedor",
+                name: "IX_Pedidos_Id_proveedor",
                 table: "Pedidos",
-                column: "ProveedorId_proveedor");
+                column: "Id_proveedor");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Productos_CategoriaId_categoria",
+                name: "IX_Productos_Id_categoria",
                 table: "Productos",
-                column: "CategoriaId_categoria");
+                column: "Id_categoria");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Reportes_ProductoId_producto",
+                name: "IX_Reportes_Id_producto",
                 table: "Reportes",
-                column: "ProductoId_producto");
+                column: "Id_producto");
         }
 
         /// <inheritdoc />
