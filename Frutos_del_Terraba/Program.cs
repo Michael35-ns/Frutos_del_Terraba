@@ -1,12 +1,23 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using Frutos_del_Terraba.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
-// Agregar servicios
+var builder = WebApplication.CreateBuilder(args);
+
+// Configuración de los servicios
 builder.Services.AddControllersWithViews();
-builder.Services.AddHttpContextAccessor(); // ← Asegura que esto esté aquí
+builder.Services.AddRazorPages();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddHttpClient();
 
+// Configuración de la base de datos
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("FrutosDb")));
+
+// Configuración del pipeline de la aplicación
 var app = builder.Build();
 
-// Configurar el pipeline
+// Configuración del entorno
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -18,9 +29,11 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
 
-// Definir la ruta por defecto
+// Configuración de las rutas
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Dashboards}/{action=Index}/{id?}");
+
+app.MapRazorPages();
 
 app.Run();

@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\crisn\OneDrive\Documents\GitHub\Frutos_del_Terraba\Frutos_del_Terraba
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Auth/Confirmacion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxDb25maXJtYWNpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Auth/ForgotPasswordBasic.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxGb3Jnb3RQYXNzd29yZEJhc2ljLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -26,8 +30,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbkJhc2ljLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Auth/RegisterBasic.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3RlckJhc2ljLmNzaHRtbA==
+[C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Dashboards/Index.cshtml]

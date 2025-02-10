@@ -1,0 +1,78 @@
+@model Frutos_del_Terraba.Models.RegisterModel
+
+@{
+    Layout = "_BlankLayout";
+    ViewData["Title"] = "Register Basic - Pages";
+}
+
+@section PageStyles {
+    <link rel="stylesheet" href="~/vendor/css/pages/page-auth.css">
+}
+
+<!-- Content -->
+<div class="position-relative">
+    <div class="authentication-wrapper authentication-basic container-p-y">
+        <div class="authentication-inner py-6 mx-4">
+
+            <!-- Register Card -->
+            <div class="card p-7">
+                <!-- Logo -->
+                <!-- /Logo -->
+                <div class="card-body mt-1">
+                    <h4 class="mb-1">Adventure starts here 🚀</h4>
+                    <p class="mb-5">Make your app management easy and fun!</p>
+
+                    <form id="formAuthentication" class="mb-5" asp-action="Register" method="post">
+                        @Html.AntiForgeryToken()
+
+                        <!-- Username -->
+                        <div class="form-floating form-floating-outline mb-5">
+                            <input asp-for="UserName" class="form-control" placeholder="Enter your username" autofocus>
+                            <label asp-for="UserName">Username</label>
+                            <span asp-validation-for="UserName" class="text-danger"></span>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-floating form-floating-outline mb-5">
+                            <input asp-for="Email" class="form-control" placeholder="Enter your email">
+                            <label asp-for="Email">Email</label>
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="mb-5 form-password-toggle">
+                            <div class="input-group input-group-merge">
+                                <div class="form-floating form-floating-outline">
+                                    <input asp-for="Password" type="password" class="form-control" placeholder="••••••••" aria-describedby="password" />
+                                    <label asp-for="Password">Password</label>
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                </div>
+                                <span class="input-group-text cursor-pointer"><i class="ri-eye-off-line ri-20px"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- Terms and Conditions -->
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary d-grid w-100 mb-5">
+                            Sign up
+                        </button>
+                    </form>
+
+                    <!-- Login Link -->
+                    <p class="text-center mb-5">
+                        <span>Already have an account?</span>
+                        <a href="/Auth/LoginBasic">
+                            <span>Sign in instead</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <!-- /Register Card -->
+            <!-- Background Images -->
+            <img src="~/img/illustrations/tree-3.png" alt="auth-tree" class="authentication-image-object-left d-none d-lg-block">
+            <img src="~/img/illustrations/auth-basic-mask-light.png" class="authentication-image d-none d-lg-block" height="172" alt="triangle-bg" data-app-light-img="illustrations/auth-basic-mask-light.png" data-app-dark-img="illustrations/auth-basic-mask-dark.png">
+            <img src="~/img/illustrations/tree.png" alt="auth-tree" class="authentication-image-object-right d-none d-lg-block">
+        </div>
+    </div>
+</div>
