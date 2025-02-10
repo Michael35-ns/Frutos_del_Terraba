@@ -1,0 +1,73 @@
+@model Frutos_del_Terraba.Models.LoginModel
+@{
+  Layout = "_BlankLayout";
+  ViewData["Title"] = "Login Basic - Pages";
+}
+
+@section PageStyles {
+<link rel="stylesheet" href="~/vendor/css/pages/page-auth.css">
+}
+
+@* ************** Content ************** *@
+
+<div class="position-relative">
+  <div class="authentication-wrapper authentication-basic container-p-y">
+    <div class="authentication-inner py-6 mx-4">
+
+      <!-- Login -->
+      <div class="card p-7">
+        <!-- Logo -->
+        <div class="app-brand justify-content-center mt-5">
+          <a href="/" class="app-brand-link gap-3">
+
+            <span class="app-brand-text demo text-heading fw-semibold">Frutos del Térraba</span>
+          </a>
+        </div>
+        <!-- /Logo -->
+
+        <div class="card-body mt-1">
+          <h4 class="mb-1">Bienvenido a Frutos del Térraba! 👋🏻</h4>
+          <p class="mb-5">Por favor inicia sesión para acceder al sistema</p>
+
+                    <form id="formAuthentication" class="mb-5" asp-action="Login" method="post">
+                        @Html.AntiForgeryToken()
+
+            <div class="form-floating form-floating-outline mb-5">
+                            <input asp-for="Email" class="form-control" placeholder="Introduce tu correo o nombre de usuario" autofocus>
+                            <label asp-for="Email">Correo o Nombre de Usuario</label>
+            </div>
+            <div class="mb-5">
+              <div class="form-password-toggle">
+                <div class="input-group input-group-merge">
+                  <div class="form-floating form-floating-outline">
+                                        <input asp-for="Password"  class="form-control"  placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
+                                        <label asp-for="Password">Contraseña</label>
+                  </div>
+                  <span class="input-group-text cursor-pointer"><i class="ri-eye-off-line ri-20px"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5 pb-2 d-flex justify-content-between pt-2 align-items-center">
+              <a href="/Auth/ForgotPasswordBasic" class="float-end mb-1">
+                <span>Olvidaste la contraseña?</span>
+              </a>
+            </div>
+            <div class="mb-5">
+              <button class="btn btn-primary d-grid w-100" type="submit">Iniciar Sesión</button>
+            </div>
+          </form>
+
+          <p class="text-center mb-5">
+            <span>No tienes una cuenta?</span>
+            <a href="/Auth/RegisterBasic">
+              <span>Creála</span>
+            </a>
+          </p>
+        </div>
+      </div>
+      <img src="~/img/illustrations/tree-3.png" alt="auth-tree" class="authentication-image-object-left d-none d-lg-block">
+      <img src="~/img/illustrations/auth-basic-mask-light.png" class="authentication-image d-none d-lg-block" height="172" alt="triangle-bg" data-app-light-img="illustrations/auth-basic-mask-light.png" data-app-dark-img="illustrations/auth-basic-mask-dark.png">
+      <img src="~/img/illustrations/tree.png" alt="auth-tree" class="authentication-image-object-right d-none d-lg-block">
+    </div>
+  </div>
+</div>

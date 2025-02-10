@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Frutos_del_Terraba.props" />
+</Project>

@@ -1,3 +1,6 @@
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+
 @{
   ViewData["Title"] = "Dashboard - Analytics";
 }
@@ -17,7 +20,10 @@
 @* ************** Content ************** *@
 <div class="row gy-6">
 
-
+    @if (HttpContextAccessor.HttpContext?.Session.GetString("Email") != null)
+    {
+        <p>Bienvenido, @HttpContextAccessor.HttpContext.Session.GetString("Email")</p>
+    }
   <!-- Data Tables -->
   <div class="col-12">
     <div class="card overflow-hidden">
