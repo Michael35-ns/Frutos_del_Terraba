@@ -1,3 +1,4 @@
+@model Frutos_del_Terraba.Models.LoginModel
 @{
   Layout = "_BlankLayout";
   ViewData["Title"] = "Login Basic - Pages";
@@ -28,29 +29,25 @@
           <h4 class="mb-1">Bienvenido a Frutos del Térraba! 👋🏻</h4>
           <p class="mb-5">Por favor inicia sesión para acceder al sistema</p>
 
-          <form id="formAuthentication" class="mb-5" action="~/" method="GET">
+                    <form id="formAuthentication" class="mb-5" asp-action="Login" method="post">
+                        @Html.AntiForgeryToken()
+
             <div class="form-floating form-floating-outline mb-5">
-              <input type="text" class="form-control" id="email" name="email-username" placeholder="Introduce tu correo o nombre de usuario" autofocus>
-              <label for="email">Correo o Nombre de Usuario</label>
+                            <input asp-for="Email" class="form-control" placeholder="Introduce tu correo o nombre de usuario" autofocus>
+                            <label asp-for="Email">Correo o Nombre de Usuario</label>
             </div>
             <div class="mb-5">
               <div class="form-password-toggle">
                 <div class="input-group input-group-merge">
                   <div class="form-floating form-floating-outline">
-                    <input type="password" id="password" class="form-control" name="password" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
-                    <label for="password">Contraseña</label>
+                                        <input asp-for="Password"  class="form-control"  placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
+                                        <label asp-for="Password">Contraseña</label>
                   </div>
                   <span class="input-group-text cursor-pointer"><i class="ri-eye-off-line ri-20px"></i></span>
                 </div>
               </div>
             </div>
             <div class="mb-5 pb-2 d-flex justify-content-between pt-2 align-items-center">
-              <div class="form-check mb-0">
-                <input class="form-check-input" type="checkbox" id="remember-me">
-                <label class="form-check-label" for="remember-me">
-                  Recuérdame
-                </label>
-              </div>
               <a href="/Auth/ForgotPasswordBasic" class="float-end mb-1">
                 <span>Olvidaste la contraseña?</span>
               </a>

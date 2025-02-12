@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj": {}
+    "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj": {
+    "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj",
+        "projectUniqueName": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj",
         "projectName": "Frutos_del_Terraba",
-        "projectPath": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj",
-        "packagesPath": "C:\\Users\\fabia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\obj\\",
+        "projectPath": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj",
+        "packagesPath": "C:\\Users\\crisn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fabia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\crisn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
