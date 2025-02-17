@@ -1,0 +1,6 @@
+@Frutos_del_Terraba_Api_HostAddress = http://localhost:5237
+
+GET {{Frutos_del_Terraba_Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

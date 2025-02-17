@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
 
 namespace Frutos_del_Terraba.Models
 {
@@ -14,6 +15,7 @@ namespace Frutos_del_Terraba.Models
         [StringLength(200, ErrorMessage = "La descripcion no pueden exceder los 200 caracteres.")]
         public string Descripcion { get; set; }
 
+        [ValidateNever]
         public ICollection<Producto> Productos { get; set; }
     }
 

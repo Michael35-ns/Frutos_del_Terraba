@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "Frutos_del_Terraba\\Frutos_del_Terraba.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
