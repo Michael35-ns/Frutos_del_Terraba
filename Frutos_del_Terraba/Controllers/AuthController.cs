@@ -49,7 +49,7 @@ public class AuthController : Controller
 
         if (response.IsSuccessStatusCode)
         {
-            return RedirectToAction("Confirmacion");
+            return RedirectToAction("Login", "Auth");
         }
         else
         {
@@ -87,27 +87,12 @@ public class AuthController : Controller
             HttpContext.Session.SetString("Token", token);
 
             var handler = new JwtSecurityTokenHandler();
-            Console.WriteLine($"Received Token: {token}");
-            if (string.IsNullOrWhiteSpace(token))
-            {
-                return BadRequest("Token is empty or null.");
-            }
-
-            if (!handler.CanReadToken(token))
-            {
-                return BadRequest("Invalid token format.");
-            }
-
             var jwtToken = handler.ReadJwtToken(token);
+            var username = jwtToken.Claims.FirstOrDefault(claim => claim.Type == "username")?.Value;
 
-            var email = jwtToken.Claims.FirstOrDefault(claim => claim.Type == "email")?.Value;
-
-            if (!string.IsNullOrEmpty(email))
-            {
-                HttpContext.Session.SetString("Email", email);
-            }
-
+            TempData["Username"] = username;
             return RedirectToAction("Index", "Dashboards");
+
         }
         else
         {
@@ -117,6 +102,25 @@ public class AuthController : Controller
         }
     }
 
+    [HttpPost]
+    public async Task<IActionResult> LogoutAsync()
+    {
+        using var httpClient = _httpClientFactory.CreateClient();
+        var response = await httpClient.PostAsync($"{apiUrl}/logout", null);
+        Console.WriteLine("entrando al logout");
+        if (response.IsSuccessStatusCode)
+        {
+            HttpContext.Session.Remove("Token");
+            HttpContext.Session.Remove("Email");
+            return RedirectToAction("Login", "Auth");
+        }
+        else
+        {
+            var errorMessage = await response.Content.ReadAsStringAsync();
+            ModelState.AddModelError("", "Error en el logout: " + errorMessage);
+            return View();
+        }
+    }
     public IActionResult Confirmacion()
     {
         return View();
