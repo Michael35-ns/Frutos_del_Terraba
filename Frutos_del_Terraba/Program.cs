@@ -1,4 +1,6 @@
-﻿using Frutos_del_Terraba.Models;
+﻿using Frutos_del_Terraba.Helpers.Implementaciones;
+using Frutos_del_Terraba.Helpers.Interfaces;
+using Frutos_del_Terraba.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -16,12 +18,26 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("FrutosDb")));
 
 
+builder.Services.AddHttpClient("ApiBaseClient", client =>
+{
+    client.BaseAddress = new Uri("https://localhost:7240/api/"); 
+});
+
+
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(30);
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
+
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+builder.Services.AddScoped<IProductoService, ProductoService>();
+
+
+
+
+
 
 var app = builder.Build();
 

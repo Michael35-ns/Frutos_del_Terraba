@@ -10,6 +10,6 @@ namespace Frutos_del_Terraba.Models
             [ValidateNever]
             public List<Categoria> Categorias { get; set; }
             public Categoria NuevaCategoria { get; set; } = new Categoria();
-        }
+    }
     }
 

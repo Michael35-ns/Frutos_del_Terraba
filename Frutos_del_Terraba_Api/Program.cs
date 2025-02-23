@@ -1,5 +1,7 @@
 
 using Frutos_del_Terraba_Api.Models;
+using Frutos_del_Terraba_Api.Servicios.Implementaciones;
+using Frutos_del_Terraba_Api.Servicios.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -27,6 +29,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 
 builder.Services.AddControllers();
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+builder.Services.AddScoped<IProductoService, ProductoService>();
+
 
 
 builder.Services.AddEndpointsApiExplorer();

@@ -5,7 +5,6 @@ namespace Frutos_del_Terraba.Models
 {
     public class Categoria
     {
-        [Key]
         public int Id_categoria { get; set; }
 
         [Required]

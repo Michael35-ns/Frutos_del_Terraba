@@ -1,5 +1,6 @@
 ﻿using Frutos_del_Terraba_Api.DTO;
 using Frutos_del_Terraba_Api.Models;
+using Frutos_del_Terraba_Api.Servicios.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,88 +11,79 @@ namespace Frutos_del_Terraba_Api.Controllers
     [ApiController]
     public class CategoriaController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ICategoriaService _categoriaService;
 
-        public CategoriaController(ApplicationDbContext context)
+        public CategoriaController(ICategoriaService categoriaService)
         {
-            _context = context;
+            _categoriaService = categoriaService;
         }
 
+        #region Obtener todas las Categorias
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> ObtenerTodasCategorias()
         {
-            var categorias = await _context.Categorias.ToListAsync();
+            var categorias = await _categoriaService.ObtenerTodasCategorias();
             return Ok(categorias);
         }
 
+        #endregion
+
+        #region Obtener Categoria por Id
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
+        public async Task<IActionResult> ObtenerCategoriaId(int id)
         {
-            var categoria = await _context.Categorias.FindAsync(id);
+            var categoria = await _categoriaService.ObtenerCategoriaPorId(id);
             if (categoria == null)
-            {
                 return NotFound(new { message = "Categoría no encontrada" });
-            }
+
             return Ok(categoria);
         }
 
+        #endregion
+
+
+        #region Crear una nueva Categoria
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CategoriaDTOModel model)
+        public async Task<IActionResult> CrearCategoria([FromBody] CategoriaDTOModel model)
         {
             if (!ModelState.IsValid)
-            {
                 return BadRequest(ModelState);
-            }
 
-            var categoria = new Categoria
-            {
-                Nombre = model.Nombre,
-                Descripcion = model.Descripcion
-            };
-
-            _context.Categorias.Add(categoria);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetById), new { id = categoria.Id_categoria }, categoria);
+            var categoria = await _categoriaService.CrearCategoria(model);
+            return CreatedAtAction(nameof(ObtenerCategoriaId), new { id = categoria.Id_categoria }, categoria);
         }
+        #endregion
 
+        #region Actualizar Categoria
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] CategoriaDTOModel model)
+        public async Task<IActionResult> ActualizarCategoria(int id, [FromBody] CategoriaDTOModel model)
         {
             if (id != model.Id_categoria)
-            {
                 return BadRequest(new { message = "El ID de la categoría no coincide" });
-            }
 
-            var categoria = await _context.Categorias.FindAsync(id);
+            var categoria = await _categoriaService.ObtenerCategoriaPorId(id);
             if (categoria == null)
-            {
                 return NotFound(new { message = "Categoría no encontrada" });
-            }
-            categoria.Nombre = model.Nombre;
-            categoria.Descripcion = model.Descripcion;
 
-            _context.Categorias.Update(categoria);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            var actualizado = await _categoriaService.ActualizarCategoria(id, model);
+            if (!actualizado)
+                return StatusCode(500, new { message = "Error al actualizar la categoría" });
+            return Ok(categoria);
         }
 
+        #endregion
 
+        #region Eliminar Categoria
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> EliminarCategoria(int id)
         {
-            var categoria = await _context.Categorias.FindAsync(id);
-            if (categoria == null)
-            {
+            var eliminado = await _categoriaService.EliminarCategoria(id);
+            if (!eliminado)
                 return NotFound(new { message = "Categoría no encontrada" });
-            }
-
-            _context.Categorias.Remove(categoria);
-            await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
+        #endregion
     }
 }
