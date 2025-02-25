@@ -90,10 +90,12 @@
         </li>
         <li>
           <div class="d-grid px-4 pt-2 pb-1">
-            <a class="btn btn-danger d-flex" href="javascript:void(0);">
-            <small class="align-middle">Logout</small>
-              <i class="ri-logout-box-r-line ms-2 ri-16px"></i>
-            </a>
+                        <form asp-controller="Auth" asp-action="Logout" method="post">
+                            <button type="submit">
+                                <small class="align-middle">Logout</small>
+                                <i class="ri-logout-box-r-line ms-2 ri-16px"></i>
+                            </button>
+                        </form>
           </div>
         </li>
       </ul>
