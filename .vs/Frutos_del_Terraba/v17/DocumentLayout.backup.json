@@ -3,8 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\crisn\\onedrive\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\views\\dashboards\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\views\\dashboards\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{810EA9C1-C90E-4D5D-9B7C-17BC315B5E08}|..\\..\\..\\..\\source\\repos\\AuthDemo\\AuthDemo\\AuthDemo.csproj|c:\\users\\crisn\\source\\repos\\authdemo\\authdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\crisn\\onedrive\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crisn\\AppData\\Local\\Temp\\.vsdbgsrc\\106739112c966cc39d25dd039145ce9de2cff17182935e358a18dd53276b70ce\\MethodBaseInvoker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\crisn\\onedrive\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -14,6 +20,10 @@
       "AbsoluteMoniker": "D:0:0:{810EA9C1-C90E-4D5D-9B7C-17BC315B5E08}|..\\..\\..\\..\\source\\repos\\AuthDemo\\AuthDemo\\AuthDemo.csproj|c:\\users\\crisn\\source\\repos\\authdemo\\authdemo\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\crisn\\onedrive\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\views\\dashboards\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\views\\dashboards\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{810EA9C1-C90E-4D5D-9B7C-17BC315B5E08}|..\\..\\..\\..\\source\\repos\\AuthDemo\\AuthDemo\\AuthDemo.csproj|c:\\users\\crisn\\source\\repos\\authdemo\\authdemo\\authdemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
@@ -21,15 +31,8 @@
       "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\views\\shared\\sections\\menu\\_verticalmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\crisn\\onedrive\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\crisn\\onedrive\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\controllers\\dashboardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\controllers\\dashboardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{810EA9C1-C90E-4D5D-9B7C-17BC315B5E08}|..\\..\\..\\..\\source\\repos\\AuthDemo\\AuthDemo\\AuthDemo.csproj|c:\\users\\crisn\\source\\repos\\authdemo\\authdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\crisn\\onedrive\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -47,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -59,20 +62,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "MethodBaseInvoker.cs",
+              "DocumentMoniker": "C:\\Users\\crisn\\AppData\\Local\\Temp\\.vsdbgsrc\\106739112c966cc39d25dd039145ce9de2cff17182935e358a18dd53276b70ce\\MethodBaseInvoker.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\106739112c966cc39d25dd039145ce9de2cff17182935e358a18dd53276b70ce\\MethodBaseInvoker.cs",
+              "ToolTip": "C:\\Users\\crisn\\AppData\\Local\\Temp\\.vsdbgsrc\\106739112c966cc39d25dd039145ce9de2cff17182935e358a18dd53276b70ce\\MethodBaseInvoker.cs [Solo lectura]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\106739112c966cc39d25dd039145ce9de2cff17182935e358a18dd53276b70ce\\MethodBaseInvoker.cs [Solo lectura]",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAcwKsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T01:01:36.435Z",
+              "EditorCaption": " [Solo lectura]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Program.cs",
               "RelativeDocumentMoniker": "Frutos_del_Terraba\\Program.cs",
               "ToolTip": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Program.cs",
               "RelativeToolTip": "Frutos_del_Terraba\\Program.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAswC8AAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-18T04:37:23.196Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "_VerticalMenu.cshtml",
               "DocumentMoniker": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Views\\Shared\\Sections\\Menu\\_VerticalMenu.cshtml",
               "RelativeDocumentMoniker": "Frutos_del_Terraba\\Views\\Shared\\Sections\\Menu\\_VerticalMenu.cshtml",
@@ -80,51 +96,48 @@
               "RelativeToolTip": "Frutos_del_Terraba\\Views\\Shared\\Sections\\Menu\\_VerticalMenu.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-18T04:27:23.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T04:27:23.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\crisn\\source\\repos\\AuthDemo\\AuthDemo\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\AuthDemo\\AuthDemo\\Program.cs",
               "ToolTip": "C:\\Users\\crisn\\source\\repos\\AuthDemo\\AuthDemo\\Program.cs",
               "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\AuthDemo\\AuthDemo\\Program.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-18T04:26:49.068Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\crisn\\source\\repos\\AuthDemo\\AuthDemo\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\AuthDemo\\AuthDemo\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\crisn\\source\\repos\\AuthDemo\\AuthDemo\\Controllers\\AuthController.cs",
               "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\AuthDemo\\AuthDemo\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAkwFgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAswEgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T04:26:28.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T04:26:28.788Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthDemo",
+              "DocumentIndex": 6,
+              "Title": "AuthDemo.csproj",
               "DocumentMoniker": "C:\\Users\\crisn\\source\\repos\\AuthDemo\\AuthDemo\\AuthDemo.csproj",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\AuthDemo\\AuthDemo\\AuthDemo.csproj",
               "ToolTip": "C:\\Users\\crisn\\source\\repos\\AuthDemo\\AuthDemo\\AuthDemo.csproj",
               "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\AuthDemo\\AuthDemo\\AuthDemo.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-18T04:26:26.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T04:26:26.235Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Views\\Dashboards\\Index.cshtml",
               "RelativeDocumentMoniker": "Frutos_del_Terraba\\Views\\Dashboards\\Index.cshtml",
@@ -132,12 +145,11 @@
               "RelativeToolTip": "Frutos_del_Terraba\\Views\\Dashboards\\Index.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAswBMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-18T04:26:04.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T04:26:04.177Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "DashboardsController.cs",
               "DocumentMoniker": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Controllers\\DashboardsController.cs",
               "RelativeDocumentMoniker": "Frutos_del_Terraba\\Controllers\\DashboardsController.cs",
@@ -145,12 +157,11 @@
               "RelativeToolTip": "Frutos_del_Terraba\\Controllers\\DashboardsController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T04:24:44.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T04:24:44.739Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Views\\Auth\\Login.cshtml",
               "RelativeDocumentMoniker": "Frutos_del_Terraba\\Views\\Auth\\Login.cshtml",
@@ -158,12 +169,11 @@
               "RelativeToolTip": "Frutos_del_Terraba\\Views\\Auth\\Login.cshtml",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-18T04:20:19.4Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T04:20:19.4Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Views\\Auth\\Register.cshtml",
               "RelativeDocumentMoniker": "Frutos_del_Terraba\\Views\\Auth\\Register.cshtml",
@@ -171,18 +181,17 @@
               "RelativeToolTip": "Frutos_del_Terraba\\Views\\Auth\\Register.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-18T04:20:18.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T04:20:18.558Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Frutos_del_Terraba\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Frutos_del_Terraba\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAswF8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-18T04:19:13.539Z",
               "EditorCaption": ""

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Frutos_del_Terraba")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94a0c1e2e0a937121d7988352fb432ba47446b56")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+193bffdcf969fe5379af38c66716fcf337ed8f60")]
 [assembly: System.Reflection.AssemblyProductAttribute("Frutos_del_Terraba")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Frutos_del_Terraba")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
