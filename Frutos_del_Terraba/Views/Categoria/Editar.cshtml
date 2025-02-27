@@ -9,7 +9,7 @@
     <div class="card">
         <h5 class="card-header">Editar Categoría</h5>
         <div class="card-body">
-            <form asp-action="Edit" asp-route-id="@Model.Id_categoria" method="post">
+            <form asp-action="Editar" asp-route-id="@Model.Id_categoria" method="post">
                 <input type="hidden" asp-for="Id_categoria" />
                 <div class="mb-3">
                     <label asp-for="Nombre" class="form-label">Nombre</label>
