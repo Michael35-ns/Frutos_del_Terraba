@@ -4,6 +4,9 @@ using System.Text;
 using Frutos_del_Terraba.Models;
 using System.IdentityModel.Tokens.Jwt;
 using Frutos_del_Terraba_Api.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
 
 public class AuthController : Controller
 {
@@ -57,6 +60,65 @@ public class AuthController : Controller
         {
             var json = JsonSerializer.Serialize(loginModel);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
+            HttpResponseMessage response = await _client.PostAsync(_client.BaseAddress + "/login", content);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, loginModel.email)
+                };
+
+                var claimsIdentity = new ClaimsIdentity(claims, "CookieAuth");
+                var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+
+                await HttpContext.SignInAsync("CookieAuth", claimsPrincipal);
+
+                return RedirectToAction("Confirmacion");
+            }
+            else
+            {
+                var errorMessage = await response.Content.ReadAsStringAsync();
+                ModelState.AddModelError("", "Error en el login: " + errorMessage);
+                return View(loginModel);
+            }
+        }
+        return View(loginModel);
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Logout()
+    {
+        await HttpContext.SignOutAsync("CookieAuth"); // Esto cierra la sesión
+
+        // Redirige a la página de login después de cerrar la sesión
+        return RedirectToAction("Login", "Auth");
+    }
+
+
+    public IActionResult AccessDenied()
+    {
+        return View();
+    }
+
+    [Authorize]
+    public IActionResult Confirmacion()
+    {
+        return View();
+    }
+
+
+
+
+
+    /*
+     public async Task<IActionResult> Login(LoginModel loginModel)
+    {
+        if (ModelState.IsValid)
+        {
+            var json = JsonSerializer.Serialize(loginModel);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
             HttpResponseMessage response = _client.PostAsync(_client.BaseAddress + "/login", content).Result;
 
             if (response.IsSuccessStatusCode)
@@ -105,9 +167,5 @@ public class AuthController : Controller
         }
         return View(loginModel);
     }
-
-    public IActionResult Confirmacion()
-    {
-        return View();
-    }
+     */
 }

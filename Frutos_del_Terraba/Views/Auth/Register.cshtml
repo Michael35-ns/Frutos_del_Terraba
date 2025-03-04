@@ -2,7 +2,7 @@
 
 @{
     Layout = "_BlankLayout";
-    ViewData["Title"] = "Register Basic - Pages";
+    ViewData["Title"] = "Registro";
 }
 
 @section PageStyles {
@@ -19,15 +19,26 @@
                 <!-- Logo -->
                 <!-- /Logo -->
                 <div class="card-body mt-1">
-                    <h4 class="mb-1">Adventure starts here 🚀</h4>
-                    <p class="mb-5">Make your app management easy and fun!</p>
+                    <h4 class="mb-1">Crea una cuenta 🚀</h4>
 
                     <form id="formAuthentication" class="mb-5" asp-action="Register" method="post">
                         @Html.AntiForgeryToken()
 
+                        @if (!ViewData.ModelState.IsValid)
+                        {
+                            <div asp-validation-summary="All" class="alert alert-danger" role="alert"></div>
+                        }
+                        
+                        <!-- userName -->
+                        <div class="form-floating form-floating-outline mb-5">
+                            <input asp-for="userName" class="form-control" placeholder="Nombre de usuario">
+                            <label asp-for="userName">Nombre de Usuario</label>
+                            <span asp-validation-for="userName" class="text-danger"></span>
+                        </div>
+
                         <!-- Email -->
                         <div class="form-floating form-floating-outline mb-5">
-                            <input asp-for="email" class="form-control" placeholder="Enter your email">
+                            <input asp-for="email" type="email" class="form-control" placeholder="Correo electrónico">
                             <label asp-for="email">Email</label>
                             <span asp-validation-for="email" class="text-danger"></span>
                         </div>
@@ -48,15 +59,15 @@
 
                         <!-- Submit Button -->
                         <button type="submit" class="btn btn-primary d-grid w-100 mb-5">
-                            Sign up
+                            Crear Cuenta
                         </button>
                     </form>
 
                     <!-- Login Link -->
                     <p class="text-center mb-5">
-                        <span>Already have an account?</span>
-                        <a href="/Auth/LoginBasic">
-                            <span>Sign in instead</span>
+                        <span>Ya tienes una cuenta?</span>
+                        <a href="/Auth/Login">
+                            <span>Iniciar sesión</span>
                         </a>
                     </p>
                 </div>

@@ -32,30 +32,41 @@
                     <form id="formAuthentication" class="mb-5" asp-action="Login" method="post">
                         @Html.AntiForgeryToken()
 
-            <div class="form-floating form-floating-outline mb-5">
-                            <input asp-for="email" class="form-control" placeholder="Introduce tu correo o nombre de usuario" autofocus>
+                        <!-- Resumen de errores generales -->
+                        @if (!ViewData.ModelState.IsValid)
+                        {
+                            <div asp-validation-summary="All" class="alert alert-danger" role="alert"></div>
+                        }
+
+                        <div class="form-floating form-floating-outline mb-5">
+                            <input asp-for="email" type="email" class="form-control" placeholder="Introduce tu correo o nombre de usuario" autofocus>
                             <label asp-for="email">Correo o Nombre de Usuario</label>
-            </div>
-            <div class="mb-5">
-              <div class="form-password-toggle">
-                <div class="input-group input-group-merge">
-                  <div class="form-floating form-floating-outline">
-                                        <input asp-for="password"  class="form-control"  placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
+                            <span asp-validation-for="email" class="text-danger"></span> <!-- Error específico -->
+                        </div>
+
+                        <div class="mb-5">
+                            <div class="form-password-toggle">
+                                <div class="input-group input-group-merge">
+                                    <div class="form-floating form-floating-outline">
+                                        <input asp-for="password" type="password"  class="form-control" placeholder="********" aria-describedby="password" />
                                         <label asp-for="password">Contraseña</label>
-                  </div>
-                  <span class="input-group-text cursor-pointer"><i class="ri-eye-off-line ri-20px"></i></span>
-                </div>
-              </div>
-            </div>
-            <div class="mb-5 pb-2 d-flex justify-content-between pt-2 align-items-center">
-              <a href="/Auth/ForgotPasswordBasic" class="float-end mb-1">
-                <span>Olvidaste la contraseña?</span>
-              </a>
-            </div>
-            <div class="mb-5">
-              <button class="btn btn-primary d-grid w-100" type="submit">Iniciar Sesión</button>
-            </div>
-          </form>
+                                    </div>
+                                    <span class="input-group-text cursor-pointer"><i class="ri-eye-off-line ri-20px"></i></span>
+                                </div>
+                            </div>
+                            <span asp-validation-for="password" class="text-danger"></span> <!-- Error específico -->
+                        </div>
+
+                        <div class="mb-5 pb-2 d-flex justify-content-between pt-2 align-items-center">
+                            <a href="/Auth/ForgotPasswordBasic" class="float-end mb-1">
+                                <span>Olvidaste la contraseña?</span>
+                            </a>
+                        </div>
+
+                        <div class="mb-5">
+                            <button class="btn btn-primary d-grid w-100" type="submit">Iniciar Sesión</button>
+                        </div>
+                    </form>
 
           <p class="text-center mb-5">
             <span>No tienes una cuenta?</span>
