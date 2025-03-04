@@ -1,0 +1,53 @@
+﻿@model Frutos_del_Terraba.Models.PedidoViewModel
+
+@{
+    ViewData["Title"] = "Pedidos";
+}
+
+<h1>Listado de Pedidos</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Pedidos.FirstOrDefault().Id_pedido)</th>
+            <th>@Html.DisplayNameFor(model => model.Pedidos.FirstOrDefault().Fecha)</th>
+            <th>@Html.DisplayNameFor(model => model.Pedidos.FirstOrDefault().Id_usuario)</th>
+            <th>@Html.DisplayNameFor(model => model.Pedidos.FirstOrDefault().Id_proveedor)</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pedido in Model.Pedidos)
+        {
+            <tr>
+                <td>@pedido.Id_pedido</td>
+                <td>@pedido.Fecha.ToString("yyyy-MM-dd")</td>
+                <td>@pedido.Id_usuario</td>
+                <td>@pedido.Id_proveedor</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Pedidos", new { id = pedido.Id_pedido })">Editar</a> |
+                    <a href="@Url.Action("Details", "Pedidos", new { id = pedido.Id_pedido })">Detalles</a> |
+                    <a href="@Url.Action("Delete", "Pedidos", new { id = pedido.Id_pedido })">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Agregar Nuevo Pedido</h2>
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="Id_usuario">ID Usuario</label>
+        <input type="number" class="form-control" id="Id_usuario" name="Id_usuario" required />
+    </div>
+    <div class="form-group">
+        <label for="Id_proveedor">ID Proveedor</label>
+        <input type="number" class="form-control" id="Id_proveedor" name="Id_proveedor" required />
+    </div>
+    <div class="form-group">
+        <label for="Fecha">Fecha</label>
+        <input type="date" class="form-control" id="Fecha" name="Fecha" required />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Crear Pedido</button>
+</form>

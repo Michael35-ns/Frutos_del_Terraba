@@ -1,4 +1,3 @@
-
 using Frutos_del_Terraba_Api.Models;
 using Frutos_del_Terraba_Api.Servicios.Implementaciones;
 using Frutos_del_Terraba_Api.Servicios.Interfaces;
@@ -21,18 +20,28 @@ builder.Services.AddCors(options =>
     });
 });
 
-
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("FrutosDb")));
-
-
-
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();
 builder.Services.AddScoped<IProductoService, ProductoService>();
+builder.Services.AddScoped<IPedidoService, PedidoService>();
 
-
+// Configuración de JWT Authentication (si la usas)
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("tu_clave_secreta")),
+            ClockSkew = TimeSpan.Zero
+        };
+    });
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
@@ -44,9 +53,10 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-
 var app = builder.Build();
 
+// Middleware de autenticación
+app.UseAuthentication(); // Asegúrate de agregar esto
 
 if (app.Environment.IsDevelopment())
 {
@@ -55,7 +65,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors("AllowFrontend");
 
 app.MapControllers();
 
