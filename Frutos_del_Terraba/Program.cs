@@ -14,9 +14,6 @@ builder.Services.AddHttpClient();
 
 builder.Services.AddDistributedMemoryCache();
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("FrutosDb")));
-
 
 builder.Services.AddHttpClient("ApiBaseClient", client =>
 {
@@ -33,10 +30,6 @@ builder.Services.AddSession(options =>
 
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();
 builder.Services.AddScoped<IProductoService, ProductoService>();
-
-
-
-
 
 
 var app = builder.Build();

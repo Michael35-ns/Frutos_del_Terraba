@@ -25,27 +25,20 @@
                     <form id="formAuthentication" class="mb-5" asp-action="Register" method="post">
                         @Html.AntiForgeryToken()
 
-                        <!-- Username -->
-                        <div class="form-floating form-floating-outline mb-5">
-                            <input asp-for="UserName" class="form-control" placeholder="Enter your username" autofocus>
-                            <label asp-for="UserName">Username</label>
-                            <span asp-validation-for="UserName" class="text-danger"></span>
-                        </div>
-
                         <!-- Email -->
                         <div class="form-floating form-floating-outline mb-5">
-                            <input asp-for="Email" class="form-control" placeholder="Enter your email">
-                            <label asp-for="Email">Email</label>
-                            <span asp-validation-for="Email" class="text-danger"></span>
+                            <input asp-for="email" class="form-control" placeholder="Enter your email">
+                            <label asp-for="email">Email</label>
+                            <span asp-validation-for="email" class="text-danger"></span>
                         </div>
 
                         <!-- Password -->
                         <div class="mb-5 form-password-toggle">
                             <div class="input-group input-group-merge">
                                 <div class="form-floating form-floating-outline">
-                                    <input asp-for="Password" type="password" class="form-control" placeholder="••••••••" aria-describedby="password" />
-                                    <label asp-for="Password">Password</label>
-                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                    <input asp-for="password" type="password" class="form-control" placeholder="••••••••" aria-describedby="password" />
+                                    <label asp-for="password">Password</label>
+                                    <span asp-validation-for="password" class="text-danger"></span>
                                 </div>
                                 <span class="input-group-text cursor-pointer"><i class="ri-eye-off-line ri-20px"></i></span>
                             </div>

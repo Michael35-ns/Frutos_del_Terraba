@@ -11,6 +11,16 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer("name=DefaultConnection"));
+
+builder.Services.AddIdentityApiEndpoints<IdentityUser>().
+    AddEntityFrameworkStores<ApplicationDbContext>();
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
@@ -21,30 +31,12 @@ builder.Services.AddCors(options =>
     });
 });
 
-
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("FrutosDb")));
-
-builder.Services.AddControllers();
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();
 builder.Services.AddScoped<IProductoService, ProductoService>();
 
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(options =>
-{
-    options.SwaggerDoc("v1", new OpenApiInfo
-    {
-        Title = "API Categorias",
-        Version = "v1"
-    });
-});
 
 var app = builder.Build();
 
-builder.Services.AddIdentityApiEndpoints<IdentityUser>().
-    AddEntityFrameworkStores<ApplicationDbContext>();
-
-app.MapGroup("/identity").MapIdentityApi<IdentityUser>();
 
 if (app.Environment.IsDevelopment())
 {
@@ -52,7 +44,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.MapGroup("/identity").MapIdentityApi<IdentityUser>();
+
 app.UseHttpsRedirection();
+
+app.UseAuthorization();
 
 app.MapControllers();
 

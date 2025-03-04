@@ -6,9 +6,9 @@ namespace Frutos_del_Terraba_Api.Models
 {
     public class ApplicationDbContext : IdentityDbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-      : base(options)
+        public ApplicationDbContext(DbContextOptions options) : base(options)
         {
+
         }
 
         public DbSet<Producto> Productos { get; set; }

@@ -1,22 +1,11 @@
 {
   "Version": 1,
-  "Hash": "UqVgVsj9GbD7a+nTi0Amet0AN00F9DsQwc5iNK9Eiq8=",
+  "Hash": "onCgnwE4vuvUD6wuZ/KbHzylrmwDru0pqfCtDa24dTw=",
   "Source": "Frutos_del_Terraba",
   "BasePath": "_content/Frutos_del_Terraba",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
-    {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\Auth_API.csproj",
-      "Version": 2,
-      "Source": "Auth_API",
-      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
-      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
-    },
     {
       "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj",
       "Version": 2,

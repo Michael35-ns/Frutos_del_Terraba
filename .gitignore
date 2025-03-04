@@ -1,8 +1,37 @@
-# Archivos de construcción y binarios
+# Carpetas de salida de compilación
 bin/
 obj/
 
+# Archivos de compilación de .NET
+*.dll
+*.exe
+*.pdb
+*.pdb.lock
+*.log
 
+# Configuraciones de Visual Studio
 .vs/
 *.vsix
-*.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de configuración de VS Code
+.vscode/
+
+# Publicaciones y cache de publicaciones
+publish/
+wwwroot/
+app.publish/
+
+# Logs y archivos temporales
+*.log
+logs/
+
+# Archivos de configuración sensibles
+.env
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+

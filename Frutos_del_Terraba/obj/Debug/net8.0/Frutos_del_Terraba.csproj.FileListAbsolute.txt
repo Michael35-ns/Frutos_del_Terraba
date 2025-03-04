@@ -548,8 +548,3 @@ C:\Users\fabia\Documents\GitHub\Frutos_del_Terraba\Frutos_del_Terraba\bin\Debug\
 C:\Users\fabia\Documents\GitHub\Frutos_del_Terraba\Frutos_del_Terraba\bin\Debug\net8.0\Frutos_del_Terraba_Api.dll
 C:\Users\fabia\Documents\GitHub\Frutos_del_Terraba\Frutos_del_Terraba\bin\Debug\net8.0\Frutos_del_Terraba_Api.pdb
 C:\Users\fabia\Documents\GitHub\Frutos_del_Terraba\Frutos_del_Terraba\obj\Debug\net8.0\Frutos_del_Terraba.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\fabia\Documents\GitHub\Frutos_del_Terraba\Frutos_del_Terraba\bin\Debug\net8.0\Auth_API.deps.json
-C:\Users\fabia\Documents\GitHub\Frutos_del_Terraba\Frutos_del_Terraba\bin\Debug\net8.0\Auth_API.runtimeconfig.json
-C:\Users\fabia\Documents\GitHub\Frutos_del_Terraba\Frutos_del_Terraba\bin\Debug\net8.0\Auth_API.exe
-C:\Users\fabia\Documents\GitHub\Frutos_del_Terraba\Frutos_del_Terraba\bin\Debug\net8.0\Auth_API.dll
-C:\Users\fabia\Documents\GitHub\Frutos_del_Terraba\Frutos_del_Terraba\bin\Debug\net8.0\Auth_API.pdb
