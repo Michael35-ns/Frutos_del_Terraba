@@ -1,11 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
-namespace Frutos_del_Terraba.Models
+namespace Frutos_del_Terraba_Api.DTO
 {
-    public class Distribucion
+    public class DistribucionDTOModel
     {
-        [Key]
         public int Id_distribucion { get; set; }
 
         [Required(ErrorMessage = "El destino es obligatorio.")]
@@ -16,8 +15,6 @@ namespace Frutos_del_Terraba.Models
         public int Cantidad { get; set; }
 
         [Required]
-        [ForeignKey("Inventario")]
-        public int Id_inventario {  get; set; }
-        public Inventario Inventario { get; set; }
+        public int Id_inventario { get; set; }
     }
 }

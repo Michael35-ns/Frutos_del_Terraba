@@ -1,11 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
-namespace Frutos_del_Terraba.Models
+namespace Frutos_del_Terraba_Api.DTO
 {
-    public class DetallesPedido
+    public class DetallesPedidoDTOModel
     {
-        [Key]
         public int Id_detalle { get; set; }
 
         public int Cantidad { get; set; }
@@ -14,15 +13,9 @@ namespace Frutos_del_Terraba.Models
         public string Observaciones { get; set; }
 
         [Required]
-        [ForeignKey("Pedido")]
         public int Id_pedido { get; set; }
 
         [Required]
-        [ForeignKey("Producto")]
         public int Id_producto { get; set; }
-
-        public Pedido Pedido { get; set; }
-        public Producto Producto { get; set; }
-
     }
 }

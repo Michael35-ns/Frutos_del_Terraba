@@ -1,10 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Frutos_del_Terraba.Models
+namespace Frutos_del_Terraba_Api.DTO
 {
-    public class Proveedor
+    public class ProveedorDTOModel
     {
-        [Key]
         public int Id_proveedor { get; set; }
 
         [Required]
@@ -21,7 +20,5 @@ namespace Frutos_del_Terraba.Models
         [Required]
         [StringLength(70, ErrorMessage = "El email no pueden exceder los 70 caracteres.")]
         public string Email { get; set; }
-
-        public ICollection<Pedido> Pedidos { get; set; }
     }
 }

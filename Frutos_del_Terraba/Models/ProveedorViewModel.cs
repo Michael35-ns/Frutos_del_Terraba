@@ -21,7 +21,7 @@ namespace Frutos_del_Terraba.Models
         [Required]
         [StringLength(70, ErrorMessage = "El email no pueden exceder los 70 caracteres.")]
         public string Email { get; set; }
+        public ICollection<PedidoViewModel> Pedidos { get; set; }
 
-        public ICollection<Pedido> Pedidos { get; set; }
     }
 }
