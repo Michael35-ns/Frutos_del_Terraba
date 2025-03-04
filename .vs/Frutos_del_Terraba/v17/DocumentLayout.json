@@ -1,7 +1,208 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Progra Avanzada\\Frutos_del_Terraba\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\migrations\\20250303215759_db_initialization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\migrations\\20250303215759_db_initialization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\models\\modelbuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\models\\modelbuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\auth_api\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|solutionrelative:auth_api\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\auth_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|solutionrelative:auth_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\models\\distribucion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\models\\distribucion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\models\\detallespedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\models\\detallespedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\models\\categoriaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\models\\categoriaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\dto\\detallespedidodtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\dto\\detallespedidodtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\dto\\categoriadtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\dto\\categoriadtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\servicios\\implementaciones\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\servicios\\implementaciones\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\servicios\\interfaces\\icategoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\servicios\\interfaces\\icategoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\auth_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|solutionrelative:auth_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\auth_api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|solutionrelative:auth_api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\auth_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|solutionrelative:auth_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\auth_api\\auth_api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|solutionrelative:auth_api\\auth_api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\helpers\\interfaces\\icategoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\helpers\\interfaces\\icategoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\helpers\\implementaciones\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\helpers\\implementaciones\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\auth_api\\migrations\\20250303204655_seeders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|solutionrelative:auth_api\\migrations\\20250303204655_seeders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\auth_api\\migrations\\20250303174900_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|solutionrelative:auth_api\\migrations\\20250303174900_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\auth_api\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|solutionrelative:auth_api\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\dto\\pedidodtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\dto\\pedidodtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\models\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\models\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\servicios\\implementaciones\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\servicios\\implementaciones\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\servicios\\interfaces\\iproductoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\servicios\\interfaces\\iproductoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\dto\\distribuciondtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\dto\\distribuciondtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\models\\distribucion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\models\\distribucion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\dto\\reportedtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\dto\\reportedtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\models\\reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\models\\reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\dto\\proveedordtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\dto\\proveedordtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\dto\\productodtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\dto\\productodtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\frutos_del_terraba_api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\frutos_del_terraba_api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\dto\\inventariodtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\dto\\inventariodtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\models\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\models\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\models\\detallespedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\models\\detallespedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\auth_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E82F7D5-AE7F-436E-845C-8ECF2003FB32}|Auth_API\\Auth_API.csproj|solutionrelative:auth_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +210,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
@@ -41,10 +246,6 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
@@ -52,8 +253,617 @@
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250303215759_DB_Initialization.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Migrations\\20250303215759_DB_Initialization.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Migrations\\20250303215759_DB_Initialization.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Migrations\\20250303215759_DB_Initialization.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Migrations\\20250303215759_DB_Initialization.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T01:32:58.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Distribucion.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Models\\Distribucion.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba\\Models\\Distribucion.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Models\\Distribucion.cs",
+              "RelativeToolTip": "Frutos_del_Terraba\\Models\\Distribucion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T01:30:01.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DetallesPedido.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Models\\DetallesPedido.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba\\Models\\DetallesPedido.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Models\\DetallesPedido.cs",
+              "RelativeToolTip": "Frutos_del_Terraba\\Models\\DetallesPedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T01:29:58.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\Pedido.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Models\\Pedido.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\Pedido.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Models\\Pedido.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T19:38:21.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T19:37:51.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\appsettings.json",
+              "RelativeDocumentMoniker": "Auth_API\\appsettings.json",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\appsettings.json",
+              "RelativeToolTip": "Auth_API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-03T17:44:05.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Auth_API\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Auth_API\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:41:40.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ModelBuilderExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\ModelBuilderExtensions.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Models\\ModelBuilderExtensions.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\ModelBuilderExtensions.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Models\\ModelBuilderExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T19:38:07.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoriaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Models\\CategoriaViewModel.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba\\Models\\CategoriaViewModel.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Models\\CategoriaViewModel.cs",
+              "RelativeToolTip": "Frutos_del_Terraba\\Models\\CategoriaViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T01:29:55.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoriaDTOModel.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\DTO\\CategoriaDTOModel.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\DTO\\CategoriaDTOModel.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\DTO\\CategoriaDTOModel.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\DTO\\CategoriaDTOModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T20:02:01.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CategoriaService.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Servicios\\Implementaciones\\CategoriaService.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Servicios\\Implementaciones\\CategoriaService.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Servicios\\Implementaciones\\CategoriaService.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Servicios\\Implementaciones\\CategoriaService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T21:59:53.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Frutos_del_Terraba\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T21:20:53.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DetallesPedidoDTOModel.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\DTO\\DetallesPedidoDTOModel.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\DTO\\DetallesPedidoDTOModel.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\DTO\\DetallesPedidoDTOModel.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\DTO\\DetallesPedidoDTOModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T20:00:14.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoriaController.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Controllers\\CategoriaController.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Controllers\\CategoriaController.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Controllers\\CategoriaController.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Controllers\\CategoriaController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwC4AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T21:59:36.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ICategoriaService.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Servicios\\Interfaces\\ICategoriaService.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Servicios\\Interfaces\\ICategoriaService.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Servicios\\Interfaces\\ICategoriaService.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Servicios\\Interfaces\\ICategoriaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T21:59:50.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\Categoria.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Models\\Categoria.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\Categoria.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Models\\Categoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T19:37:56.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ICategoriaService.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Helpers\\Interfaces\\ICategoriaService.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba\\Helpers\\Interfaces\\ICategoriaService.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Helpers\\Interfaces\\ICategoriaService.cs",
+              "RelativeToolTip": "Frutos_del_Terraba\\Helpers\\Interfaces\\ICategoriaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T21:19:54.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CategoriaController.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Controllers\\CategoriaController.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba\\Controllers\\CategoriaController.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Controllers\\CategoriaController.cs",
+              "RelativeToolTip": "Frutos_del_Terraba\\Controllers\\CategoriaController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwDEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T21:20:03.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Frutos_del_Terraba\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T21:20:31.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Auth_API.http",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\Auth_API.http",
+              "RelativeDocumentMoniker": "Auth_API\\Auth_API.http",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\Auth_API.http",
+              "RelativeToolTip": "Auth_API\\Auth_API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-03-03T21:22:17.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "Auth_API\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\WeatherForecast.cs",
+              "RelativeToolTip": "Auth_API\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T21:22:24.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Auth_API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Auth_API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-03T21:22:33.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\Program.cs",
+              "RelativeDocumentMoniker": "Auth_API\\Program.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\Program.cs",
+              "RelativeToolTip": "Auth_API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:42:44.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CategoriaService.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Helpers\\Implementaciones\\CategoriaService.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba\\Helpers\\Implementaciones\\CategoriaService.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Helpers\\Implementaciones\\CategoriaService.cs",
+              "RelativeToolTip": "Frutos_del_Terraba\\Helpers\\Implementaciones\\CategoriaService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwCUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T21:19:21.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20250303174900_Inicial.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\Migrations\\20250303174900_Inicial.cs",
+              "RelativeDocumentMoniker": "Auth_API\\Migrations\\20250303174900_Inicial.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\Migrations\\20250303174900_Inicial.cs",
+              "RelativeToolTip": "Auth_API\\Migrations\\20250303174900_Inicial.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA+wNwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T19:43:48.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20250303204655_Seeders.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\Migrations\\20250303204655_Seeders.cs",
+              "RelativeDocumentMoniker": "Auth_API\\Migrations\\20250303204655_Seeders.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\Migrations\\20250303204655_Seeders.cs",
+              "RelativeToolTip": "Auth_API\\Migrations\\20250303204655_Seeders.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwCIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T21:02:58.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Auth_API\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Auth_API\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:49:11.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PedidoDTOModel.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\DTO\\PedidoDTOModel.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\DTO\\PedidoDTOModel.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\DTO\\PedidoDTOModel.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\DTO\\PedidoDTOModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T20:01:12.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Proveedor.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\Proveedor.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Models\\Proveedor.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\Proveedor.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Models\\Proveedor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T19:38:26.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\Producto.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T19:38:23.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ProductoService.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Servicios\\Implementaciones\\ProductoService.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Servicios\\Implementaciones\\ProductoService.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Servicios\\Implementaciones\\ProductoService.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Servicios\\Implementaciones\\ProductoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T20:23:48.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IProductoService.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Servicios\\Interfaces\\IProductoService.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Servicios\\Interfaces\\IProductoService.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Servicios\\Interfaces\\IProductoService.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Servicios\\Interfaces\\IProductoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T20:23:40.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "Frutos_del_Terraba\\Controllers\\ProductoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T20:22:27.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ProveedorDTOModel.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\DTO\\ProveedorDTOModel.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\DTO\\ProveedorDTOModel.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\DTO\\ProveedorDTOModel.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\DTO\\ProveedorDTOModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T20:01:31.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ReporteDTOModel.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\DTO\\ReporteDTOModel.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\DTO\\ReporteDTOModel.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\DTO\\ReporteDTOModel.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\DTO\\ReporteDTOModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T20:01:46.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Reporte.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\Reporte.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Models\\Reporte.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\Reporte.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Models\\Reporte.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T19:38:32.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Distribucion.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\Distribucion.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Models\\Distribucion.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\Distribucion.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Models\\Distribucion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T19:38:04.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ProductoDTOModel.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\DTO\\ProductoDTOModel.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\DTO\\ProductoDTOModel.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\DTO\\ProductoDTOModel.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\DTO\\ProductoDTOModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T19:58:41.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DistribucionDTOModel.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\DTO\\DistribucionDTOModel.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\DTO\\DistribucionDTOModel.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\DTO\\DistribucionDTOModel.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\DTO\\DistribucionDTOModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T20:00:40.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\appsettings.json",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-03T20:14:42.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Frutos_del_Terraba_Api.http",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.http",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.http",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.http",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-03-03T20:10:34.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "InventarioDTOModel.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\DTO\\InventarioDTOModel.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\DTO\\InventarioDTOModel.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\DTO\\InventarioDTOModel.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\DTO\\InventarioDTOModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T20:00:55.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Inventario.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\Inventario.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Models\\Inventario.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\Inventario.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Models\\Inventario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T19:38:05.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "DetallesPedido.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\DetallesPedido.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Models\\DetallesPedido.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\DetallesPedido.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Models\\DetallesPedido.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T19:37:58.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba\\Models\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Models\\LoginModel.cs",
+              "RelativeToolTip": "Frutos_del_Terraba\\Models\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T19:38:55.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "RegisterModel.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\RegisterModel.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Models\\RegisterModel.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\RegisterModel.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Models\\RegisterModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T19:38:30.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba_Api\\Models\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\LoginModel.cs",
+              "RelativeToolTip": "Frutos_del_Terraba_Api\\Models\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T19:38:08.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\appsettings.json",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba\\appsettings.json",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\appsettings.json",
+              "RelativeToolTip": "Frutos_del_Terraba\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAADoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-03T17:44:52.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Program.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba\\Program.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Program.cs",
+              "RelativeToolTip": "Frutos_del_Terraba\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:44:51.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Auth_API\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Auth_API\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Auth_API\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:39:32.528Z"
             }
           ]
         }

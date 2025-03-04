@@ -1770,10 +1770,29 @@
           }
         }
       },
+      "Auth_API/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.12",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.12",
+          "Swashbuckle.AspNetCore": "6.6.2"
+        },
+        "compile": {
+          "bin/placeholder/Auth_API.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Auth_API.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Frutos_del_Terraba_Api/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Auth_API": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.12",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.12",
           "Microsoft.EntityFrameworkCore": "8.0.12",
@@ -4685,6 +4704,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Auth_API/1.0.0": {
+      "type": "project",
+      "path": "../Auth_API/Auth_API.csproj",
+      "msbuildProject": "../Auth_API/Auth_API.csproj"
+    },
     "Frutos_del_Terraba_Api/1.0.0": {
       "type": "project",
       "path": "../Frutos_del_Terraba_Api/Frutos_del_Terraba_Api.csproj",
@@ -4701,24 +4725,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\macan\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\fabia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj",
+      "projectUniqueName": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj",
       "projectName": "Frutos_del_Terraba",
-      "projectPath": "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj",
-      "packagesPath": "C:\\Users\\macan\\.nuget\\packages\\",
-      "outputPath": "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba\\obj\\",
+      "projectPath": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj",
+      "packagesPath": "C:\\Users\\fabia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\macan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\fabia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4726,14 +4745,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj": {
-              "projectPath": "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj"
+            "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj": {
+              "projectPath": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj"
             }
           }
         }
@@ -4747,8 +4767,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -4792,7 +4811,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

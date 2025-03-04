@@ -3,9 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Frutos_del_Terraba.Models
 {
-    public class Reporte
+    public class ReporteViewModel
     {
-        [Key]
         public int Id_reporte { get; set; }
 
         [Required]
@@ -19,9 +18,7 @@ namespace Frutos_del_Terraba.Models
         public DateTime Fecha { get; set; }
 
         [Required]
-        [ForeignKey("Producto")]
         public int Id_producto { get; set; }
-        public Producto Producto { get; set; } 
     }
 
 }

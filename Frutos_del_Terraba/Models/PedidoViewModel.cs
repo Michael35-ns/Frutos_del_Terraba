@@ -3,9 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Frutos_del_Terraba.Models
 {
-    public class Pedido
+    public class PedidoViewModel
     {
-        [Key]
         public int Id_pedido { get; set; }
 
         public int Id_usuario { get; set; } 
@@ -13,10 +12,6 @@ namespace Frutos_del_Terraba.Models
         public DateTime Fecha { get; set; }
 
         [Required]
-        [ForeignKey("Proveedor")]
         public int Id_proveedor { get; set; } 
-
-        public Proveedor Proveedor { get; set; }
-        public ICollection<DetallesPedido> DetallesPedidos { get; set; }
     }
 }

@@ -1,8 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace Frutos_del_Terraba_Api.Models
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
       : base(options)
@@ -25,7 +27,14 @@ namespace Frutos_del_Terraba_Api.Models
                 .HasMany(c => c.Productos)
                 .WithOne(p => p.Categoria)
                 .HasForeignKey(p => p.Id_categoria)
-                .OnDelete(DeleteBehavior.Cascade); 
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Pedidos sin relación inversa en IdentityUser
+            modelBuilder.Entity<Pedido>()
+                .HasOne(p => p.Usuario)
+                .WithMany()  
+                .HasForeignKey(p => p.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             // Pedido y DetallesPedido (Uno a Muchos)
             modelBuilder.Entity<Pedido>()
@@ -67,7 +76,7 @@ namespace Frutos_del_Terraba_Api.Models
                 .HasMany(p => p.Reportes)
                 .WithOne(r => r.Producto)
                 .HasForeignKey(r => r.Id_producto)
-                .OnDelete(DeleteBehavior.Cascade); 
+                .OnDelete(DeleteBehavior.Cascade);
 
             base.OnModelCreating(modelBuilder);
 

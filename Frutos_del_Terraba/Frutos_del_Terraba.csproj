@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Frutos_del_Terraba_Api\Frutos_del_Terraba_Api.csproj" />
   </ItemGroup>
 

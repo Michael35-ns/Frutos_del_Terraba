@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace Frutos_del_Terraba_Api.Models
 {
@@ -6,6 +7,62 @@ namespace Frutos_del_Terraba_Api.Models
     {
         public static void Seed(this ModelBuilder modelBuilder)
         {
+            var adminRoleId = Guid.NewGuid().ToString();
+            var empleadoRoleId = Guid.NewGuid().ToString();
+            var distribuidorRoleId = Guid.NewGuid().ToString();
+
+            modelBuilder.Entity<IdentityRole>().HasData(
+                new IdentityRole { Id = adminRoleId, Name = "Admin", NormalizedName = "ADMIN" },
+                new IdentityRole { Id = empleadoRoleId, Name = "Empleado", NormalizedName = "EMPLEADO" },
+                new IdentityRole { Id = distribuidorRoleId, Name = "Distribuidor", NormalizedName = "DISTRIBUIDOR" }
+            );
+
+            var hasher = new PasswordHasher<IdentityUser>();
+
+            var usuario1Id = Guid.NewGuid().ToString();
+            var usuario2Id = Guid.NewGuid().ToString();
+            var usuario3Id = Guid.NewGuid().ToString();
+
+            modelBuilder.Entity<IdentityUser>().HasData(
+                new IdentityUser
+                {
+                    Id = usuario1Id,
+                    UserName = "fabian@gmail.com",
+                    NormalizedUserName = "FABIAN@GMAIL.COM",
+                    Email = "fabian@gmail.com",
+                    NormalizedEmail = "FABIAN@GMAIL.COM",
+                    EmailConfirmed = true,
+                    PasswordHash = hasher.HashPassword(null, "Fabian123$")
+                },
+                new IdentityUser
+                {
+                    Id = usuario2Id,
+                    UserName = "cristopher@gmail.com",
+                    NormalizedUserName = "CRISTOPHER@GMAIL.COM",
+                    Email = "cristopher@gmail.com",
+                    NormalizedEmail = "CRISTOPHER@GMAIL.COM",
+                    EmailConfirmed = true,
+                    PasswordHash = hasher.HashPassword(null, "Cristopher123$")
+                },
+                new IdentityUser
+                {
+                    Id = usuario3Id,
+                    UserName = "rodolfo@gmail.com",
+                    NormalizedUserName = "RODOLFO@GMAIL.COM",
+                    Email = "rodolfo@gmail.com",
+                    NormalizedEmail = "RODOLFO@GMAIL.COM",
+                    EmailConfirmed = true,
+                    PasswordHash = hasher.HashPassword(null, "Rodolfo123$")
+                }
+            );
+
+            modelBuilder.Entity<IdentityUserRole<string>>().HasData(
+                new IdentityUserRole<string> { UserId = usuario1Id, RoleId = adminRoleId },
+                new IdentityUserRole<string> { UserId = usuario2Id, RoleId = empleadoRoleId },
+                new IdentityUserRole<string> { UserId = usuario3Id, RoleId = distribuidorRoleId }
+            );
+
+
             modelBuilder.Entity<Categoria>()
                 .HasData(
                     new Categoria { Id_categoria= 1, Nombre="Frutas", Descripcion="Todas las frutas"},
@@ -32,10 +89,10 @@ namespace Frutos_del_Terraba_Api.Models
 
             modelBuilder.Entity<Pedido>()
                 .HasData(
-                    new Pedido { Id_pedido = 1, Fecha=DateTime.Now, Id_proveedor = 1, Id_usuario = 1 },
-                    new Pedido { Id_pedido = 2, Fecha = DateTime.Now, Id_proveedor = 1, Id_usuario = 1 },
-                    new Pedido { Id_pedido = 3, Fecha = DateTime.Now, Id_proveedor = 2, Id_usuario = 1 },
-                    new Pedido { Id_pedido = 4, Fecha = DateTime.Now, Id_proveedor = 2, Id_usuario = 1 }
+                    new Pedido { Id_pedido = 1, Fecha=DateTime.Now, Id_proveedor = 1, UserId = usuario1Id },
+                    new Pedido { Id_pedido = 2, Fecha = DateTime.Now, Id_proveedor = 1, UserId = usuario1Id },
+                    new Pedido { Id_pedido = 3, Fecha = DateTime.Now, Id_proveedor = 2, UserId = usuario1Id },
+                    new Pedido { Id_pedido = 4, Fecha = DateTime.Now, Id_proveedor = 2, UserId = usuario1Id }
                 );
 
             modelBuilder.Entity<DetallesPedido>()
@@ -48,6 +105,7 @@ namespace Frutos_del_Terraba_Api.Models
                     new DetallesPedido { Id_detalle = 6, Id_pedido = 3, Id_producto = 6, Cantidad = 100, Observaciones = "" },
                     new DetallesPedido { Id_detalle = 7, Id_pedido = 4, Id_producto = 7, Cantidad = 100, Observaciones = "" }
                 );
+            
 
             modelBuilder.Entity<Inventario>()
                 .HasData(

@@ -6,7 +6,7 @@ using System.IdentityModel.Tokens.Jwt;
 
 public class AuthController : Controller
 {
-    protected string apiUrl = "https://localhost:7187/api/auth";
+    protected string apiUrl = "https://localhost:7137/api/auth"; 
 
     private readonly IHttpClientFactory _httpClientFactory;
 
