@@ -28,3 +28,81 @@ window.config = {
     chartBgColor: '#F0F2F8'
   }
 };
+
+
+$(document).ready(function () {
+    // Aplicamos DataTable a la tabla con id #DataTables_Table_0
+    $("#DataTables_Table_0").DataTable({
+        "language": {
+            "decimal": "",
+            "emptyTable": "No hay informacion",
+            "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+            "infoEmpty": "Mostrando 0 a 0 de 0 Entradas",
+            "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+            "lengthMenu": "Mostrar _MENU_ Entradas",
+            "loadingRecords": "Cargando...",
+            "processing": "Procesando...",
+            "search": "Buscar:",
+            "zeroRecords": "Sin resultados encontrados",
+            "paginate": {
+                "first": "Primero",
+                "last": "Ultimo",
+                "next": "Siguiente",
+                "previous": "Anterior"
+            }
+        },
+        "autoWidth": false
+    });
+});
+
+
+function confirmDelete(entityName, entityId, deleteUrl) {
+    console.log("confirmDelete ejecutada");  // Verifica si la función se está llamando
+    Swal.fire({
+        title: `Estas seguro de eliminar esta ${entityName}?`,
+        text: "No podras revertir esto!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: `Si, eliminar ${entityName}!`
+    }).then((result) => {
+        if (result.isConfirmed) {
+            const finalUrl = deleteUrl.replace("{id}", entityId);
+            console.log(finalUrl);  // Verifica la URL final
+            fetch(finalUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);  // Verifica la respuesta del servidor
+                    if (data.success) {
+                        Swal.fire(
+                            `${entityName.charAt(0).toUpperCase() + entityName.slice(1)} eliminado!`,
+                            `La ${entityName} ha sido eliminada.`,
+                            'success'
+                        ).then(() => {
+                            location.reload();
+                        });
+                    } else {
+                        Swal.fire(
+                            'Error!',
+                            data.message || `No se pudo eliminar la ${entityName}.`,
+                            'error'
+                        );
+                    }
+                })
+                .catch(error => {
+                    console.error('Detalles del error:', error);  // Imprime detalles del error
+                    Swal.fire(
+                        'Error!',
+                        `Ocurrio un error al eliminar la ${entityName}. Detalles: ${error.message || error}`,
+                        'error'
+                    );
+                });
+        }
+    });
+}

@@ -1,11 +1,42 @@
 <environment include="Development">
-  @* Template helper js *@
-  <script src="~/vendor/js/helpers.js"></script>
-  @* Config file contain global vars & default theme options, Set your preferred theme option in this file. *@
-  <script src="~/js/config.js"></script>
+    @* Template helper js *@
+    <script src="~/vendor/js/helpers.js"></script>
+    @* Config file contain global vars & default theme options, Set your preferred theme option in this file. *@
+    <script src="~/js/config.js"></script>
 </environment>
 
 <environment exclude="Development">
-  <script src="~/vendor/js/helpers.js" asp-append-version="true"></script>
-  <script src="~/js/config.js" asp-append-version="true"></script>
+    <script src="~/vendor/js/helpers.js" asp-append-version="true"></script>
+    <script src="~/js/config.js" asp-append-version="true"></script>
 </environment>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <text>
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Éxito!',
+                    text: '@TempData["SuccessMessage"]',
+                    confirmButtonColor: '#28a745'
+                });
+            </text>
+            TempData["SuccessMessage"] = null;
+        }
+
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <text>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: '@TempData["ErrorMessage"]',
+                    confirmButtonColor: '#dc3545'
+                });
+            </text>
+            TempData["ErrorMessage"] = null;
+        }
+    });
+</script>

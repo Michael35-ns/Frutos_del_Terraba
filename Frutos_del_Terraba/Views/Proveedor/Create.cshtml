@@ -1,0 +1,43 @@
+﻿@model Frutos_del_Terraba.Models.ProveedorViewModel
+
+@{
+    ViewData["Title"] = "Crear Proveedor";
+}
+
+<div class="container m-5">
+    <div class="card">
+        <h5 class="card-header">Crear Proveedor</h5>
+        <div class="card-body demo-vertical-spacing demo-only-element">
+            <form asp-action="Create" method="post">
+                <div class="form-floating form-floating-outline mb-3">
+                    <input asp-for="Nombre" class="form-control" placeholder="Ingrese el nombre del Proveedor" />
+                    <label asp-for="Nombre">Nombre del Proveedor</label>
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+
+                <div class="form-floating form-floating-outline mb-3">
+                    <input asp-for="Apellidos" class="form-control" placeholder="Ingrese los apellidos del Proveedor" />
+                    <label asp-for="Apellidos">Apellidos del Proveedor</label>
+                    <span asp-validation-for="Apellidos" class="text-danger"></span>
+                </div>
+
+                <div class="form-floating form-floating-outline mb-3">
+                    <input asp-for="Telefono" class="form-control" placeholder="Ingrese el telefono del Proveedor" />
+                    <label asp-for="Telefono">Telefono del Proveedor</label>
+                    <span asp-validation-for="Telefono" class="text-danger"></span>
+                </div>
+
+                <div class="form-floating form-floating-outline mb-3">
+                    <input asp-for="Email" class="form-control" placeholder="Ingrese el email del Proveedor" />
+                    <label asp-for="Email">Email del Proveedor</label>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="text-end">
+                    <button type="submit" class="btn btn-primary">Crear Proveedor</button>
+                    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

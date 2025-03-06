@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Frutos_del_Terraba.Models.ProveedorViewModel>
+
+@{
+    ViewData["Title"] = "Lista de Proveedores";
+}
+
+<div class="card m-5">
+    <div class="card-header">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <h5 class="mb-3">Lista de Proveedores</h5>
+            <a class="btn btn-primary" href="@Url.Action("Create", "Proveedor")">
+                <i class="ri-add-line"></i> Agregar Proveedor
+            </a>
+        </div>
+    </div>
+
+    <!-- Tabla de Productos -->
+    <div class="table-responsive m-2">
+        <table class="table dataTable no-footer" id="DataTables_Table_0">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Telefono</th>
+                    <th>Email</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var proveedor in Model)
+                    {
+                        <tr>
+                            <td>@proveedor.Nombre</td>
+                            <td>@proveedor.Apellidos</td>
+                            <td>@proveedor.Telefono</td>
+                            <td>@proveedor.Email</td>
+                            <td class="d-flex gap-2">
+                                <a class=" btn btn-outline-dark" asp-action="Edit" asp-route-id="@proveedor.Id_proveedor">
+                                    <i class="ri-pencil-line me-1"></i> 
+                                </a>
+                                <a href="#" class="btn btn-outline-danger" title="Eliminar" onclick="confirmDelete('proveedor', '@proveedor.Id_proveedor', '/Proveedor/Delete/{id}')">
+                                    <i class="ri-delete-bin-6-line me-1"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5" class="text-center">No hay productos registrados.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

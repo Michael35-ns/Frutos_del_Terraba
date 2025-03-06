@@ -74,7 +74,7 @@ public class AuthController : Controller
 
                 await HttpContext.SignInAsync("CookieAuth", claimsPrincipal);
 
-                return RedirectToAction("Confirmacion");
+                return RedirectToAction("Index", "Dashboards");
             }
             else
             {
@@ -108,64 +108,4 @@ public class AuthController : Controller
         return View();
     }
 
-
-
-
-
-    /*
-     public async Task<IActionResult> Login(LoginModel loginModel)
-    {
-        if (ModelState.IsValid)
-        {
-            var json = JsonSerializer.Serialize(loginModel);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
-            HttpResponseMessage response = _client.PostAsync(_client.BaseAddress + "/login", content).Result;
-
-            if (response.IsSuccessStatusCode)
-            {
-
-                var tokenResponse = await response.Content.ReadAsStringAsync();
-                var jsonDocument = JsonDocument.Parse(tokenResponse);
-
-                if (!jsonDocument.RootElement.TryGetProperty("token", out JsonElement tokenElement))
-                {
-                    ModelState.AddModelError("", "La respuesta de la API no contiene un token.");
-                    return View(loginModel);
-                }
-
-                var token = tokenElement.GetString();
-
-                var handler = new JwtSecurityTokenHandler();
-                Console.WriteLine($"Received Token: {token}");
-                if (string.IsNullOrWhiteSpace(token))
-                {
-                    return BadRequest("Token is empty or null.");
-                }
-
-                if (!handler.CanReadToken(token))
-                {
-                    return BadRequest("Invalid token format.");
-                }
-
-                var jwtToken = handler.ReadJwtToken(token);
-
-                var email = jwtToken.Claims.FirstOrDefault(claim => claim.Type == "email")?.Value;
-
-                if (!string.IsNullOrEmpty(email))
-                {
-                    HttpContext.Session.SetString("Email", email);
-                }
-
-                return RedirectToAction("Index", "Dashboards");
-            }
-            else
-            {
-                var errorMessage = await response.Content.ReadAsStringAsync();
-                ModelState.AddModelError("", "Error en el login: " + errorMessage);
-                return View(loginModel);
-            }
-        }
-        return View(loginModel);
-    }
-     */
 }

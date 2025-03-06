@@ -38,6 +38,7 @@ builder.Services.AddAuthentication("CookieAuth")
         options.AccessDeniedPath = "/Auth/AccessDenied";
     });
 
+
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
@@ -48,6 +49,7 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
+
 
 app.UseAuthentication(); 
 app.UseAuthorization();

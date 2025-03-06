@@ -177,5 +177,84 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.ProveedorController",
+    "Method": "ActualizarProveedor",
+    "RelativePath": "api/Proveedor/ActualizarProveedor/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "Frutos_del_Terraba_Api.DTO.ProveedorDTOModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.ProveedorController",
+    "Method": "CrearProveedor",
+    "RelativePath": "api/Proveedor/CrearProveedor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Frutos_del_Terraba_Api.DTO.ProveedorDTOModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.ProveedorController",
+    "Method": "EliminarProveedor",
+    "RelativePath": "api/Proveedor/EliminarProveedor/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.ProveedorController",
+    "Method": "GetProveedor",
+    "RelativePath": "api/Proveedor/GetProveedor/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.ProveedorController",
+    "Method": "GetProveedores",
+    "RelativePath": "api/Proveedor/GetProveedores",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

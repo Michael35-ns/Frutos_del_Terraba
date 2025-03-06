@@ -4,13 +4,15 @@
     ViewData["Title"] = "Lista de Productos";
 }
 
-<div class="card">
+<div class="card m-5">
     <div class="card-header">
         <h5 class="mb-3">Lista de Productos</h5>
         <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
-            <div class="d-flex align-items-center">
-                <input type="search" class="form-control form-control-sm" placeholder="Buscar..." aria-controls="DataTables_Table_0">
+            <!-- Buscador -->
+            <div class="dt-search d-flex align-items-center">
+                <input type="search" class="dt-input form-control form-control-sm" id="dt-search-0 placeholder="Buscar..." aria-controls="DataTables_Table_0">
             </div>
+            <!-- Selector de longitud -->
             <div class="d-flex align-items-center ms-auto">
                 <div class="d-flex align-items-center me-3">
                     <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="form-select form-select-sm w-auto">
@@ -21,11 +23,14 @@
                     </select>
                 </div>
             </div>
+            <a class="btn btn-primary" href="@Url.Action("Crear", "Producto")">
+                <i class="ri-add-line"></i> Agregar Producto
+            </a>
         </div>
     </div>
 
     <!-- Tabla de Productos -->
-    <div class="table-responsive">
+    <div class="table-responsive m-2">
         <table class="table dataTable no-footer" id="DataTables_Table_0">
             <thead>
                 <tr>

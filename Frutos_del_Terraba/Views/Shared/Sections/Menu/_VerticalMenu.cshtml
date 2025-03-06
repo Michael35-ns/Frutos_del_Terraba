@@ -15,19 +15,19 @@
             </div>
         </a>
     </div>
-  @* ! Full version menu-items *@
-  <ul class="menu-inner py-1">
-    <!-- Productos -->
-    <li class='menu-item@(currentPage.EndsWith("/") || currentPage.StartsWith("/Dashboards") ? " active open" : "")'>
-      <a href="javascript:void(0);" class="menu-link menu-toggle">
+    @* ! Full version menu-items *@
+    <ul class="menu-inner py-1">
+        <!-- Productos -->
+        <li class='menu-item@(currentPage.EndsWith("/") || currentPage.StartsWith("/Dashboards") ? " active open" : "")'>
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="ri-box-3-line"></i>
-        <div>Productos</div>
-      </a>
-      <ul class="menu-sub">
+                <div>Productos</div>
+            </a>
+            <ul class="menu-sub">
                 <li class='menu-item@(currentPage == "/Academy/Dashboard" ? " active" : "")'>
                     <a href="@Url.Action("Index", "Producto")" class="menu-link">
                         <div>Ver Productos</div>
-                        </a>
+                    </a>
                 </li>
                 <li class='menu-item@(currentPage == "/Academy/Dashboard" ? " active" : "")'>
                     <a href="@Url.Action("Crear", "Producto")" class="menu-link">
@@ -39,57 +39,57 @@
                         <div>Categorias</div>
                     </a>
                 </li>
-      </ul>
-    </li>
-    <!-- Pedidos -->
-    <li class='menu-item@(currentPage.StartsWith("/LayoutExamples") ? " active open" : "")'>
-      <a href="javascript:void(0);" class="menu-link menu-toggle">
+            </ul>
+        </li>
+        <!-- Pedidos -->
+        <li class='menu-item@(currentPage.StartsWith("/LayoutExamples") ? " active open" : "")'>
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="ri-draft-line"></i>
-        <div> Pedidos</div>
-      </a>
-      <ul class="menu-sub">
+                <div> Pedidos</div>
+            </a>
+            <ul class="menu-sub">
 
-        <li class='menu-item@(currentPage == "/LayoutExamples/WithoutMenu" ? " active" : "")'>
-          <a asp-controller="LayoutExamples" asp-action="WithoutMenu" class="menu-link">
-            <div>Ver Pedidos</div>
-          </a>
+                <li class='menu-item@(currentPage == "/LayoutExamples/WithoutMenu" ? " active" : "")'>
+                    <a asp-controller="LayoutExamples" asp-action="WithoutMenu" class="menu-link">
+                        <div>Ver Pedidos</div>
+                    </a>
+                </li>
+                <li class='menu-item@(currentPage == "/LayoutExamples/WithoutNavbar" ? " active" : "")'>
+                    <a asp-controller="LayoutExamples" asp-action="WithoutNavbar" class="menu-link">
+                        <div>Hacer Pedido</div>
+                    </a>
+                </li>
+                <li class='menu-item@(currentPage == "/LayoutExamples/Container" ? " active" : "")'>
+                    <a asp-controller="LayoutExamples" asp-action="Container" class="menu-link">
+                        <div>Editar Pedido</div>
+                    </a>
+                </li>
+            </ul>
         </li>
-        <li class='menu-item@(currentPage == "/LayoutExamples/WithoutNavbar" ? " active" : "")'>
-          <a asp-controller="LayoutExamples" asp-action="WithoutNavbar" class="menu-link">
-            <div>Hacer Pedido</div>
-          </a>
-        </li>
-        <li class='menu-item@(currentPage == "/LayoutExamples/Container" ? " active" : "")'>
-          <a asp-controller="LayoutExamples" asp-action="Container" class="menu-link">
-            <div>Editar Pedido</div>
-          </a>
-        </li>
-      </ul>
-    </li>
         <!-- Distribución-->
-    <li class='menu-item@(currentPage.StartsWith("/FrontPages") ? " active open" : "")'>
-      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <li class='menu-item@(currentPage.StartsWith("/FrontPages") ? " active open" : "")'>
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="ri-caravan-line"></i>
-        <div>Distribución</div>
-      </a>
-      <ul class="menu-sub">
-        <li class='menu-item@(currentPage == "/FrontPages/LandingPage" ? " active" : "")'>
-          <a href="#" class="menu-link" target="_blank">
+                <div>Distribución</div>
+            </a>
+            <ul class="menu-sub">
+                <li class='menu-item@(currentPage == "/FrontPages/LandingPage" ? " active" : "")'>
+                    <a href="#" class="menu-link" target="_blank">
                         <div>Ver Distribuciones</div>
-          </a>
-        </li>
-        <li class='menu-item@(currentPage == "/FrontPages/PricingPage" ? " active" : "")'>
-          <a href="#" class="menu-link" target="_blank">
+                    </a>
+                </li>
+                <li class='menu-item@(currentPage == "/FrontPages/PricingPage" ? " active" : "")'>
+                    <a href="#" class="menu-link" target="_blank">
                         <div>Nuevo Envío</div>
-          </a>
-        </li>
-        <li class='menu-item@(currentPage == "/FrontPages/PaymentPage" ? " active" : "")'>
-          <a href="#" class="menu-link" target="_blank">
+                    </a>
+                </li>
+                <li class='menu-item@(currentPage == "/FrontPages/PaymentPage" ? " active" : "")'>
+                    <a href="#" class="menu-link" target="_blank">
                         <div>Historial de Distribuciones</div>
-          </a>
+                    </a>
+                </li>
+            </ul>
         </li>
-      </ul>
-    </li>
         <!-- Inventario-->
         <li class='menu-item@(currentPage.StartsWith("/FrontPages") ? " active open" : "")'>
             <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -126,13 +126,13 @@
                 <div>Proveedores</div>
             </a>
             <ul class="menu-sub">
-                <li class='menu-item@(currentPage == "/FrontPages/LandingPage" ? " active" : "")'>
-                    <a href="#" class="menu-link" target="_blank">
+                <li class='menu-item@(currentPage == "/Academy/Dashboard" ? " active" : "")'>
+                    <a href="@Url.Action("Index", "Proveedor")" class="menu-link">
                         <div>Ver Proveedores</div>
                     </a>
                 </li>
-                <li class='menu-item@(currentPage == "/FrontPages/PricingPage" ? " active" : "")'>
-                    <a href="#" class="menu-link" target="_blank">
+                <li class='menu-item@(currentPage == "/Academy/Dashboard" ? " active" : "")'>
+                    <a href="@Url.Action("Create", "Proveedor")" class="menu-link">
                         <div>Añadir Proveedores</div>
                     </a>
                 </li>
@@ -163,13 +163,6 @@
                 </li>
             </ul>
         </li>
-
-    <li class="menu-header mt-7">
-      <span class="menu-header-text">Apps &amp; Pages</span>
-    </li>
-
-
-  </ul>
-
+    </ul>
 </aside>
 <!-- / Menu -->
