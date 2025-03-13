@@ -16,6 +16,7 @@ namespace Frutos_del_Terraba_Api.Models
         public DbSet<Reporte> Reportes { get; set; }
         public DbSet<Inventario> Inventarios { get; set; }
         public DbSet<Distribucion> Distribuciones { get; set; }
+        public DbSet<DetallesDistribucion> DetallesDistribuciones { get; set; }
         public DbSet<Proveedor> Proveedores { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<DetallesPedido> DetallesPedidos { get; set; }
@@ -50,19 +51,33 @@ namespace Frutos_del_Terraba_Api.Models
                 .HasForeignKey(dp => dp.Id_producto)
                 .OnDelete(DeleteBehavior.Cascade); 
 
-            // Inventario y Distribucion (Uno a Muchos)
-            modelBuilder.Entity<Inventario>()
-                .HasMany(i => i.Distribuciones)
-                .WithOne(d => d.Inventario)
-                .HasForeignKey(d => d.Id_inventario)
-                .OnDelete(DeleteBehavior.Cascade); 
-
             // Producto e Inventario (Muchos a Uno)
             modelBuilder.Entity<Inventario>()
                 .HasOne(i => i.Producto)
                 .WithMany(p => p.Inventarios)
                 .HasForeignKey(i => i.Id_producto)
-                .OnDelete(DeleteBehavior.Restrict); 
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Distribucion sin relación inversa en IdentityUser
+            modelBuilder.Entity<Distribucion>()
+                .HasOne(p => p.Usuario)
+                .WithMany()
+                .HasForeignKey(p => p.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // DetallesDistribucion y Distribucion (Muchos a Uno)
+            modelBuilder.Entity<DetallesDistribucion>()
+                .HasOne(d => d.Distribucion)
+                .WithMany(dist => dist.DetallesDistribuciones)
+                .HasForeignKey(d => d.Id_distribucion)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // DetallesDistribucion e Inventario (Muchos a Uno)
+            modelBuilder.Entity<DetallesDistribucion>()
+                .HasOne(d => d.Inventario)
+                .WithMany(inv => inv.DetallesDistribuciones)
+                .HasForeignKey(d => d.Id_inventario)
+                .OnDelete(DeleteBehavior.Restrict);
 
             // Proveedor y Pedido (Uno a Muchos)
             modelBuilder.Entity<Proveedor>()

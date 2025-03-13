@@ -18,5 +18,7 @@ namespace Frutos_del_Terraba.Models
         [Required]
         public int Id_producto { get; set; }
 
+        public string nombreProducto { get; set; }
+
     }
 }

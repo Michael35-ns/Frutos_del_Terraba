@@ -37,6 +37,9 @@
                             <td>@proveedor.Telefono</td>
                             <td>@proveedor.Email</td>
                             <td class="d-flex gap-2">
+                                <a class=" btn btn-outline-info" asp-action="Show" asp-route-id="@proveedor.Id_proveedor">
+                                    <i class="ri-eye-line me-1"></i>
+                                </a>
                                 <a class=" btn btn-outline-dark" asp-action="Edit" asp-route-id="@proveedor.Id_proveedor">
                                     <i class="ri-pencil-line me-1"></i> 
                                 </a>

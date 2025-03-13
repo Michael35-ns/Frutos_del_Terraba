@@ -41,7 +41,7 @@ namespace Frutos_del_Terraba_Api.Controllers
         {
             var proveedor = await _context.Proveedores.FindAsync(id);
             if (proveedor == null)
-                return NotFound(new { message = "Categoría no encontrada" });
+                return NotFound(new { message = "Proveedor no encontrada" });
 
             return Ok(proveedor);
         }
@@ -115,6 +115,45 @@ namespace Frutos_del_Terraba_Api.Controllers
             {
                 return StatusCode(500, new { message = "Error interno del servidor, al eliminar el proveedor", error = ex.Message });
             }
+        }
+        #endregion
+
+        #region Obtener historial de Pedidos realizados y Proveedor por Id
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetHistorialPedidos_Y_Proveedor(int id)
+        {
+            var proveedor = await _context.Proveedores.FindAsync(id);
+            if (proveedor == null)
+                return NotFound(new { message = "Proveedor no encontrado" });
+
+            var historialPedidos = await _context.Pedidos
+                .Where(p => p.Id_proveedor == id)
+                .Include(p => p.Usuario)
+                .Include(p => p.DetallesPedidos)
+                    .ThenInclude(d => d.Producto) 
+                .Select(p => new {
+                    Id_pedido = p.Id_pedido,
+                    Fecha = p.Fecha,
+                    Usuario = new
+                    {
+                        Id = p.UserId,
+                        UserName = p.Usuario.UserName
+                    },
+                    DetallesPedidos = p.DetallesPedidos.Select(d => new {
+                        Id_detalle = d.Id_detalle,
+                        Cantidad = d.Cantidad,
+                        Observaciones = d.Observaciones,
+                        Id_producto = d.Id_producto,
+                        NombreProducto = d.Producto.Nombre 
+                    })
+                })
+                .ToListAsync();
+
+            return Ok(new
+            {
+                Proveedor = proveedor,
+                HistorialPedidos = historialPedidos
+            });
         }
         #endregion
     }

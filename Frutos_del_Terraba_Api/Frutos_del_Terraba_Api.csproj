@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Auth_API\Auth_API.csproj" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

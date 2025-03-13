@@ -50,12 +50,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/fabia/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Distribucion/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpYnVjaW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/fabia/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/fabia/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabia/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Inventario/Despachado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xEZXNwYWNoYWRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabia/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Inventario/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabia/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Inventario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/fabia/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Producto/Crear.cshtml]
@@ -80,6 +96,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/fabia/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Proveedor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabia/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Proveedor/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXFNob3cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/fabia/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Shared/Error.cshtml]

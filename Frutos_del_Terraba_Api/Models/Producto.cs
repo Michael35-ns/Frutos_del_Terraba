@@ -12,8 +12,6 @@ namespace Frutos_del_Terraba_Api.Models
         [StringLength(70, ErrorMessage = "El nombre no pueden exceder los 70 caracteres.")]
         public string Nombre { get; set; }
 
-        public int Stock { get; set; }
-
         [Required]
         [ForeignKey("Categoria")]
         public int Id_categoria { get; set; }  

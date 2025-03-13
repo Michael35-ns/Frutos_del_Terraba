@@ -1,15 +1,15 @@
-﻿@model IEnumerable<Frutos_del_Terraba.Models.ProductoViewModel>
+﻿@model IEnumerable<Frutos_del_Terraba.Models.InventarioViewModel>
 
 @{
-    ViewData["Title"] = "Lista de Productos";
+    ViewData["Title"] = "Lista de Inventario";
 }
 
 <div class="card m-5">
     <div class="card-header">
         <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
-            <h5 class="mb-3">Lista de Productos</h5>
-            <a class="btn btn-primary" href="@Url.Action("Crear", "Producto")">
-                <i class="ri-add-line"></i> Agregar Producto
+            <h5 class="mb-3">Lista de Inventario</h5>
+            <a class="btn btn-primary" href="@Url.Action("Create", "Distribucion")">
+                <i class="ri-add-line"></i> Despachar Inventario
             </a>
         </div>
     </div>
@@ -20,23 +20,25 @@
             <thead>
                 <tr>
                     <th>Nombre</th>
-                    <th>Categoría</th>
+                    <th>Cantidad</th>
+                    <th>Categoria</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
                 @if (Model != null && Model.Any())
                 {
-                    foreach (var producto in Model)
+                    foreach (var inventario in Model)
                     {
                         <tr>
-                            <td>@producto.Nombre</td>
-                            <td>@producto.NombreCategoria</td>
+                            <td>@inventario.Producto.Nombre</td>
+                            <td>@inventario.Cantidad</td>
+                            <td>@inventario.Producto.Categoria.Nombre</td>
                             <td class="d-flex gap-2">
-                                <a class=" btn btn-outline-dark" asp-action="Editar" asp-route-id="@producto.IdProducto">
+                                <a class=" btn btn-outline-dark" asp-action="Edit" asp-route-id="@inventario.Id_inventario">
                                     <i class="ri-pencil-line me-1"></i>
                                 </a>
-                                <a href="#" class="btn btn-outline-danger" title="Eliminar" onclick="confirmDelete('producto', '@producto.IdProducto', '/Producto/Eliminar/{id}')">
+                                <a href="#" class="btn btn-outline-danger" title="Eliminar" onclick="confirmDelete('inventario', '@inventario.Id_inventario', '/Inventario/Delete/{id}')">
                                     <i class="ri-delete-bin-6-line me-1"></i>
                                 </a>
                             </td>
@@ -46,7 +48,7 @@
                 else
                 {
                     <tr>
-                        <td colspan="5" class="text-center">No hay productos registrados.</td>
+                        <td colspan="5" class="text-center">No hay productos en el inventario registrados.</td>
                     </tr>
                 }
             </tbody>

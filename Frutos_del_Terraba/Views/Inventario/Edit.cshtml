@@ -1,0 +1,36 @@
+﻿@model Frutos_del_Terraba.Models.InventarioViewModel
+
+@{
+    ViewData["Title"] = "Actualizar Inventario";
+}
+
+<div class="container m-5">
+    <div class="card">
+        <h5 class="card-header">Actualizar Inventario</h5>
+        <div class="card-body demo-vertical-spacing demo-only-element">
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="Id_inventario" />
+                <div class="form-floating form-floating-outline mb-3">
+                    <input asp-for="Producto.Nombre" class="form-control" placeholder="Nombre del Producto" readonly />
+                    <label asp-for="Producto.Nombre">Nombre de la Producto</label>
+                </div>
+
+                <div class="form-floating form-floating-outline mb-3">
+                    <input asp-for="Producto.Categoria.Nombre" class="form-control" placeholder="Nombre de la Categoria" readonly />
+                    <label asp-for="Producto.Categoria.Nombre">Nombre de la Categoria</label>
+                </div>
+
+                <div class="form-floating form-floating-outline mb-3">
+                    <input asp-for="Cantidad" class="form-control" placeholder="Cantidad" />
+                    <label asp-for="Cantidad">Cantidad</label>
+                    <span asp-validation-for="Cantidad" class="text-danger"></span>
+                </div>
+
+                <div class="text-end">
+                    <button type="submit" class="btn btn-primary">Actualizar Inventario</button>
+                    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

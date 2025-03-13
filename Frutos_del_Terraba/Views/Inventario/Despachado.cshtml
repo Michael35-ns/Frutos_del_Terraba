@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Frutos_del_Terraba.Models.DetallesDistribucionViewModel>
+
+@{
+    ViewData["Title"] = "Inventario Despachado";
+}
+
+<div class="card m-5">
+    <div class="card-header">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <h5 class="mb-3">Inventario Despachado</h5>
+            <a class="btn btn-primary" href="@Url.Action("Create", "Distribucion")">
+                <i class="ri-add-line"></i> Despachar Inventario
+            </a>
+        </div>
+    </div>
+
+    <!-- Tabla de Productos -->
+    <div class="table-responsive m-2">
+        <table class="table dataTable no-footer" id="DataTables_Table_0">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Categoria</th>
+                    <th>Cantidad</th>
+                    <th>Destino</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var detallesDistribucion in Model)
+                    {
+                        <tr>
+                            <td>@detallesDistribucion.Inventario.Producto.Nombre</td>
+                            <td>@detallesDistribucion.Inventario.Producto.Categoria.Nombre</td>
+                            <td>@detallesDistribucion.Cantidad</td>
+                            <td>@detallesDistribucion.Distribucion.Destino</td>
+                            <td class="d-flex gap-2">
+                                <a class=" btn btn-outline-info" asp-controller="Distribucion" asp-action="Show" asp-route-id="@detallesDistribucion.Id_distribucion">
+                                    <i class="ri-eye-line me-1"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5" class="text-center">No hay productos en el inventario registrados.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

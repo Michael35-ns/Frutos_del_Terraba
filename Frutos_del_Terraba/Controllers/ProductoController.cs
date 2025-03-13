@@ -1,5 +1,7 @@
-﻿using Frutos_del_Terraba.Helpers.Interfaces;
+﻿using Azure;
+using Frutos_del_Terraba.Helpers.Interfaces;
 using Frutos_del_Terraba.Models;
+using Frutos_del_Terraba_Api.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -30,7 +32,6 @@ namespace Frutos_del_Terraba.Controllers
             return View(productos);
         }
         #endregion
-
 
         #region Crear un nuevo producto
         [HttpGet]
@@ -78,12 +79,11 @@ namespace Frutos_del_Terraba.Controllers
             }
 
             await _productoService.CrearProductoAsync(model);
+            TempData["SuccessMessage"] = "Producto creado exitosamente.";
             return RedirectToAction(nameof(Index));
         }
 
         #endregion
-
-
 
         #region Eliminar un producto
         [HttpPost]
@@ -92,13 +92,12 @@ namespace Frutos_del_Terraba.Controllers
             var eliminado = await _productoService.EliminarProductoAsync(id);
             if (eliminado)
             {
-                return RedirectToAction(nameof(Index));
+                return Json(new { success = true });
             }
-
-            return View("Error", new { RequestId = $"Error al eliminar el producto con ID {id}." });
+            
+            return Json(new { success = false });
         }
         #endregion
-
 
         #region Editar Producto
         [HttpGet]
@@ -146,6 +145,7 @@ namespace Frutos_del_Terraba.Controllers
             if (productoActualizado == null)
             {
                 ModelState.AddModelError("", "Hubo un error al actualizar el producto. Inténtelo de nuevo.");
+                TempData["ErrorMessage"] = "Error al actualizar el producto. Inténtalo de nuevo.";
 
                 var categorias = await _categoriaService.ObtenerTodasCategoriasAsync();
                 ViewBag.Categorias = categorias.Select(c => new SelectListItem
@@ -156,7 +156,8 @@ namespace Frutos_del_Terraba.Controllers
 
                 return View(model);
             }
-
+            
+            TempData["SuccessMessage"] = "Producto actualizado exitosamente.";
             return RedirectToAction("Index");
         }
 

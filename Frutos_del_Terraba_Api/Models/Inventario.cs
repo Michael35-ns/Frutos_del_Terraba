@@ -14,6 +14,6 @@ namespace Frutos_del_Terraba_Api.Models
         [ForeignKey("Producto")]
         public int Id_producto { get; set; }
         public Producto Producto { get; set; }
-        public ICollection<Distribucion> Distribuciones { get; set; }
+        public ICollection<DetallesDistribucion> DetallesDistribuciones { get; set; }
     }
 }
