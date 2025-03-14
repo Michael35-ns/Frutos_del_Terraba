@@ -17,12 +17,6 @@
                 </div>
 
                 <div class="form-floating form-floating-outline mb-3">
-                    <input asp-for="Stock" class="form-control" type="number" placeholder="Ingrese la cantidad en stock" />
-                    <label asp-for="Stock">Stock</label>
-                    <span asp-validation-for="Stock" class="text-danger"></span>
-                </div>
-
-                <div class="form-floating form-floating-outline mb-3">
                     <select asp-for="Id_categoria" asp-items="categorias" class="form-select" required>
                         <option value="">Seleccione una categoría</option>
                     </select>

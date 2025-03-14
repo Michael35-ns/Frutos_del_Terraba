@@ -194,3 +194,17 @@ html, body {
 }
 
 
+/*=====================================Hover para el acordion============================*/
+.hover-effect:hover {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.accordion-button {
+    cursor: pointer;
+}
+
+.accordion-button:hover {
+    background-color: rgba(0, 123, 255, 0.05);
+}
+/*======================================================================================*/

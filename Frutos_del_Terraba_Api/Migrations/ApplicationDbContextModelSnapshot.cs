@@ -65,6 +65,83 @@ namespace Frutos_del_Terraba_Api.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Frutos_del_Terraba_Api.Models.DetallesDistribucion", b =>
+                {
+                    b.Property<int>("Id_detalle_distribucion")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_detalle_distribucion"));
+
+                    b.Property<int>("Cantidad")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Id_distribucion")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Id_inventario")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id_detalle_distribucion");
+
+                    b.HasIndex("Id_distribucion");
+
+                    b.HasIndex("Id_inventario");
+
+                    b.ToTable("DetallesDistribuciones");
+
+                    b.HasData(
+                        new
+                        {
+                            Id_detalle_distribucion = 1,
+                            Cantidad = 10,
+                            Id_distribucion = 1,
+                            Id_inventario = 1
+                        },
+                        new
+                        {
+                            Id_detalle_distribucion = 2,
+                            Cantidad = 15,
+                            Id_distribucion = 1,
+                            Id_inventario = 2
+                        },
+                        new
+                        {
+                            Id_detalle_distribucion = 3,
+                            Cantidad = 5,
+                            Id_distribucion = 2,
+                            Id_inventario = 3
+                        },
+                        new
+                        {
+                            Id_detalle_distribucion = 4,
+                            Cantidad = 25,
+                            Id_distribucion = 2,
+                            Id_inventario = 1
+                        },
+                        new
+                        {
+                            Id_detalle_distribucion = 5,
+                            Cantidad = 30,
+                            Id_distribucion = 2,
+                            Id_inventario = 5
+                        },
+                        new
+                        {
+                            Id_detalle_distribucion = 6,
+                            Cantidad = 40,
+                            Id_distribucion = 3,
+                            Id_inventario = 6
+                        },
+                        new
+                        {
+                            Id_detalle_distribucion = 7,
+                            Cantidad = 50,
+                            Id_distribucion = 3,
+                            Id_inventario = 7
+                        });
+                });
+
             modelBuilder.Entity("Frutos_del_Terraba_Api.Models.DetallesPedido", b =>
                 {
                     b.Property<int>("Id_detalle")
@@ -162,20 +239,28 @@ namespace Frutos_del_Terraba_Api.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_distribucion"));
 
-                    b.Property<int>("Cantidad")
-                        .HasColumnType("int");
-
                     b.Property<string>("Destino")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<int>("Id_inventario")
-                        .HasColumnType("int");
+                    b.Property<string>("Observaciones")
+                        .IsRequired()
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
+
+                    b.Property<string>("Ubicacion")
+                        .IsRequired()
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id_distribucion");
 
-                    b.HasIndex("Id_inventario");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Distribuciones");
 
@@ -183,51 +268,26 @@ namespace Frutos_del_Terraba_Api.Migrations
                         new
                         {
                             Id_distribucion = 1,
-                            Cantidad = 10,
                             Destino = "Supermercado A",
-                            Id_inventario = 1
+                            Observaciones = "Es una cargamento que hay que transportar con cuidado",
+                            Ubicacion = "Rúa 21",
+                            UserId = "bed3f5b8-d532-4dc0-bbf2-218952642b33"
                         },
                         new
                         {
                             Id_distribucion = 2,
-                            Cantidad = 15,
-                            Destino = "Supermercado B",
-                            Id_inventario = 2
+                            Destino = "Supermercado ",
+                            Observaciones = "",
+                            Ubicacion = "El Boule Garage",
+                            UserId = "4be251a3-a379-45ab-a14d-ea1e4655f9ba"
                         },
                         new
                         {
                             Id_distribucion = 3,
-                            Cantidad = 5,
                             Destino = "Frutería C",
-                            Id_inventario = 3
-                        },
-                        new
-                        {
-                            Id_distribucion = 4,
-                            Cantidad = 25,
-                            Destino = "Verdulería D",
-                            Id_inventario = 4
-                        },
-                        new
-                        {
-                            Id_distribucion = 5,
-                            Cantidad = 30,
-                            Destino = "Tienda E",
-                            Id_inventario = 5
-                        },
-                        new
-                        {
-                            Id_distribucion = 6,
-                            Cantidad = 40,
-                            Destino = "Mercado F",
-                            Id_inventario = 6
-                        },
-                        new
-                        {
-                            Id_distribucion = 7,
-                            Cantidad = 50,
-                            Destino = "Comedor G",
-                            Id_inventario = 7
+                            Observaciones = "Un buen pedido",
+                            Ubicacion = "Lomito's Grill - Steak House",
+                            UserId = "bed3f5b8-d532-4dc0-bbf2-218952642b33"
                         });
                 });
 
@@ -255,43 +315,43 @@ namespace Frutos_del_Terraba_Api.Migrations
                         new
                         {
                             Id_inventario = 1,
-                            Cantidad = 30,
+                            Cantidad = 330,
                             Id_producto = 1
                         },
                         new
                         {
                             Id_inventario = 2,
-                            Cantidad = 25,
+                            Cantidad = 325,
                             Id_producto = 2
                         },
                         new
                         {
                             Id_inventario = 3,
-                            Cantidad = 20,
+                            Cantidad = 320,
                             Id_producto = 3
                         },
                         new
                         {
                             Id_inventario = 4,
-                            Cantidad = 50,
+                            Cantidad = 350,
                             Id_producto = 4
                         },
                         new
                         {
                             Id_inventario = 5,
-                            Cantidad = 60,
+                            Cantidad = 360,
                             Id_producto = 5
                         },
                         new
                         {
                             Id_inventario = 6,
-                            Cantidad = 80,
+                            Cantidad = 380,
                             Id_producto = 6
                         },
                         new
                         {
                             Id_inventario = 7,
-                            Cantidad = 90,
+                            Cantidad = 390,
                             Id_producto = 7
                         });
                 });
@@ -326,30 +386,30 @@ namespace Frutos_del_Terraba_Api.Migrations
                         new
                         {
                             Id_pedido = 1,
-                            Fecha = new DateTime(2025, 3, 3, 15, 57, 58, 659, DateTimeKind.Local).AddTicks(6742),
+                            Fecha = new DateTime(2025, 3, 11, 18, 18, 20, 428, DateTimeKind.Local).AddTicks(6142),
                             Id_proveedor = 1,
-                            UserId = "7cba396e-ef44-45d4-8ca8-cbe90733d21e"
+                            UserId = "bed3f5b8-d532-4dc0-bbf2-218952642b33"
                         },
                         new
                         {
                             Id_pedido = 2,
-                            Fecha = new DateTime(2025, 3, 3, 15, 57, 58, 659, DateTimeKind.Local).AddTicks(6767),
+                            Fecha = new DateTime(2025, 3, 11, 18, 18, 20, 428, DateTimeKind.Local).AddTicks(6160),
                             Id_proveedor = 1,
-                            UserId = "7cba396e-ef44-45d4-8ca8-cbe90733d21e"
+                            UserId = "bed3f5b8-d532-4dc0-bbf2-218952642b33"
                         },
                         new
                         {
                             Id_pedido = 3,
-                            Fecha = new DateTime(2025, 3, 3, 15, 57, 58, 659, DateTimeKind.Local).AddTicks(6769),
+                            Fecha = new DateTime(2025, 3, 11, 18, 18, 20, 428, DateTimeKind.Local).AddTicks(6163),
                             Id_proveedor = 2,
-                            UserId = "7cba396e-ef44-45d4-8ca8-cbe90733d21e"
+                            UserId = "bed3f5b8-d532-4dc0-bbf2-218952642b33"
                         },
                         new
                         {
                             Id_pedido = 4,
-                            Fecha = new DateTime(2025, 3, 3, 15, 57, 58, 659, DateTimeKind.Local).AddTicks(6771),
+                            Fecha = new DateTime(2025, 3, 11, 18, 18, 20, 428, DateTimeKind.Local).AddTicks(6165),
                             Id_proveedor = 2,
-                            UserId = "7cba396e-ef44-45d4-8ca8-cbe90733d21e"
+                            UserId = "bed3f5b8-d532-4dc0-bbf2-218952642b33"
                         });
                 });
 
@@ -369,9 +429,6 @@ namespace Frutos_del_Terraba_Api.Migrations
                         .HasMaxLength(70)
                         .HasColumnType("nvarchar(70)");
 
-                    b.Property<int>("Stock")
-                        .HasColumnType("int");
-
                     b.HasKey("Id_producto");
 
                     b.HasIndex("Id_categoria");
@@ -383,50 +440,43 @@ namespace Frutos_del_Terraba_Api.Migrations
                         {
                             Id_producto = 1,
                             Id_categoria = 3,
-                            Nombre = "Culantro Coyote",
-                            Stock = 40
+                            Nombre = "Culantro Coyote"
                         },
                         new
                         {
                             Id_producto = 2,
                             Id_categoria = 3,
-                            Nombre = "Tonillo",
-                            Stock = 46
+                            Nombre = "Tonillo"
                         },
                         new
                         {
                             Id_producto = 3,
                             Id_categoria = 3,
-                            Nombre = "Apio",
-                            Stock = 50
+                            Nombre = "Apio"
                         },
                         new
                         {
                             Id_producto = 4,
                             Id_categoria = 1,
-                            Nombre = "Papaya",
-                            Stock = 50
+                            Nombre = "Papaya"
                         },
                         new
                         {
                             Id_producto = 5,
                             Id_categoria = 1,
-                            Nombre = "Manzana Verde",
-                            Stock = 50
+                            Nombre = "Manzana Verde"
                         },
                         new
                         {
                             Id_producto = 6,
                             Id_categoria = 1,
-                            Nombre = "Manzana Roja",
-                            Stock = 100
+                            Nombre = "Manzana Roja"
                         },
                         new
                         {
                             Id_producto = 7,
                             Id_categoria = 2,
-                            Nombre = "Brocoli",
-                            Stock = 100
+                            Nombre = "Brocoli"
                         });
                 });
 
@@ -538,19 +588,19 @@ namespace Frutos_del_Terraba_Api.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "d86e1426-a604-499c-b4d2-ad5023a6b42d",
+                            Id = "01daa330-1e67-4302-b70e-d9ee9bc90b36",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "ca645775-80c6-44a5-b5ab-079a07cd521e",
+                            Id = "ab91b54e-7068-40eb-ba14-66bc140979e4",
                             Name = "Empleado",
                             NormalizedName = "EMPLEADO"
                         },
                         new
                         {
-                            Id = "aecad1ec-a292-47f0-b58c-7b3b7fcce86a",
+                            Id = "a1f17514-3467-4b7f-9822-4e0d6a6df446",
                             Name = "Distribuidor",
                             NormalizedName = "DISTRIBUIDOR"
                         });
@@ -648,49 +698,49 @@ namespace Frutos_del_Terraba_Api.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "7cba396e-ef44-45d4-8ca8-cbe90733d21e",
+                            Id = "bed3f5b8-d532-4dc0-bbf2-218952642b33",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "35eb9634-0265-49df-9db7-f19472c45751",
+                            ConcurrencyStamp = "a0db3c0d-1629-4d77-aa40-a6f33d5bd242",
                             Email = "fabian@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "FABIAN@GMAIL.COM",
                             NormalizedUserName = "FABIAN@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDrXJ5R8HyW5N3PNAf74XmO+pO0rpXGxiVkNRcVw0AOzM03KEo9fPcnE6sXfx4Cn8Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELxbBRh4RuJlPQ4y2Gi8qqCivPLnrqsjYeAYPRzQoOFnkCDzBxEn/hbG/Q+Og9QrGA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "160f00ea-0d4a-4f55-98e3-435627c81f46",
+                            SecurityStamp = "5d4a10f7-3ef3-40d5-ab4d-9fe8ad500b81",
                             TwoFactorEnabled = false,
                             UserName = "fabian@gmail.com"
                         },
                         new
                         {
-                            Id = "8ea58a73-f3c8-4b9a-bb9f-980f00e9bb43",
+                            Id = "4be251a3-a379-45ab-a14d-ea1e4655f9ba",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "be4323f7-2220-43ce-8104-e01fd3c1986e",
+                            ConcurrencyStamp = "28fbe989-8286-4d9f-b6fd-30bca2ba5d5d",
                             Email = "cristopher@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "CRISTOPHER@GMAIL.COM",
                             NormalizedUserName = "CRISTOPHER@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEOavrtmtV+QrmYgc0nMnUzGIyxNMVFf11rrRRGPv4hV6hxskWDqaeXfHrHaRfHTaEA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEHELEyS9szOe+8AOcDMOFnbG8auqOGwnY9ZVcqTsFgyIo2y5YaTyP83Q6WoXbtafPA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "70129b1e-5385-4bef-a31c-fe1492b99563",
+                            SecurityStamp = "f3955dde-83f5-4e0c-9925-5366814bf1b0",
                             TwoFactorEnabled = false,
                             UserName = "cristopher@gmail.com"
                         },
                         new
                         {
-                            Id = "5900c253-7075-4165-95de-79bc9952f055",
+                            Id = "1daa661e-c084-4685-a1c4-1691d4e409ce",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "04f67baa-8098-437f-a53f-81cce1bbd059",
+                            ConcurrencyStamp = "3d47f076-ea6e-4935-9601-0293755833d4",
                             Email = "rodolfo@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "RODOLFO@GMAIL.COM",
                             NormalizedUserName = "RODOLFO@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAELaKytraFxqY/yHjLMX3WVsHZCoThOMpTQIabFaEtfU8rZHjypif52LF6DU6MmX4ww==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGleacv7xd6BO9kowqulU3w3V4iiecFScBunYlii5bZC9UAnfILUAorbJPia6rNDPA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "a39be971-03ad-4830-afdd-76c90d112fc7",
+                            SecurityStamp = "1ded6fd3-c729-439f-bde4-92c33d2cbb47",
                             TwoFactorEnabled = false,
                             UserName = "rodolfo@gmail.com"
                         });
@@ -760,18 +810,18 @@ namespace Frutos_del_Terraba_Api.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "7cba396e-ef44-45d4-8ca8-cbe90733d21e",
-                            RoleId = "d86e1426-a604-499c-b4d2-ad5023a6b42d"
+                            UserId = "bed3f5b8-d532-4dc0-bbf2-218952642b33",
+                            RoleId = "01daa330-1e67-4302-b70e-d9ee9bc90b36"
                         },
                         new
                         {
-                            UserId = "8ea58a73-f3c8-4b9a-bb9f-980f00e9bb43",
-                            RoleId = "ca645775-80c6-44a5-b5ab-079a07cd521e"
+                            UserId = "4be251a3-a379-45ab-a14d-ea1e4655f9ba",
+                            RoleId = "ab91b54e-7068-40eb-ba14-66bc140979e4"
                         },
                         new
                         {
-                            UserId = "5900c253-7075-4165-95de-79bc9952f055",
-                            RoleId = "aecad1ec-a292-47f0-b58c-7b3b7fcce86a"
+                            UserId = "1daa661e-c084-4685-a1c4-1691d4e409ce",
+                            RoleId = "a1f17514-3467-4b7f-9822-4e0d6a6df446"
                         });
                 });
 
@@ -792,6 +842,25 @@ namespace Frutos_del_Terraba_Api.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("Frutos_del_Terraba_Api.Models.DetallesDistribucion", b =>
+                {
+                    b.HasOne("Frutos_del_Terraba_Api.Models.Distribucion", "Distribucion")
+                        .WithMany("DetallesDistribuciones")
+                        .HasForeignKey("Id_distribucion")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Frutos_del_Terraba_Api.Models.Inventario", "Inventario")
+                        .WithMany("DetallesDistribuciones")
+                        .HasForeignKey("Id_inventario")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Distribucion");
+
+                    b.Navigation("Inventario");
                 });
 
             modelBuilder.Entity("Frutos_del_Terraba_Api.Models.DetallesPedido", b =>
@@ -815,13 +884,13 @@ namespace Frutos_del_Terraba_Api.Migrations
 
             modelBuilder.Entity("Frutos_del_Terraba_Api.Models.Distribucion", b =>
                 {
-                    b.HasOne("Frutos_del_Terraba_Api.Models.Inventario", "Inventario")
-                        .WithMany("Distribuciones")
-                        .HasForeignKey("Id_inventario")
-                        .OnDelete(DeleteBehavior.Cascade)
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("Inventario");
+                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("Frutos_del_Terraba_Api.Models.Inventario", b =>
@@ -932,9 +1001,14 @@ namespace Frutos_del_Terraba_Api.Migrations
                     b.Navigation("Productos");
                 });
 
+            modelBuilder.Entity("Frutos_del_Terraba_Api.Models.Distribucion", b =>
+                {
+                    b.Navigation("DetallesDistribuciones");
+                });
+
             modelBuilder.Entity("Frutos_del_Terraba_Api.Models.Inventario", b =>
                 {
-                    b.Navigation("Distribuciones");
+                    b.Navigation("DetallesDistribuciones");
                 });
 
             modelBuilder.Entity("Frutos_del_Terraba_Api.Models.Pedido", b =>

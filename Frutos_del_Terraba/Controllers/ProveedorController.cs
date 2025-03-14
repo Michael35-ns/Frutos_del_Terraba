@@ -16,6 +16,7 @@ namespace Frutos_del_Terraba.Controllers
             _client.BaseAddress = baseAddress;
         }
 
+        #region Index
         [HttpGet]
         public IActionResult Index()
         {
@@ -30,7 +31,9 @@ namespace Frutos_del_Terraba.Controllers
             }
             return View(proveedoresList);
         }
+        #endregion
 
+        #region Create
         [HttpGet]
         public IActionResult Create()
         {
@@ -64,7 +67,32 @@ namespace Frutos_del_Terraba.Controllers
             TempData["ErrorMessage"] = "Error en la validacion del formulario.";
             return View(proveedor);
         }
+        #endregion
 
+        #region Show
+        [HttpGet]
+        public async Task<IActionResult> Show(int? id)
+        {
+            if (id == null)
+            {
+                return BadRequest();
+            }
+
+            HttpResponseMessage response = await _client.GetAsync(_client.BaseAddress + $"/Proveedor/GetHistorialPedidos_Y_Proveedor/{id}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+                var resultado = JsonSerializer.Deserialize<HistorialProveedorViewModel>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+                return View(resultado);
+            }
+
+            return NotFound();
+        }
+        #endregion
+
+        #region Edit
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
@@ -109,8 +137,9 @@ namespace Frutos_del_Terraba.Controllers
             }
             return View(proveedor);
         }
+        #endregion
 
-
+        #region Delete
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
@@ -125,7 +154,7 @@ namespace Frutos_del_Terraba.Controllers
                 return Json(new { success = false });
             }
         }
-
+        #endregion
 
     }
 }

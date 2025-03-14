@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Frutos_del_Terraba_Api.Migrations
 {
     /// <inheritdoc />
-    public partial class DB_Initialization : Migration
+    public partial class DB_Creacion : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -189,13 +189,34 @@ namespace Frutos_del_Terraba_Api.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Distribuciones",
+                columns: table => new
+                {
+                    Id_distribucion = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Destino = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    Ubicacion = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: false),
+                    Observaciones = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Distribuciones", x => x.Id_distribucion);
+                    table.ForeignKey(
+                        name: "FK_Distribuciones_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Productos",
                 columns: table => new
                 {
                     Id_producto = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nombre = table.Column<string>(type: "nvarchar(70)", maxLength: 70, nullable: false),
-                    Stock = table.Column<int>(type: "int", nullable: false),
                     Id_categoria = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -307,24 +328,30 @@ namespace Frutos_del_Terraba_Api.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Distribuciones",
+                name: "DetallesDistribuciones",
                 columns: table => new
                 {
-                    Id_distribucion = table.Column<int>(type: "int", nullable: false)
+                    Id_detalle_distribucion = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Destino = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Cantidad = table.Column<int>(type: "int", nullable: false),
+                    Id_distribucion = table.Column<int>(type: "int", nullable: false),
                     Id_inventario = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Distribuciones", x => x.Id_distribucion);
+                    table.PrimaryKey("PK_DetallesDistribuciones", x => x.Id_detalle_distribucion);
                     table.ForeignKey(
-                        name: "FK_Distribuciones_Inventarios_Id_inventario",
+                        name: "FK_DetallesDistribuciones_Distribuciones_Id_distribucion",
+                        column: x => x.Id_distribucion,
+                        principalTable: "Distribuciones",
+                        principalColumn: "Id_distribucion",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_DetallesDistribuciones_Inventarios_Id_inventario",
                         column: x => x.Id_inventario,
                         principalTable: "Inventarios",
                         principalColumn: "Id_inventario",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.InsertData(
@@ -332,9 +359,9 @@ namespace Frutos_del_Terraba_Api.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "aecad1ec-a292-47f0-b58c-7b3b7fcce86a", null, "Distribuidor", "DISTRIBUIDOR" },
-                    { "ca645775-80c6-44a5-b5ab-079a07cd521e", null, "Empleado", "EMPLEADO" },
-                    { "d86e1426-a604-499c-b4d2-ad5023a6b42d", null, "Admin", "ADMIN" }
+                    { "01daa330-1e67-4302-b70e-d9ee9bc90b36", null, "Admin", "ADMIN" },
+                    { "a1f17514-3467-4b7f-9822-4e0d6a6df446", null, "Distribuidor", "DISTRIBUIDOR" },
+                    { "ab91b54e-7068-40eb-ba14-66bc140979e4", null, "Empleado", "EMPLEADO" }
                 });
 
             migrationBuilder.InsertData(
@@ -342,9 +369,9 @@ namespace Frutos_del_Terraba_Api.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "5900c253-7075-4165-95de-79bc9952f055", 0, "04f67baa-8098-437f-a53f-81cce1bbd059", "rodolfo@gmail.com", true, false, null, "RODOLFO@GMAIL.COM", "RODOLFO@GMAIL.COM", "AQAAAAIAAYagAAAAELaKytraFxqY/yHjLMX3WVsHZCoThOMpTQIabFaEtfU8rZHjypif52LF6DU6MmX4ww==", null, false, "a39be971-03ad-4830-afdd-76c90d112fc7", false, "rodolfo@gmail.com" },
-                    { "7cba396e-ef44-45d4-8ca8-cbe90733d21e", 0, "35eb9634-0265-49df-9db7-f19472c45751", "fabian@gmail.com", true, false, null, "FABIAN@GMAIL.COM", "FABIAN@GMAIL.COM", "AQAAAAIAAYagAAAAEDrXJ5R8HyW5N3PNAf74XmO+pO0rpXGxiVkNRcVw0AOzM03KEo9fPcnE6sXfx4Cn8Q==", null, false, "160f00ea-0d4a-4f55-98e3-435627c81f46", false, "fabian@gmail.com" },
-                    { "8ea58a73-f3c8-4b9a-bb9f-980f00e9bb43", 0, "be4323f7-2220-43ce-8104-e01fd3c1986e", "cristopher@gmail.com", true, false, null, "CRISTOPHER@GMAIL.COM", "CRISTOPHER@GMAIL.COM", "AQAAAAIAAYagAAAAEOavrtmtV+QrmYgc0nMnUzGIyxNMVFf11rrRRGPv4hV6hxskWDqaeXfHrHaRfHTaEA==", null, false, "70129b1e-5385-4bef-a31c-fe1492b99563", false, "cristopher@gmail.com" }
+                    { "1daa661e-c084-4685-a1c4-1691d4e409ce", 0, "3d47f076-ea6e-4935-9601-0293755833d4", "rodolfo@gmail.com", true, false, null, "RODOLFO@GMAIL.COM", "RODOLFO@GMAIL.COM", "AQAAAAIAAYagAAAAEGleacv7xd6BO9kowqulU3w3V4iiecFScBunYlii5bZC9UAnfILUAorbJPia6rNDPA==", null, false, "1ded6fd3-c729-439f-bde4-92c33d2cbb47", false, "rodolfo@gmail.com" },
+                    { "4be251a3-a379-45ab-a14d-ea1e4655f9ba", 0, "28fbe989-8286-4d9f-b6fd-30bca2ba5d5d", "cristopher@gmail.com", true, false, null, "CRISTOPHER@GMAIL.COM", "CRISTOPHER@GMAIL.COM", "AQAAAAIAAYagAAAAEHELEyS9szOe+8AOcDMOFnbG8auqOGwnY9ZVcqTsFgyIo2y5YaTyP83Q6WoXbtafPA==", null, false, "f3955dde-83f5-4e0c-9925-5366814bf1b0", false, "cristopher@gmail.com" },
+                    { "bed3f5b8-d532-4dc0-bbf2-218952642b33", 0, "a0db3c0d-1629-4d77-aa40-a6f33d5bd242", "fabian@gmail.com", true, false, null, "FABIAN@GMAIL.COM", "FABIAN@GMAIL.COM", "AQAAAAIAAYagAAAAELxbBRh4RuJlPQ4y2Gi8qqCivPLnrqsjYeAYPRzQoOFnkCDzBxEn/hbG/Q+Og9QrGA==", null, false, "5d4a10f7-3ef3-40d5-ab4d-9fe8ad500b81", false, "fabian@gmail.com" }
                 });
 
             migrationBuilder.InsertData(
@@ -371,9 +398,19 @@ namespace Frutos_del_Terraba_Api.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { "aecad1ec-a292-47f0-b58c-7b3b7fcce86a", "5900c253-7075-4165-95de-79bc9952f055" },
-                    { "d86e1426-a604-499c-b4d2-ad5023a6b42d", "7cba396e-ef44-45d4-8ca8-cbe90733d21e" },
-                    { "ca645775-80c6-44a5-b5ab-079a07cd521e", "8ea58a73-f3c8-4b9a-bb9f-980f00e9bb43" }
+                    { "a1f17514-3467-4b7f-9822-4e0d6a6df446", "1daa661e-c084-4685-a1c4-1691d4e409ce" },
+                    { "ab91b54e-7068-40eb-ba14-66bc140979e4", "4be251a3-a379-45ab-a14d-ea1e4655f9ba" },
+                    { "01daa330-1e67-4302-b70e-d9ee9bc90b36", "bed3f5b8-d532-4dc0-bbf2-218952642b33" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Distribuciones",
+                columns: new[] { "Id_distribucion", "Destino", "Observaciones", "Ubicacion", "UserId" },
+                values: new object[,]
+                {
+                    { 1, "Supermercado A", "Es una cargamento que hay que transportar con cuidado", "Rúa 21", "bed3f5b8-d532-4dc0-bbf2-218952642b33" },
+                    { 2, "Supermercado ", "", "El Boule Garage", "4be251a3-a379-45ab-a14d-ea1e4655f9ba" },
+                    { 3, "Frutería C", "Un buen pedido", "Lomito's Grill - Steak House", "bed3f5b8-d532-4dc0-bbf2-218952642b33" }
                 });
 
             migrationBuilder.InsertData(
@@ -381,24 +418,24 @@ namespace Frutos_del_Terraba_Api.Migrations
                 columns: new[] { "Id_pedido", "Fecha", "Id_proveedor", "UserId" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2025, 3, 3, 15, 57, 58, 659, DateTimeKind.Local).AddTicks(6742), 1, "7cba396e-ef44-45d4-8ca8-cbe90733d21e" },
-                    { 2, new DateTime(2025, 3, 3, 15, 57, 58, 659, DateTimeKind.Local).AddTicks(6767), 1, "7cba396e-ef44-45d4-8ca8-cbe90733d21e" },
-                    { 3, new DateTime(2025, 3, 3, 15, 57, 58, 659, DateTimeKind.Local).AddTicks(6769), 2, "7cba396e-ef44-45d4-8ca8-cbe90733d21e" },
-                    { 4, new DateTime(2025, 3, 3, 15, 57, 58, 659, DateTimeKind.Local).AddTicks(6771), 2, "7cba396e-ef44-45d4-8ca8-cbe90733d21e" }
+                    { 1, new DateTime(2025, 3, 11, 18, 18, 20, 428, DateTimeKind.Local).AddTicks(6142), 1, "bed3f5b8-d532-4dc0-bbf2-218952642b33" },
+                    { 2, new DateTime(2025, 3, 11, 18, 18, 20, 428, DateTimeKind.Local).AddTicks(6160), 1, "bed3f5b8-d532-4dc0-bbf2-218952642b33" },
+                    { 3, new DateTime(2025, 3, 11, 18, 18, 20, 428, DateTimeKind.Local).AddTicks(6163), 2, "bed3f5b8-d532-4dc0-bbf2-218952642b33" },
+                    { 4, new DateTime(2025, 3, 11, 18, 18, 20, 428, DateTimeKind.Local).AddTicks(6165), 2, "bed3f5b8-d532-4dc0-bbf2-218952642b33" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Productos",
-                columns: new[] { "Id_producto", "Id_categoria", "Nombre", "Stock" },
+                columns: new[] { "Id_producto", "Id_categoria", "Nombre" },
                 values: new object[,]
                 {
-                    { 1, 3, "Culantro Coyote", 40 },
-                    { 2, 3, "Tonillo", 46 },
-                    { 3, 3, "Apio", 50 },
-                    { 4, 1, "Papaya", 50 },
-                    { 5, 1, "Manzana Verde", 50 },
-                    { 6, 1, "Manzana Roja", 100 },
-                    { 7, 2, "Brocoli", 100 }
+                    { 1, 3, "Culantro Coyote" },
+                    { 2, 3, "Tonillo" },
+                    { 3, 3, "Apio" },
+                    { 4, 1, "Papaya" },
+                    { 5, 1, "Manzana Verde" },
+                    { 6, 1, "Manzana Roja" },
+                    { 7, 2, "Brocoli" }
                 });
 
             migrationBuilder.InsertData(
@@ -420,27 +457,27 @@ namespace Frutos_del_Terraba_Api.Migrations
                 columns: new[] { "Id_inventario", "Cantidad", "Id_producto" },
                 values: new object[,]
                 {
-                    { 1, 30, 1 },
-                    { 2, 25, 2 },
-                    { 3, 20, 3 },
-                    { 4, 50, 4 },
-                    { 5, 60, 5 },
-                    { 6, 80, 6 },
-                    { 7, 90, 7 }
+                    { 1, 330, 1 },
+                    { 2, 325, 2 },
+                    { 3, 320, 3 },
+                    { 4, 350, 4 },
+                    { 5, 360, 5 },
+                    { 6, 380, 6 },
+                    { 7, 390, 7 }
                 });
 
             migrationBuilder.InsertData(
-                table: "Distribuciones",
-                columns: new[] { "Id_distribucion", "Cantidad", "Destino", "Id_inventario" },
+                table: "DetallesDistribuciones",
+                columns: new[] { "Id_detalle_distribucion", "Cantidad", "Id_distribucion", "Id_inventario" },
                 values: new object[,]
                 {
-                    { 1, 10, "Supermercado A", 1 },
-                    { 2, 15, "Supermercado B", 2 },
-                    { 3, 5, "Frutería C", 3 },
-                    { 4, 25, "Verdulería D", 4 },
-                    { 5, 30, "Tienda E", 5 },
-                    { 6, 40, "Mercado F", 6 },
-                    { 7, 50, "Comedor G", 7 }
+                    { 1, 10, 1, 1 },
+                    { 2, 15, 1, 2 },
+                    { 3, 5, 2, 3 },
+                    { 4, 25, 2, 1 },
+                    { 5, 30, 2, 5 },
+                    { 6, 40, 3, 6 },
+                    { 7, 50, 3, 7 }
                 });
 
             migrationBuilder.CreateIndex(
@@ -483,6 +520,16 @@ namespace Frutos_del_Terraba_Api.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_DetallesDistribuciones_Id_distribucion",
+                table: "DetallesDistribuciones",
+                column: "Id_distribucion");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_DetallesDistribuciones_Id_inventario",
+                table: "DetallesDistribuciones",
+                column: "Id_inventario");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_DetallesPedidos_Id_pedido",
                 table: "DetallesPedidos",
                 column: "Id_pedido");
@@ -493,9 +540,9 @@ namespace Frutos_del_Terraba_Api.Migrations
                 column: "Id_producto");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Distribuciones_Id_inventario",
+                name: "IX_Distribuciones_UserId",
                 table: "Distribuciones",
-                column: "Id_inventario");
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Inventarios_Id_producto",
@@ -542,10 +589,10 @@ namespace Frutos_del_Terraba_Api.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "DetallesPedidos");
+                name: "DetallesDistribuciones");
 
             migrationBuilder.DropTable(
-                name: "Distribuciones");
+                name: "DetallesPedidos");
 
             migrationBuilder.DropTable(
                 name: "Reportes");
@@ -554,19 +601,22 @@ namespace Frutos_del_Terraba_Api.Migrations
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
-                name: "Pedidos");
+                name: "Distribuciones");
 
             migrationBuilder.DropTable(
                 name: "Inventarios");
+
+            migrationBuilder.DropTable(
+                name: "Pedidos");
+
+            migrationBuilder.DropTable(
+                name: "Productos");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
                 name: "Proveedores");
-
-            migrationBuilder.DropTable(
-                name: "Productos");
 
             migrationBuilder.DropTable(
                 name: "Categorias");

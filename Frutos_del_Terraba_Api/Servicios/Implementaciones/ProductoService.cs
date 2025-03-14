@@ -22,7 +22,6 @@ namespace Frutos_del_Terraba_Api.Servicios.Implementaciones
             if (producto == null) return false;
 
             producto.Nombre = productoDto.Nombre;
-            producto.Stock = productoDto.Stock;
             producto.Id_categoria = productoDto.Id_categoria;
 
             await _context.SaveChangesAsync(); 
@@ -38,7 +37,6 @@ namespace Frutos_del_Terraba_Api.Servicios.Implementaciones
             var producto = new Producto
             {
                 Nombre = productoDto.Nombre,
-                Stock = productoDto.Stock,
                 Id_categoria = productoDto.Id_categoria
             };
 
@@ -49,7 +47,6 @@ namespace Frutos_del_Terraba_Api.Servicios.Implementaciones
             {
                 IdProducto = producto.Id_producto, 
                 Nombre = producto.Nombre,
-                Stock = producto.Stock,
                 Id_categoria = producto.Id_categoria
             };
         }
@@ -95,7 +92,6 @@ namespace Frutos_del_Terraba_Api.Servicios.Implementaciones
             {
                 IdProducto = producto.Id_producto,
                 Nombre = producto.Nombre,
-                Stock = producto.Stock,
                 Id_categoria = producto.Id_categoria
             };
         }
@@ -115,7 +111,6 @@ namespace Frutos_del_Terraba_Api.Servicios.Implementaciones
             {
                 IdProducto = p.Id_producto,
                 Nombre = p.Nombre,
-                Stock = p.Stock,
                 Id_categoria = p.Id_categoria
             }).ToList();
         }
