@@ -1,8 +1,6 @@
 ﻿using Frutos_del_Terraba.Helpers.Implementaciones;
 using Frutos_del_Terraba.Helpers.Interfaces;
-using Frutos_del_Terraba.Models;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +28,9 @@ builder.Services.AddSession(options =>
 
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();
 builder.Services.AddScoped<IProductoService, ProductoService>();
+builder.Services.AddScoped<IPedidoService, PedidoService>();
+
+
 
 builder.Services.AddAuthentication("CookieAuth")
     .AddCookie("CookieAuth", options =>

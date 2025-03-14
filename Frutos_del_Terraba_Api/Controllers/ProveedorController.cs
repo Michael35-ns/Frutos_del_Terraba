@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Frutos_del_Terraba_Api.Controllers
 {
-    [Route("api/[controller]/[action]")]
+    [Route("api/proveedor")]
     [ApiController]
     public class ProveedorController : Controller
     {

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "UwY8dTbsNnfF89mFiSWCzS6YCTF5obTB1ZHxsIIxY0w=",
+  "Hash": "n5Bz+Vti6oKBU/UUAp8ux/fsD1OjTytjZdgfRVmmsIU=",
   "Source": "Frutos_del_Terraba",
   "BasePath": "_content/Frutos_del_Terraba",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj",
       "Version": 2,
       "Source": "Frutos_del_Terraba_Api",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,17 +22,17 @@
     {
       "Name": "Frutos_del_Terraba\\wwwroot",
       "Source": "Frutos_del_Terraba",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\css\\demo.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\css\\demo.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "css/demo.css",
       "AssetKind": "All",
@@ -48,10 +48,10 @@
       "OriginalItemSpec": "wwwroot\\css\\demo.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\css\\site.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -67,10 +67,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\1.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\1.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/avatars/1.png",
       "AssetKind": "All",
@@ -86,10 +86,10 @@
       "OriginalItemSpec": "wwwroot\\img\\avatars\\1.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\2.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\2.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/avatars/2.png",
       "AssetKind": "All",
@@ -105,10 +105,10 @@
       "OriginalItemSpec": "wwwroot\\img\\avatars\\2.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\3.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\3.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/avatars/3.png",
       "AssetKind": "All",
@@ -124,10 +124,10 @@
       "OriginalItemSpec": "wwwroot\\img\\avatars\\3.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\4.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\4.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/avatars/4.png",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\img\\avatars\\4.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\5.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\5.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/avatars/5.png",
       "AssetKind": "All",
@@ -162,10 +162,10 @@
       "OriginalItemSpec": "wwwroot\\img\\avatars\\5.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\6.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\6.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/avatars/6.png",
       "AssetKind": "All",
@@ -181,10 +181,10 @@
       "OriginalItemSpec": "wwwroot\\img\\avatars\\6.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\7.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\7.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/avatars/7.png",
       "AssetKind": "All",
@@ -200,48 +200,10 @@
       "OriginalItemSpec": "wwwroot\\img\\avatars\\7.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\8.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\backgrounds\\18.jpg",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
-      "BasePath": "_content/Frutos_del_Terraba",
-      "RelativePath": "img/avatars/8.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\avatars\\8.png"
-    },
-    {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\9.png",
-      "SourceId": "Frutos_del_Terraba",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
-      "BasePath": "_content/Frutos_del_Terraba",
-      "RelativePath": "img/avatars/9.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\avatars\\9.png"
-    },
-    {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\backgrounds\\18.jpg",
-      "SourceId": "Frutos_del_Terraba",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/backgrounds/18.jpg",
       "AssetKind": "All",
@@ -257,10 +219,10 @@
       "OriginalItemSpec": "wwwroot\\img\\backgrounds\\18.jpg"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\1.jpg",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\1.jpg",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/elements/1.jpg",
       "AssetKind": "All",
@@ -276,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\img\\elements\\1.jpg"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\11.jpg",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\11.jpg",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/elements/11.jpg",
       "AssetKind": "All",
@@ -295,10 +257,10 @@
       "OriginalItemSpec": "wwwroot\\img\\elements\\11.jpg"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\12.jpg",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\12.jpg",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/elements/12.jpg",
       "AssetKind": "All",
@@ -314,10 +276,10 @@
       "OriginalItemSpec": "wwwroot\\img\\elements\\12.jpg"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\13.jpg",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\13.jpg",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/elements/13.jpg",
       "AssetKind": "All",
@@ -333,10 +295,10 @@
       "OriginalItemSpec": "wwwroot\\img\\elements\\13.jpg"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\17.jpg",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\17.jpg",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/elements/17.jpg",
       "AssetKind": "All",
@@ -352,10 +314,10 @@
       "OriginalItemSpec": "wwwroot\\img\\elements\\17.jpg"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\18.jpg",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\18.jpg",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/elements/18.jpg",
       "AssetKind": "All",
@@ -371,10 +333,10 @@
       "OriginalItemSpec": "wwwroot\\img\\elements\\18.jpg"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\19.jpg",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\19.jpg",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/elements/19.jpg",
       "AssetKind": "All",
@@ -390,10 +352,10 @@
       "OriginalItemSpec": "wwwroot\\img\\elements\\19.jpg"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\2.jpg",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\2.jpg",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/elements/2.jpg",
       "AssetKind": "All",
@@ -409,10 +371,10 @@
       "OriginalItemSpec": "wwwroot\\img\\elements\\2.jpg"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\20.jpg",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\20.jpg",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/elements/20.jpg",
       "AssetKind": "All",
@@ -428,10 +390,10 @@
       "OriginalItemSpec": "wwwroot\\img\\elements\\20.jpg"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\3.jpg",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\3.jpg",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/elements/3.jpg",
       "AssetKind": "All",
@@ -447,10 +409,10 @@
       "OriginalItemSpec": "wwwroot\\img\\elements\\3.jpg"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\4.jpg",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\4.jpg",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/elements/4.jpg",
       "AssetKind": "All",
@@ -466,10 +428,10 @@
       "OriginalItemSpec": "wwwroot\\img\\elements\\4.jpg"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\5.jpg",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\5.jpg",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/elements/5.jpg",
       "AssetKind": "All",
@@ -485,10 +447,10 @@
       "OriginalItemSpec": "wwwroot\\img\\elements\\5.jpg"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\7.jpg",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\elements\\7.jpg",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/elements/7.jpg",
       "AssetKind": "All",
@@ -504,10 +466,10 @@
       "OriginalItemSpec": "wwwroot\\img\\elements\\7.jpg"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\favicon\\favicon.ico",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\favicon\\favicon.ico",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/favicon/favicon.ico",
       "AssetKind": "All",
@@ -523,10 +485,10 @@
       "OriginalItemSpec": "wwwroot\\img\\favicon\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\asana.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\asana.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/brands/asana.png",
       "AssetKind": "All",
@@ -542,10 +504,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\brands\\asana.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\aws.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\aws.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/brands/aws.png",
       "AssetKind": "All",
@@ -561,10 +523,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\brands\\aws.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\behance.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\behance.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/brands/behance.png",
       "AssetKind": "All",
@@ -580,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\brands\\behance.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\dribbble.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\dribbble.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/brands/dribbble.png",
       "AssetKind": "All",
@@ -599,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\brands\\dribbble.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\facebook.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\facebook.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/brands/facebook.png",
       "AssetKind": "All",
@@ -618,10 +580,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\brands\\facebook.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\github.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\github.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/brands/github.png",
       "AssetKind": "All",
@@ -637,10 +599,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\brands\\github.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\google.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\google.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/brands/google.png",
       "AssetKind": "All",
@@ -656,10 +618,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\brands\\google.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\instagram.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\instagram.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/brands/instagram.png",
       "AssetKind": "All",
@@ -675,10 +637,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\brands\\instagram.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\mailchimp.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\mailchimp.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/brands/mailchimp.png",
       "AssetKind": "All",
@@ -694,10 +656,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\brands\\mailchimp.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\slack.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\slack.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/brands/slack.png",
       "AssetKind": "All",
@@ -713,10 +675,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\brands\\slack.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\twitter.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\brands\\twitter.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/brands/twitter.png",
       "AssetKind": "All",
@@ -732,10 +694,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\brands\\twitter.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\misc\\aviato.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\misc\\aviato.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/misc/aviato.png",
       "AssetKind": "All",
@@ -751,10 +713,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\misc\\aviato.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\misc\\bitbank.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\misc\\bitbank.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/misc/bitbank.png",
       "AssetKind": "All",
@@ -770,10 +732,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\misc\\bitbank.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\misc\\triangle-light.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\misc\\triangle-light.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/misc/triangle-light.png",
       "AssetKind": "All",
@@ -789,10 +751,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\misc\\triangle-light.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\misc\\zipcar.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\misc\\zipcar.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/misc/zipcar.png",
       "AssetKind": "All",
@@ -808,10 +770,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\misc\\zipcar.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\payments\\american-bank.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\payments\\american-bank.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/payments/american-bank.png",
       "AssetKind": "All",
@@ -827,10 +789,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\payments\\american-bank.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\payments\\citi.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\payments\\citi.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/payments/citi.png",
       "AssetKind": "All",
@@ -846,10 +808,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\payments\\citi.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\payments\\digital-ocean.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\payments\\digital-ocean.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/payments/digital-ocean.png",
       "AssetKind": "All",
@@ -865,10 +827,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\payments\\digital-ocean.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\payments\\gumroad.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\payments\\gumroad.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/payments/gumroad.png",
       "AssetKind": "All",
@@ -884,10 +846,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\payments\\gumroad.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\payments\\mastercard-2.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\payments\\mastercard-2.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/payments/mastercard-2.png",
       "AssetKind": "All",
@@ -903,10 +865,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\payments\\mastercard-2.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\payments\\stripes.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\icons\\payments\\stripes.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/icons/payments/stripes.png",
       "AssetKind": "All",
@@ -922,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\payments\\stripes.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\illustrations\\404.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\illustrations\\404.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/illustrations/404.png",
       "AssetKind": "All",
@@ -941,10 +903,10 @@
       "OriginalItemSpec": "wwwroot\\img\\illustrations\\404.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\illustrations\\auth-basic-mask-light.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\illustrations\\auth-basic-mask-light.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/illustrations/auth-basic-mask-light.png",
       "AssetKind": "All",
@@ -960,10 +922,10 @@
       "OriginalItemSpec": "wwwroot\\img\\illustrations\\auth-basic-mask-light.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\illustrations\\misc-mask-light.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\illustrations\\misc-mask-light.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/illustrations/misc-mask-light.png",
       "AssetKind": "All",
@@ -979,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\img\\illustrations\\misc-mask-light.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\illustrations\\misc-under-maintenance.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\illustrations\\misc-under-maintenance.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/illustrations/misc-under-maintenance.png",
       "AssetKind": "All",
@@ -998,10 +960,10 @@
       "OriginalItemSpec": "wwwroot\\img\\illustrations\\misc-under-maintenance.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\illustrations\\tree.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\illustrations\\tree.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/illustrations/tree.png",
       "AssetKind": "All",
@@ -1017,10 +979,10 @@
       "OriginalItemSpec": "wwwroot\\img\\illustrations\\tree.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\illustrations\\tree-3.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\illustrations\\tree-3.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/illustrations/tree-3.png",
       "AssetKind": "All",
@@ -1036,10 +998,10 @@
       "OriginalItemSpec": "wwwroot\\img\\illustrations\\tree-3.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\illustrations\\trophy.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\illustrations\\trophy.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/illustrations/trophy.png",
       "AssetKind": "All",
@@ -1055,10 +1017,10 @@
       "OriginalItemSpec": "wwwroot\\img\\illustrations\\trophy.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\layouts\\layout-container-light.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\layouts\\layout-container-light.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/layouts/layout-container-light.png",
       "AssetKind": "All",
@@ -1074,10 +1036,10 @@
       "OriginalItemSpec": "wwwroot\\img\\layouts\\layout-container-light.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\layouts\\layout-fluid-light.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\layouts\\layout-fluid-light.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/layouts/layout-fluid-light.png",
       "AssetKind": "All",
@@ -1093,10 +1055,10 @@
       "OriginalItemSpec": "wwwroot\\img\\layouts\\layout-fluid-light.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\layouts\\layout-without-menu-light.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\layouts\\layout-without-menu-light.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/layouts/layout-without-menu-light.png",
       "AssetKind": "All",
@@ -1112,10 +1074,10 @@
       "OriginalItemSpec": "wwwroot\\img\\layouts\\layout-without-menu-light.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\layouts\\layout-without-navbar-light.png",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\layouts\\layout-without-navbar-light.png",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "img/layouts/layout-without-navbar-light.png",
       "AssetKind": "All",
@@ -1131,10 +1093,10 @@
       "OriginalItemSpec": "wwwroot\\img\\layouts\\layout-without-navbar-light.png"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\config.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\config.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "js/config.js",
       "AssetKind": "All",
@@ -1150,10 +1112,10 @@
       "OriginalItemSpec": "wwwroot\\js\\config.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\dashboards-analytics.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\dashboards-analytics.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "js/dashboards-analytics.js",
       "AssetKind": "All",
@@ -1169,10 +1131,10 @@
       "OriginalItemSpec": "wwwroot\\js\\dashboards-analytics.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\extended-ui-perfect-scrollbar.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\extended-ui-perfect-scrollbar.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "js/extended-ui-perfect-scrollbar.js",
       "AssetKind": "All",
@@ -1188,10 +1150,10 @@
       "OriginalItemSpec": "wwwroot\\js\\extended-ui-perfect-scrollbar.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\form-basic-inputs.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\form-basic-inputs.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "js/form-basic-inputs.js",
       "AssetKind": "All",
@@ -1207,10 +1169,10 @@
       "OriginalItemSpec": "wwwroot\\js\\form-basic-inputs.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\main.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\main.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "js/main.js",
       "AssetKind": "All",
@@ -1226,10 +1188,10 @@
       "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\pages-account-settings-account.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\pages-account-settings-account.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "js/pages-account-settings-account.js",
       "AssetKind": "All",
@@ -1245,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\js\\pages-account-settings-account.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\site.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1264,10 +1226,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\ui-modals.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\ui-modals.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "js/ui-modals.js",
       "AssetKind": "All",
@@ -1283,10 +1245,10 @@
       "OriginalItemSpec": "wwwroot\\js\\ui-modals.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\ui-popover.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\ui-popover.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "js/ui-popover.js",
       "AssetKind": "All",
@@ -1302,10 +1264,10 @@
       "OriginalItemSpec": "wwwroot\\js\\ui-popover.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\ui-toasts.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\ui-toasts.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "js/ui-toasts.js",
       "AssetKind": "All",
@@ -1321,10 +1283,10 @@
       "OriginalItemSpec": "wwwroot\\js\\ui-toasts.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1340,10 +1302,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1359,10 +1321,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1378,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1397,10 +1359,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1416,10 +1378,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1435,10 +1397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1454,10 +1416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1473,10 +1435,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1492,10 +1454,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1511,10 +1473,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1530,10 +1492,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1549,10 +1511,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1568,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1587,10 +1549,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1606,10 +1568,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1625,10 +1587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1644,10 +1606,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1663,10 +1625,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1682,10 +1644,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1701,10 +1663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1720,10 +1682,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1739,10 +1701,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1758,10 +1720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1777,10 +1739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1796,10 +1758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1815,10 +1777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1834,10 +1796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1853,10 +1815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1872,10 +1834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1891,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1910,10 +1872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1929,10 +1891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1948,10 +1910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1967,10 +1929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1986,10 +1948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2005,10 +1967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2024,10 +1986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2043,10 +2005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2062,10 +2024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2081,10 +2043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2100,10 +2062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2119,10 +2081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2138,10 +2100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2157,10 +2119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2176,10 +2138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2195,10 +2157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2214,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2233,10 +2195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2252,10 +2214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2271,10 +2233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2290,10 +2252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2309,10 +2271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2328,10 +2290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2347,10 +2309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2366,10 +2328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2385,10 +2347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2404,10 +2366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\css\\core.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\css\\core.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/css/core.css",
       "AssetKind": "All",
@@ -2423,10 +2385,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\css\\core.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\css\\pages\\page-account-settings.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\css\\pages\\page-account-settings.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/css/pages/page-account-settings.css",
       "AssetKind": "All",
@@ -2442,10 +2404,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\css\\pages\\page-account-settings.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\css\\pages\\page-auth.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\css\\pages\\page-auth.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/css/pages/page-auth.css",
       "AssetKind": "All",
@@ -2461,10 +2423,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\css\\pages\\page-auth.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\css\\pages\\page-icons.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\css\\pages\\page-icons.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/css/pages/page-icons.css",
       "AssetKind": "All",
@@ -2480,10 +2442,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\css\\pages\\page-icons.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\css\\pages\\page-misc.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\css\\pages\\page-misc.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/css/pages/page-misc.css",
       "AssetKind": "All",
@@ -2499,10 +2461,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\css\\pages\\page-misc.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\css\\theme-default.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\css\\theme-default.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/css/theme-default.css",
       "AssetKind": "All",
@@ -2518,10 +2480,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\css\\theme-default.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\fonts\\remixicon\\remixicon.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\fonts\\remixicon\\remixicon.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/fonts/remixicon/remixicon.css",
       "AssetKind": "All",
@@ -2537,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\fonts\\remixicon\\remixicon.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\fonts\\remixicon\\remixicon.eot",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\fonts\\remixicon\\remixicon.eot",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/fonts/remixicon/remixicon.eot",
       "AssetKind": "All",
@@ -2556,10 +2518,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\fonts\\remixicon\\remixicon.eot"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\fonts\\remixicon\\remixicon.svg",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\fonts\\remixicon\\remixicon.svg",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/fonts/remixicon/remixicon.svg",
       "AssetKind": "All",
@@ -2575,10 +2537,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\fonts\\remixicon\\remixicon.svg"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\fonts\\remixicon\\remixicon.ttf",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\fonts\\remixicon\\remixicon.ttf",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/fonts/remixicon/remixicon.ttf",
       "AssetKind": "All",
@@ -2594,10 +2556,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\fonts\\remixicon\\remixicon.ttf"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\fonts\\remixicon\\remixicon.woff",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\fonts\\remixicon\\remixicon.woff",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/fonts/remixicon/remixicon.woff",
       "AssetKind": "All",
@@ -2613,10 +2575,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\fonts\\remixicon\\remixicon.woff"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\fonts\\remixicon\\remixicon.woff2",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\fonts\\remixicon\\remixicon.woff2",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/fonts/remixicon/remixicon.woff2",
       "AssetKind": "All",
@@ -2632,10 +2594,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\fonts\\remixicon\\remixicon.woff2"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\js\\bootstrap.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/js/bootstrap.js",
       "AssetKind": "All",
@@ -2651,10 +2613,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\js\\helpers.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\js\\helpers.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/js/helpers.js",
       "AssetKind": "All",
@@ -2670,10 +2632,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\js\\helpers.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\js\\menu.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\js\\menu.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/js/menu.js",
       "AssetKind": "All",
@@ -2689,10 +2651,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\js\\menu.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\apex-charts\\apex-charts.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\apex-charts\\apex-charts.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/libs/apex-charts/apex-charts.css",
       "AssetKind": "All",
@@ -2708,10 +2670,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\libs\\apex-charts\\apex-charts.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\apex-charts\\apexcharts.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\apex-charts\\apexcharts.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/libs/apex-charts/apexcharts.js",
       "AssetKind": "All",
@@ -2727,10 +2689,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\libs\\apex-charts\\apexcharts.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\highlight\\highlight.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\highlight\\highlight.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/libs/highlight/highlight.css",
       "AssetKind": "All",
@@ -2746,10 +2708,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\libs\\highlight\\highlight.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\highlight\\highlight.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\highlight\\highlight.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/libs/highlight/highlight.js",
       "AssetKind": "All",
@@ -2765,10 +2727,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\libs\\highlight\\highlight.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\highlight\\highlight-github.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\highlight\\highlight-github.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/libs/highlight/highlight-github.css",
       "AssetKind": "All",
@@ -2784,10 +2746,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\libs\\highlight\\highlight-github.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\jquery\\jquery.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\jquery\\jquery.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/libs/jquery/jquery.js",
       "AssetKind": "All",
@@ -2803,10 +2765,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\libs\\jquery\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\masonry\\masonry.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\masonry\\masonry.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/libs/masonry/masonry.js",
       "AssetKind": "All",
@@ -2822,10 +2784,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\libs\\masonry\\masonry.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\node-waves\\node-waves.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\node-waves\\node-waves.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/libs/node-waves/node-waves.css",
       "AssetKind": "All",
@@ -2841,10 +2803,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\libs\\node-waves\\node-waves.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\node-waves\\node-waves.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\node-waves\\node-waves.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/libs/node-waves/node-waves.js",
       "AssetKind": "All",
@@ -2860,10 +2822,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\libs\\node-waves\\node-waves.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/libs/perfect-scrollbar/perfect-scrollbar.css",
       "AssetKind": "All",
@@ -2879,10 +2841,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/libs/perfect-scrollbar/perfect-scrollbar.js",
       "AssetKind": "All",
@@ -2898,10 +2860,10 @@
       "OriginalItemSpec": "wwwroot\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js"
     },
     {
-      "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\popper\\popper.js",
+      "Identity": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\vendor\\libs\\popper\\popper.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\",
       "BasePath": "_content/Frutos_del_Terraba",
       "RelativePath": "vendor/libs/popper/popper.js",
       "AssetKind": "All",

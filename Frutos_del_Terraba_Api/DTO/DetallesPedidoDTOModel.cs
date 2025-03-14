@@ -12,6 +12,8 @@ namespace Frutos_del_Terraba_Api.DTO
         [StringLength(300, ErrorMessage = "Las observaciones no pueden exceder los 300 caracteres.")]
         public string Observaciones { get; set; }
 
+        public string NombreProducto { get; set; }
+
         [Required]
         public int Id_pedido { get; set; }
 

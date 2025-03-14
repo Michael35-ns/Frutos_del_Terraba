@@ -2,12 +2,8 @@
 using Frutos_del_Terraba_Api.Models;
 using Frutos_del_Terraba_Api.Servicios.Implementaciones;
 using Frutos_del_Terraba_Api.Servicios.Interfaces;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
-using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +13,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer("name=DefaultConnection"));
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+builder.Services.AddScoped<IProductoService, ProductoService>();
+builder.Services.AddScoped<IPedidoService, PedidoService>();
 
 builder.Services.AddIdentityApiEndpoints<IdentityUser>().
     AddEntityFrameworkStores<ApplicationDbContext>();
@@ -31,8 +30,10 @@ builder.Services.AddCors(options =>
     });
 });
 
-builder.Services.AddScoped<ICategoriaService, CategoriaService>();
-builder.Services.AddScoped<IProductoService, ProductoService>();
+
+
+
+
 
 
 var app = builder.Build();

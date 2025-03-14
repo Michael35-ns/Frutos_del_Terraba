@@ -1,0 +1,65 @@
+﻿using Frutos_del_Terraba.Helpers.Interfaces;
+using Frutos_del_Terraba.Models;
+using Frutos_del_Terraba_Api.DTO;
+
+namespace Frutos_del_Terraba.Helpers.Implementaciones
+{
+    public class PedidoService : IPedidoService
+    {
+        private readonly HttpClient _httpClient;
+        private readonly string _baseUrl = "https://localhost:7240/api/pedido";
+        private readonly string _proveedorUrl = "https://localhost:7240/api/proveedor"; 
+
+        public PedidoService(HttpClient httpClient)
+        {
+            _httpClient = httpClient;
+        }
+
+        // Obtener todos los pedidos
+        public async Task<IEnumerable<PedidoDTOModel>> ObtenerTodosPedidosAsync()
+        {
+            try
+            {
+                var pedidos = await _httpClient.GetFromJsonAsync<IEnumerable<PedidoDTOModel>>(_baseUrl);
+                return pedidos ?? new List<PedidoDTOModel>();
+            }
+            catch
+            {
+                return new List<PedidoDTOModel>();
+            }
+        }
+
+        // Obtener todos los proveedores
+        public async Task<IEnumerable<ProveedorDTOModel>> ObtenerTodosProveedoresAsync()
+        {
+            try
+            {
+                var proveedores = await _httpClient.GetFromJsonAsync<IEnumerable<ProveedorDTOModel>>(_proveedorUrl);
+                return proveedores ?? new List<ProveedorDTOModel>();
+            }
+            catch
+            {
+                return new List<ProveedorDTOModel>();
+            }
+        }
+
+        public async Task<PedidoDTOModel?> CrearPedidoAsync(PedidoDTOModel pedido)
+        {
+            try
+            {
+                var response = await _httpClient.PostAsJsonAsync(_baseUrl, pedido);
+                if (response.IsSuccessStatusCode)
+                {
+                    return await response.Content.ReadFromJsonAsync<PedidoDTOModel>();
+                }
+                return null;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+
+    }
+}

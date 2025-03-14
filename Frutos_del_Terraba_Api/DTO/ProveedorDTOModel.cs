@@ -20,5 +20,9 @@ namespace Frutos_del_Terraba_Api.DTO
         [Required]
         [StringLength(70, ErrorMessage = "El email no pueden exceder los 70 caracteres.")]
         public string Email { get; set; }
+        public override string ToString()
+        {
+            return Nombre;  // Esto hará que 'ToString()' devuelva el nombre del proveedor
+        }
     }
 }
