@@ -35,7 +35,7 @@ namespace Frutos_del_Terraba.Controllers
 
         #region Crear un nuevo producto
         [HttpGet]
-        public async Task<IActionResult> Crear()
+        public async Task<IActionResult> Create()
         {
             var categorias = await _categoriaService.ObtenerTodasCategoriasAsync();
 
@@ -56,7 +56,7 @@ namespace Frutos_del_Terraba.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Crear(ProductoViewModel model)
+        public async Task<IActionResult> Create(ProductoViewModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace Frutos_del_Terraba.Controllers
 
         #region Eliminar un producto
         [HttpPost]
-        public async Task<IActionResult> Eliminar(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             var eliminado = await _productoService.EliminarProductoAsync(id);
             if (eliminado)
@@ -101,7 +101,7 @@ namespace Frutos_del_Terraba.Controllers
 
         #region Editar Producto
         [HttpGet]
-        public async Task<IActionResult> Editar(int id)
+        public async Task<IActionResult> Edit(int id)
         {
             var producto = await _productoService.ObtenerProductoPorIdAsync(id);
             if (producto == null)
@@ -126,7 +126,7 @@ namespace Frutos_del_Terraba.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Editar(ProductoViewModel model)
+        public async Task<IActionResult> Edit(ProductoViewModel model)
         {
             if (!ModelState.IsValid)
             {

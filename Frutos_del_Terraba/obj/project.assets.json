@@ -1121,6 +1121,64 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "PdfSharpCore/1.3.64": {
+        "type": "package",
+        "dependencies": {
+          "SharpZipLib": "1.3.3",
+          "SixLabors.Fonts": "1.0.0-beta17",
+          "SixLabors.ImageSharp": "1.0.4"
+        },
+        "compile": {
+          "lib/net8.0/PdfSharpCore.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/PdfSharpCore.dll": {}
+        },
+        "resource": {
+          "lib/net8.0/de/PdfSharpCore.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "SharpZipLib/1.3.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/ICSharpCode.SharpZipLib.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/ICSharpCode.SharpZipLib.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SixLabors.Fonts/1.0.0-beta17": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/SixLabors.Fonts.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SixLabors.Fonts.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SixLabors.ImageSharp/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.6.2": {
         "type": "package",
         "dependencies": {
@@ -3639,6 +3697,94 @@
         "mono.texttemplating.nuspec"
       ]
     },
+    "PdfSharpCore/1.3.64": {
+      "sha512": "INuaPZ+Uuti6u6ijuX/1PqEokrKnf8dZ/jTcAdo/3lkkY6DWKRf0C3hL4VTJEIYniYKAwtk628H8RL37xzvL3Q==",
+      "type": "package",
+      "path": "pdfsharpcore/1.3.64",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net5.0/PdfSharpCore.dll",
+        "lib/net5.0/de/PdfSharpCore.resources.dll",
+        "lib/net6.0/PdfSharpCore.dll",
+        "lib/net6.0/de/PdfSharpCore.resources.dll",
+        "lib/net7.0/PdfSharpCore.dll",
+        "lib/net7.0/de/PdfSharpCore.resources.dll",
+        "lib/net8.0/PdfSharpCore.dll",
+        "lib/net8.0/de/PdfSharpCore.resources.dll",
+        "lib/netcoreapp3.1/PdfSharpCore.dll",
+        "lib/netcoreapp3.1/de/PdfSharpCore.resources.dll",
+        "lib/netstandard2.0/PdfSharpCore.dll",
+        "lib/netstandard2.0/de/PdfSharpCore.resources.dll",
+        "pdfsharpcore.1.3.64.nupkg.sha512",
+        "pdfsharpcore.nuspec"
+      ]
+    },
+    "SharpZipLib/1.3.3": {
+      "sha512": "N8+hwhsKZm25tDJfWpBSW7EGhH/R7EMuiX+KJ4C4u+fCWVc1lJ5zg1u3S1RPPVYgTqhx/C3hxrqUpi6RwK5+Tg==",
+      "type": "package",
+      "path": "sharpziplib/1.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/sharpziplib-nuget-256x256.png",
+        "lib/net45/ICSharpCode.SharpZipLib.dll",
+        "lib/net45/ICSharpCode.SharpZipLib.pdb",
+        "lib/net45/ICSharpCode.SharpZipLib.xml",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.pdb",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.xml",
+        "lib/netstandard2.1/ICSharpCode.SharpZipLib.dll",
+        "lib/netstandard2.1/ICSharpCode.SharpZipLib.pdb",
+        "lib/netstandard2.1/ICSharpCode.SharpZipLib.xml",
+        "sharpziplib.1.3.3.nupkg.sha512",
+        "sharpziplib.nuspec"
+      ]
+    },
+    "SixLabors.Fonts/1.0.0-beta17": {
+      "sha512": "qubgVovAoSR7vyv9tJ68gSzRIPWz7HBjTM9rwAaLjpcJ6T50arnX+GHAZcC0r2mVagyRMknCNda3DGoe8StUUQ==",
+      "type": "package",
+      "path": "sixlabors.fonts/1.0.0-beta17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.1/SixLabors.Fonts.dll",
+        "lib/netcoreapp3.1/SixLabors.Fonts.xml",
+        "lib/netstandard2.0/SixLabors.Fonts.dll",
+        "lib/netstandard2.0/SixLabors.Fonts.xml",
+        "lib/netstandard2.1/SixLabors.Fonts.dll",
+        "lib/netstandard2.1/SixLabors.Fonts.xml",
+        "sixlabors.fonts.1.0.0-beta17.nupkg.sha512",
+        "sixlabors.fonts.128.png",
+        "sixlabors.fonts.nuspec"
+      ]
+    },
+    "SixLabors.ImageSharp/1.0.4": {
+      "sha512": "H2rPiEr2ddBOltOuqRYhpLBAsQXDAhbzMMhhuksnBG2oefup1MXMchALe7yYkKJksNbtxbZHKeM6dn/68I75qw==",
+      "type": "package",
+      "path": "sixlabors.imagesharp/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/SixLabors.ImageSharp.dll",
+        "lib/net472/SixLabors.ImageSharp.xml",
+        "lib/netcoreapp2.1/SixLabors.ImageSharp.dll",
+        "lib/netcoreapp2.1/SixLabors.ImageSharp.xml",
+        "lib/netcoreapp3.1/SixLabors.ImageSharp.dll",
+        "lib/netcoreapp3.1/SixLabors.ImageSharp.xml",
+        "lib/netstandard1.3/SixLabors.ImageSharp.dll",
+        "lib/netstandard1.3/SixLabors.ImageSharp.xml",
+        "lib/netstandard2.0/SixLabors.ImageSharp.dll",
+        "lib/netstandard2.0/SixLabors.ImageSharp.xml",
+        "lib/netstandard2.1/SixLabors.ImageSharp.dll",
+        "lib/netstandard2.1/SixLabors.ImageSharp.xml",
+        "sixlabors.imagesharp.1.0.4.nupkg.sha512",
+        "sixlabors.imagesharp.128.png",
+        "sixlabors.imagesharp.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.6.2": {
       "sha512": "+NB4UYVYN6AhDSjW0IJAd1AGD8V33gemFNLPaxKTtPkHB+HaKAKf9MGAEUPivEWvqeQfcKIw8lJaHq6LHljRuw==",
       "type": "package",
@@ -4697,23 +4843,29 @@
       "Frutos_del_Terraba_Api >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.12",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.12",
-      "Microsoft.Extensions.Http >= 9.0.1"
+      "Microsoft.Extensions.Http >= 9.0.1",
+      "PdfSharpCore >= 1.3.64"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\crisn\\.nuget\\packages\\": {}
+    "C:\\Users\\macan\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj",
+      "projectUniqueName": "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj",
       "projectName": "Frutos_del_Terraba",
-      "projectPath": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj",
-      "packagesPath": "C:\\Users\\crisn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\obj\\",
+      "projectPath": "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj",
+      "packagesPath": "C:\\Users\\macan\\.nuget\\packages\\",
+      "outputPath": "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\crisn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\macan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4721,15 +4873,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj": {
-              "projectPath": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj"
+            "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj": {
+              "projectPath": "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj"
             }
           }
         }
@@ -4743,7 +4894,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -4766,6 +4918,10 @@
           "Microsoft.Extensions.Http": {
             "target": "Package",
             "version": "[9.0.1, )"
+          },
+          "PdfSharpCore": {
+            "target": "Package",
+            "version": "[1.3.64, )"
           }
         },
         "imports": [
@@ -4787,7 +4943,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

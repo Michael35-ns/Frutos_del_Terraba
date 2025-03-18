@@ -564,3 +564,8 @@ C:\Users\crisn\OneDrive\Documents\GitHub\Frutos_del_Terraba\Frutos_del_Terraba\o
 C:\Users\crisn\OneDrive\Documents\GitHub\Frutos_del_Terraba\Frutos_del_Terraba\obj\Debug\net8.0\Frutos_del_Terraba.pdb
 C:\Users\crisn\OneDrive\Documents\GitHub\Frutos_del_Terraba\Frutos_del_Terraba\obj\Debug\net8.0\Frutos_del_Terraba.genruntimeconfig.cache
 C:\Users\crisn\OneDrive\Documents\GitHub\Frutos_del_Terraba\Frutos_del_Terraba\obj\Debug\net8.0\ref\Frutos_del_Terraba.dll
+D:\Progra Avanzada\Frutos_del_Terraba\Frutos_del_Terraba\bin\Debug\net8.0\PdfSharpCore.dll
+D:\Progra Avanzada\Frutos_del_Terraba\Frutos_del_Terraba\bin\Debug\net8.0\ICSharpCode.SharpZipLib.dll
+D:\Progra Avanzada\Frutos_del_Terraba\Frutos_del_Terraba\bin\Debug\net8.0\SixLabors.Fonts.dll
+D:\Progra Avanzada\Frutos_del_Terraba\Frutos_del_Terraba\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+D:\Progra Avanzada\Frutos_del_Terraba\Frutos_del_Terraba\bin\Debug\net8.0\de\PdfSharpCore.resources.dll

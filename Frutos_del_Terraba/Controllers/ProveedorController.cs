@@ -21,7 +21,7 @@ namespace Frutos_del_Terraba.Controllers
         public IActionResult Index()
         {
             List<ProveedorViewModel> proveedoresList = new List<ProveedorViewModel>();
-            HttpResponseMessage response = _client.GetAsync(_client.BaseAddress + "/Proveedor/GetProveedores").Result;
+            HttpResponseMessage response = _client.GetAsync(_client.BaseAddress + "/proveedor").Result;
 
             if (response.IsSuccessStatusCode)
             {
@@ -48,7 +48,7 @@ namespace Frutos_del_Terraba.Controllers
                 var json = JsonSerializer.Serialize(proveedor);
                 Console.WriteLine(json);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
-                HttpResponseMessage response = await _client.PostAsync(_client.BaseAddress + "/Proveedor/CrearProveedor", content);
+                HttpResponseMessage response = await _client.PostAsync(_client.BaseAddress + "/proveedor", content);
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -78,9 +78,11 @@ namespace Frutos_del_Terraba.Controllers
                 return BadRequest();
             }
 
-            HttpResponseMessage response = await _client.GetAsync(_client.BaseAddress + $"/Proveedor/GetHistorialPedidos_Y_Proveedor/{id}");
+            HttpResponseMessage response = await _client.GetAsync(_client.BaseAddress + $"/proveedor/historial/{id}");
 
             if (response.IsSuccessStatusCode)
+
+                if (response.IsSuccessStatusCode)
             {
                 var json = await response.Content.ReadAsStringAsync();
                 var resultado = JsonSerializer.Deserialize<HistorialProveedorViewModel>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
@@ -100,7 +102,7 @@ namespace Frutos_del_Terraba.Controllers
             {
                 return BadRequest();
             }
-            HttpResponseMessage response = await _client.GetAsync(_client.BaseAddress + $"/Proveedor/GetProveedor/{id}");
+            HttpResponseMessage response = await _client.GetAsync(_client.BaseAddress + $"/proveedor/{id}");
 
             if (response.IsSuccessStatusCode)
             {
@@ -120,7 +122,7 @@ namespace Frutos_del_Terraba.Controllers
                 var json = JsonSerializer.Serialize(proveedor);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                var url = $"{_client.BaseAddress}/Proveedor/ActualizarProveedor/{proveedor.Id_proveedor}";
+                var url = $"{_client.BaseAddress}/proveedor/{proveedor.Id_proveedor}";
                 HttpResponseMessage response = await _client.PutAsync(url, content);
 
                 if (response.IsSuccessStatusCode)
@@ -143,7 +145,7 @@ namespace Frutos_del_Terraba.Controllers
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
-            HttpResponseMessage response = await _client.DeleteAsync(_client.BaseAddress + $"/Proveedor/EliminarProveedor/{id}");
+            HttpResponseMessage response = await _client.DeleteAsync(_client.BaseAddress + $"/proveedor/{id}");
 
             if (response.IsSuccessStatusCode)
             {

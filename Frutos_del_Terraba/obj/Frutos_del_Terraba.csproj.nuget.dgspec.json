@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj": {}
+    "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj": {}
   },
   "projects": {
-    "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj": {
+    "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj",
+        "projectUniqueName": "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj",
         "projectName": "Frutos_del_Terraba",
-        "projectPath": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj",
-        "packagesPath": "C:\\Users\\crisn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\obj\\",
+        "projectPath": "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba\\Frutos_del_Terraba.csproj",
+        "packagesPath": "C:\\Users\\macan\\.nuget\\packages\\",
+        "outputPath": "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\crisn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\macan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj": {
-                "projectPath": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj"
+              "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj": {
+                "projectPath": "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj"
               }
             }
           }
@@ -44,7 +47,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -67,6 +71,10 @@
             "Microsoft.Extensions.Http": {
               "target": "Package",
               "version": "[9.0.1, )"
+            },
+            "PdfSharpCore": {
+              "target": "Package",
+              "version": "[1.3.64, )"
             }
           },
           "imports": [
@@ -88,21 +96,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj": {
+    "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj",
+        "projectUniqueName": "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj",
         "projectName": "Frutos_del_Terraba_Api",
-        "projectPath": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj",
-        "packagesPath": "C:\\Users\\crisn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\crisn\\OneDrive\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\obj\\",
+        "projectPath": "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj",
+        "packagesPath": "C:\\Users\\macan\\.nuget\\packages\\",
+        "outputPath": "D:\\Progra Avanzada\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\crisn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\macan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -110,7 +122,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -128,7 +139,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -186,7 +198,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
