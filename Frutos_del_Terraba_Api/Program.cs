@@ -13,9 +13,12 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer("name=DefaultConnection"));
+
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();
 builder.Services.AddScoped<IProductoService, ProductoService>();
 builder.Services.AddScoped<IPedidoService, PedidoService>();
+builder.Services.AddScoped<IDetallesPedidoService, DetallePedidoService>();
+
 
 builder.Services.AddIdentityApiEndpoints<IdentityUser>().
     AddEntityFrameworkStores<ApplicationDbContext>();

@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Frutos_del_Terraba_Api.Servicios.Implementaciones
 {
-    public class DetallePedidoService : IDetallesPedido
+    public class DetallePedidoService : IDetallesPedidoService
     {
         private readonly ApplicationDbContext _context;
-        
+
         public DetallePedidoService(ApplicationDbContext context)
         {
             _context = context;
@@ -19,7 +19,7 @@ namespace Frutos_del_Terraba_Api.Servicios.Implementaciones
             var detalles = await _context.DetallesPedidos
                             .Where(d => d.Id_pedido == id)
                             .Include(d => d.Producto)
-                            .Include(d=> d.Pedido)
+                            .Include(d => d.Pedido)
                             .ToListAsync();
 
             return detalles.Select(d => new DetallesPedidoDTOModel
@@ -27,8 +27,37 @@ namespace Frutos_del_Terraba_Api.Servicios.Implementaciones
                 Id_pedido = d.Id_pedido,
                 Cantidad = d.Cantidad,
                 Id_producto = d.Id_producto,
-                NombreProducto = d.Producto?.Nombre
+                Observaciones = d.Observaciones
             }).ToList();
         }
+
+
+        public async Task<DetallesPedidoDTOModel> AgregarDetallesPedido(DetallesPedidoDTOModel detalles)
+        {
+            if (detalles == null || detalles.Id_pedido == 0)
+            {
+                throw new ArgumentException("El ID del pedido es obligatorio.");
+            }
+
+            var detallePedido = new DetallesPedido
+            {
+                Id_pedido = detalles.Id_pedido,
+                Id_producto = detalles.Id_producto,
+                Cantidad = detalles.Cantidad,
+                Observaciones = detalles.Observaciones ?? "" // Evita nulos en la columna Observaciones
+            };
+
+            _context.DetallesPedidos.Add(detallePedido);
+            await _context.SaveChangesAsync();
+
+            return new DetallesPedidoDTOModel
+            {
+                Id_pedido = detallePedido.Id_pedido,
+                Cantidad = detallePedido.Cantidad,
+                Id_producto = detallePedido.Id_producto
+            };
+        }
+
+
     }
 }

@@ -80,8 +80,24 @@
   },
   {
     "ContainingType": "Frutos_del_Terraba_Api.Controllers.DetallePedidoController",
-    "Method": "ObtenerDetallesPedido",
+    "Method": "AgregarDetallesPedido",
     "RelativePath": "api/detallepedido",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "detalles",
+        "Type": "Frutos_del_Terraba_Api.DTO.DetallesPedidoDTOModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.DetallePedidoController",
+    "Method": "ObtenerDetallesPedido",
+    "RelativePath": "api/detallepedido/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -89,9 +105,35 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.DistribucionController",
+    "Method": "GetDistribucion",
+    "RelativePath": "api/Distribucion/GetDistribucion/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.DistribucionController",
+    "Method": "GetDistribuciones",
+    "RelativePath": "api/Distribucion/GetDistribuciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -114,6 +156,79 @@
       }
     ],
     "EndpointName": "GetWeatherForecast"
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.InventarioController",
+    "Method": "ActualizarInventario",
+    "RelativePath": "api/Inventario/ActualizarInventario/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "Frutos_del_Terraba_Api.DTO.InventarioDTOModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.InventarioController",
+    "Method": "EliminarInventario",
+    "RelativePath": "api/Inventario/EliminarInventario/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.InventarioController",
+    "Method": "GetInventario",
+    "RelativePath": "api/Inventario/GetInventario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.InventarioController",
+    "Method": "GetInventario",
+    "RelativePath": "api/Inventario/GetInventario/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.InventarioController",
+    "Method": "GetInventarioDespachado",
+    "RelativePath": "api/Inventario/GetInventarioDespachado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Frutos_del_Terraba_Api.Controllers.PedidoController",
@@ -288,6 +403,22 @@
     "Method": "EliminarProveedor",
     "RelativePath": "api/proveedor/{id}",
     "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.ProveedorController",
+    "Method": "GetHistorialPedidos_Y_Proveedor",
+    "RelativePath": "api/proveedor/historial/{id}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [

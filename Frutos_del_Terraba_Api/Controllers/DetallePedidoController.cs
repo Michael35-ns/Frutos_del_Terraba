@@ -1,4 +1,6 @@
-﻿using Frutos_del_Terraba_Api.Servicios.Interfaces;
+﻿using Frutos_del_Terraba_Api.DTO;
+using Frutos_del_Terraba_Api.Servicios.Implementaciones;
+using Frutos_del_Terraba_Api.Servicios.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Frutos_del_Terraba_Api.Controllers
@@ -7,18 +9,25 @@ namespace Frutos_del_Terraba_Api.Controllers
     [ApiController]
     public class DetallePedidoController : Controller
     {
-        private readonly IDetallesPedido _detallesPedido;
+        private readonly IDetallesPedidoService _detallesPedido;
 
-        public DetallePedidoController(IDetallesPedido detallesPedido)
+        public DetallePedidoController(IDetallesPedidoService detallePedidoService)
         {
-            _detallesPedido = detallesPedido;
+            _detallesPedido = detallePedidoService ?? throw new ArgumentNullException(nameof(detallePedidoService));
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<IActionResult> ObtenerDetallesPedido(int id)
         {
             var detalles = await _detallesPedido.ObtenerDetallesPedidos(id);
             return Ok(detalles);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AgregarDetallesPedido(DetallesPedidoDTOModel detalles)
+        {
+            var detallesPedido = await _detallesPedido.AgregarDetallesPedido(detalles);
+            return Ok(detallesPedido);
         }
     }
 }

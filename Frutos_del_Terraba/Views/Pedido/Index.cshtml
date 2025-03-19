@@ -29,9 +29,18 @@
                 }
                 <td>@pedido.Fecha.ToShortDateString()</td>
                 <td>
-                    <a asp-action="Editar" asp-route-id="@pedido.Id_pedido" class="btn btn-warning">Editar</a>
-                    <a asp-action="Eliminar" asp-route-id="@pedido.Id_pedido" class="btn btn-danger" onclick="return confirm('¿Estás seguro de eliminar este pedido?');">Eliminar</a>
-                    <a asp-action="AgregarDetalles" asp-route-id="@pedido.Id_pedido" class="btn btn-info">Agregar Detalles</a>
+                    <a asp-action="Editar" asp-route-id="@pedido.Id_pedido" class="btn btn-outline-warning" title="Editar">
+                        <i class="ri-edit-line"></i>
+                    </a>
+                    <a asp-action="Eliminar" asp-route-id="@pedido.Id_pedido" class="btn btn-outline-danger" onclick="return confirm('¿Estás seguro de eliminar este pedido?');" title="Eliminar">
+                        <i class="ri-delete-bin-line"></i>
+                    </a>
+                    <a asp-action="Create" asp-controller="DetallePedido" asp-route-id="@pedido.Id_pedido" class="btn btn-outline-info" title="Agregar Detalles">
+                        <i class="ri-add-circle-line"></i>
+                    </a>
+                    <a asp-action="VerDetallesPedido" asp-controller="DetallePedido" asp-route-id="@pedido.Id_pedido" class="btn btn-outline-success" title="Ver Detalles">
+                        <i class="ri-eye-line"></i>
+                    </a>
                 </td>
             </tr>
         }
@@ -60,6 +69,6 @@
         <label asp-for="Fecha">Fecha</label>
         <input type="date" class="form-control" name="Fecha" required />
     </div>
-
-    <button type="submit" class="btn btn-primary">Agregar Pedido</button>
+    <br />
+    <button type="submit" class="btn btn-outline-primary">Agregar Pedido</button>
 </form>

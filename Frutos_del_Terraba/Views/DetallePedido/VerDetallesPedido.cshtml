@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Frutos_del_Terraba.Models.DetallesPedidoViewModel>
+
+<h2>Detalles del Pedido</h2>
+
+<table class="table dataTable" id="DataTables_Table_0">
+    <thead>
+        <tr>
+            <th>Nombre del Producto</th>
+            <th>Cantidad</th>
+            <th>Observaciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var detalle in Model)
+        {
+            <tr>
+                <td>@detalle.nombreProducto</td>
+                <td>@detalle.Cantidad</td>
+                <td>@detalle.Observaciones</td>
+
+
+            </tr>
+        }
+    </tbody>
+</table>

@@ -119,7 +119,7 @@ namespace Frutos_del_Terraba_Api.Controllers
         #endregion
 
         #region Obtener historial de Pedidos realizados y Proveedor por Id
-        [HttpGet("{id}")]
+        [HttpGet("historial/{id}")]
         public async Task<IActionResult> GetHistorialPedidos_Y_Proveedor(int id)
         {
             var proveedor = await _context.Proveedores.FindAsync(id);
