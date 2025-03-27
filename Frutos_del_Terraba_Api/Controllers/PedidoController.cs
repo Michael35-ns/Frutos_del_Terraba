@@ -1,7 +1,7 @@
 ﻿using Frutos_del_Terraba_Api.DTO;
-
 using Frutos_del_Terraba_Api.Servicios.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace Frutos_del_Terraba_Api.Controllers
 {
@@ -19,10 +19,57 @@ namespace Frutos_del_Terraba_Api.Controllers
         [HttpGet]
         public async Task<IActionResult> ObtenerTodosPedidos()
         {
-            var pedidos = await _pedidoService.ObtenerTodosPedidos();
+            var pedidos = await _pedidoService.ObtenerTodosPedidosAsync(); // Correcto: método asíncrono
             return Ok(pedidos);
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> ObtenerPedidoPorId(int id)
+        {
+            try
+            {
+                var pedido = await _pedidoService.ObtenerPedidoPorIdAsync(id); // Correcto: método asíncrono
+                return Ok(pedido);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { mensaje = ex.Message });
+            }
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> ActualizarPedido(int id, [FromBody] PedidoDTOModel pedido)
+        {
+
+                if (!ModelState.IsValid)
+                {
+                    foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+                    {
+                        Console.WriteLine($"Error de validación: {error.ErrorMessage}");
+                    }
+
+                    return BadRequest(ModelState); 
+                }
+
+                var pedidoJson = JsonSerializer.Serialize(pedido);
+                Console.WriteLine($"JSON recibido: {pedidoJson}");
+
+                var pedidoActualizado = await _pedidoService.ActualizarPedidoAsync(id, pedido);
+
+                if (pedidoActualizado)
+                {
+                    Console.WriteLine("Pedido actualizado con éxito.");
+                return Ok(new { message = "Pedido actualizado exitosamente." });
+
+            }
+            else
+                {
+                    Console.WriteLine("No se encontró el pedido con el ID proporcionado.");
+                    return NotFound(new { mensaje = "Pedido no encontrado." });
+                }
+            
+
+        }
 
 
         [HttpPost]
@@ -30,11 +77,26 @@ namespace Frutos_del_Terraba_Api.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest();
+                return BadRequest(ModelState); // Correcto: devuelve los errores de validación
             }
 
             var pedido = await _pedidoService.CrearPedidoAsync(Pedido);
             return Ok(pedido);
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> EliminarPedido(int id)
+        {
+            var pedidoEliminado = await _pedidoService.EliminarPedidoAsync(id);
+            if (pedidoEliminado)
+            {
+                return Ok(new { mensaje = "Pedido eliminado exitosamente." });
+            }
+            else
+            {
+                return NotFound(new { mensaje = "Pedido no encontrado." });
+            }
+        }
+
     }
 }

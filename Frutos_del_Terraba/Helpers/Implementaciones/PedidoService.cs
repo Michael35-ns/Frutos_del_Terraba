@@ -1,6 +1,7 @@
 ﻿using Frutos_del_Terraba.Helpers.Interfaces;
 using Frutos_del_Terraba.Models;
 using Frutos_del_Terraba_Api.DTO;
+using System.Text.Json;
 
 namespace Frutos_del_Terraba.Helpers.Implementaciones
 {
@@ -8,14 +9,13 @@ namespace Frutos_del_Terraba.Helpers.Implementaciones
     {
         private readonly HttpClient _httpClient;
         private readonly string _baseUrl = "https://localhost:7240/api/pedido";
-        private readonly string _proveedorUrl = "https://localhost:7240/api/proveedor"; 
+        private readonly string _proveedorUrl = "https://localhost:7240/api/proveedor";
 
         public PedidoService(HttpClient httpClient)
         {
             _httpClient = httpClient;
         }
 
-        // Obtener todos los pedidos
         public async Task<IEnumerable<PedidoDTOModel>> ObtenerTodosPedidosAsync()
         {
             try
@@ -29,7 +29,6 @@ namespace Frutos_del_Terraba.Helpers.Implementaciones
             }
         }
 
-        // Obtener todos los proveedores
         public async Task<IEnumerable<ProveedorDTOModel>> ObtenerTodosProveedoresAsync()
         {
             try
@@ -59,6 +58,42 @@ namespace Frutos_del_Terraba.Helpers.Implementaciones
                 return null;
             }
         }
+
+        public Task<PedidoDTOModel> ObtenerPedidoPorIdAsync(int id)
+        {
+            var pedido = _httpClient.GetFromJsonAsync<PedidoDTOModel>($"{_baseUrl}/{id}");
+            return pedido;
+        }
+
+        public async Task<PedidoDTOModel> ActualizarPedidoAsync(int id, PedidoDTOModel pedido)
+        {
+            var pedidoJson = JsonSerializer.Serialize(pedido);
+            Console.WriteLine($"Enviando el siguiente JSON: {pedidoJson}");
+
+            var response = await _httpClient.PutAsJsonAsync($"{_baseUrl}/{id}", pedido);
+
+            var content = await response.Content.ReadAsStringAsync();
+            Console.WriteLine($"Respuesta del servidor: {content}");
+
+            try
+            {
+                var pedidos = await response.Content.ReadFromJsonAsync<PedidoDTOModel>();
+                return pedidos;
+            }
+            catch (JsonException ex)
+            {
+                Console.WriteLine($"Error de deserialización: {ex.Message}");
+                return null;
+            }
+        }
+
+        public async Task<bool> EliminarPedidoAsync(int id)
+        {
+            var response = await _httpClient.DeleteAsync($"{_baseUrl}/{id}");
+            return response.IsSuccessStatusCode;
+        }
+
+
 
 
     }

@@ -7,7 +7,7 @@ namespace Frutos_del_Terraba.Models
     {
         public int Id_pedido { get; set; }
 
-        public int Id_usuario { get; set; } 
+        public String Id_usuario { get; set; } 
 
         public DateTime Fecha { get; set; }
 

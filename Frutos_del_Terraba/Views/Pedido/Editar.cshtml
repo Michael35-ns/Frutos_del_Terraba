@@ -1,0 +1,25 @@
+﻿@model Frutos_del_Terraba.Models.PedidoViewModel
+
+<h2>Editar Pedido</h2>
+
+<form asp-action="Editar" asp-route-id="@Model.NuevoPedido.Id_pedido" method="post">
+    <input type="hidden" asp-for="NuevoPedido.Id_pedido" name="Id_pedido" />
+
+    <div class="form-group">
+        <label asp-for="NuevoPedido.UserId">Usuario</label>
+        <input asp-for="NuevoPedido.UserId" name="UserId" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NuevoPedido.Fecha">Fecha</label>
+        <input type ="date" asp-for="NuevoPedido.Fecha" name="Fecha" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NuevoPedido.Id_proveedor">Proveedor</label>
+        <select asp-for="NuevoPedido.Id_proveedor" class="form-control" asp-items="@(new SelectList(Model.Proveedores, "Id_proveedor", "Nombre"))" name="Id_proveedor"></select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

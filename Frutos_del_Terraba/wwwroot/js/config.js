@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Config
  * -------------------------------------------------------------------------------------
  * ! IMPORTANT: Make sure you clear the browser local storage In order to see the config changes in the template.
@@ -57,51 +57,42 @@ $(document).ready(function () {
 
 
 function confirmDelete(entityName, entityId, deleteUrl) {
-    console.log("confirmDelete ejecutada");  // Verifica si la funci�n se est� llamando
+    console.log(deleteUrl);
+    console.log("confirmDelete ejecutada");  
     Swal.fire({
-        title: `Estas seguro de eliminar esta ${entityName}?`,
-        text: "No podras revertir esto!",
+        title: `¿Estás seguro de eliminar esta ${entityName}?`,
+        text: "¡No podrás revertir esto!",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: `Si, eliminar ${entityName}!`
+        confirmButtonText: `Sí, eliminar ${entityName}!`
     }).then((result) => {
         if (result.isConfirmed) {
             const finalUrl = deleteUrl.replace("{id}", entityId);
-            console.log(finalUrl);  // Verifica la URL final
+            console.log(finalUrl); 
             fetch(finalUrl, {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
+                headers: { 'Content-Type': 'application/json' }
             })
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Error: ${response.status}`);
+                    }
+                    return response.text();  // Leer como texto primero
+                })
+                .then(text => text ? JSON.parse(text) : { success: false, mensaje: "La API no devolvió contenido" }) // Manejar JSON vacío
                 .then(data => {
-                    console.log(data);  // Verifica la respuesta del servidor
                     if (data.success) {
-                        Swal.fire(
-                            `${entityName.charAt(0).toUpperCase() + entityName.slice(1)} eliminado!`,
-                            `La ${entityName} ha sido eliminada.`,
-                            'success'
-                        ).then(() => {
-                            location.reload();
-                        });
+                        Swal.fire("Pedido eliminado", "El pedido ha sido eliminado correctamente.", "success")
+                            .then(() => location.reload());
                     } else {
-                        Swal.fire(
-                            'Error!',
-                            data.message || `No se pudo eliminar la ${entityName}.`,
-                            'error'
-                        );
+                        Swal.fire("Error", data.mensaje || "No se pudo eliminar el " + entityName, "error");
                     }
                 })
                 .catch(error => {
-                    console.error('Detalles del error:', error);  // Imprime detalles del error
-                    Swal.fire(
-                        'Error!',
-                        `Ocurrio un error al eliminar la ${entityName}. Detalles: ${error.message || error}`,
-                        'error'
-                    );
+                    console.error("Error al eliminar:", error);
+                    Swal.fire("Error", `No se pudo eliminar el pedido. Detalles: ${error.message || error}`, "error");
                 });
         }
     });

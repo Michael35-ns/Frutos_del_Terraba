@@ -31,7 +31,40 @@ namespace Frutos_del_Terraba_Api.Servicios.Implementaciones
             return pedidoDTO;
         }
 
-        public async Task<IEnumerable<PedidoDTOModel>> ObtenerTodosPedidos()
+        public async Task<PedidoDTOModel> ObtenerPedidoPorIdAsync(int id)
+        {
+            var pedidos = await _context.Pedidos
+                .Include(p => p.Proveedor)
+                .Where(p => p.Id_pedido == id)
+                .Select(p => new PedidoDTOModel
+                {
+                    Id_pedido = p.Id_pedido,
+                    Fecha = p.Fecha,
+                    Id_proveedor = p.Id_proveedor,
+                    UserId = p.UserId
+                }).FirstOrDefaultAsync();
+            return pedidos;
+        }
+
+        public async Task<bool> ActualizarPedidoAsync(int id, PedidoDTOModel pedidoDTO)
+        {
+                var pedido = await _context.Pedidos.FindAsync(id);
+                if (pedido == null)
+                {
+                    Console.WriteLine($"No se encontró el pedido con ID {id}.");
+                    return false;
+                }
+
+                pedido.UserId = pedidoDTO.UserId;
+                pedido.Fecha = pedidoDTO.Fecha;
+                pedido.Id_proveedor = pedidoDTO.Id_proveedor;
+
+                await _context.SaveChangesAsync();
+                Console.WriteLine($"Pedido con ID {id} actualizado correctamente.");
+                return true;
+        }
+
+        public async Task<IEnumerable<PedidoDTOModel>> ObtenerTodosPedidosAsync()
         {
             var pedidos = await _context.Pedidos
                 .Include(p => p.Proveedor)
@@ -46,8 +79,20 @@ namespace Frutos_del_Terraba_Api.Servicios.Implementaciones
             }).ToList();
         }
 
+        public async Task<bool> EliminarPedidoAsync(int id)
+        {
+            var pedido = await _context.Pedidos.FindAsync(id);
+            if (pedido == null)
+            {
+                Console.WriteLine($"No se encontró el pedido con ID {id}.");
+                return false;
+            }
 
+            _context.Pedidos.Remove(pedido);
+            await _context.SaveChangesAsync();
+            Console.WriteLine($"Pedido con ID {id} eliminado correctamente.");
+            return true;
+        }
 
-        
     }
 }

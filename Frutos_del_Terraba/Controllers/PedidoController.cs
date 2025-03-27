@@ -1,15 +1,15 @@
-﻿using Frutos_del_Terraba.Helpers.Implementaciones;
-using Frutos_del_Terraba.Helpers.Interfaces;
+﻿using Frutos_del_Terraba.Helpers.Interfaces;
 using Frutos_del_Terraba.Models;
 using Frutos_del_Terraba_Api.DTO;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Text.Json;
 
 namespace Frutos_del_Terraba.Controllers
 {
     public class PedidoController : Controller
     {
         private readonly IPedidoService _pedidoService;
-
 
         public PedidoController(IPedidoService pedidoService)
         {
@@ -20,11 +20,11 @@ namespace Frutos_del_Terraba.Controllers
         public async Task<IActionResult> Index()
         {
             var pedidos = await _pedidoService.ObtenerTodosPedidosAsync();
-            var proveedores = await _pedidoService.ObtenerTodosProveedoresAsync(); // Obtenemos los proveedores
+            var proveedores = await _pedidoService.ObtenerTodosProveedoresAsync();
             var viewModel = new PedidoViewModel
             {
                 Pedido = pedidos.ToList(),
-                Proveedores = proveedores.ToList(), // Pasamos los proveedores al ViewModel
+                Proveedores = proveedores.ToList(),
                 NuevoPedido = new PedidoDTOModel()
             };
             return View(viewModel);
@@ -35,17 +35,70 @@ namespace Frutos_del_Terraba.Controllers
         {
             if (!ModelState.IsValid)
             {
-                // Registra los errores de validación para más detalles
                 foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
                 {
                     Console.WriteLine($"Error: {error.ErrorMessage}");
                 }
-
-                return BadRequest(ModelState); // Devolvemos los errores específicos
+                return BadRequest(ModelState);
             }
 
             var pedidoCreado = await _pedidoService.CrearPedidoAsync(pedido);
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Editar(int id)
+        {
+            var pedidoDTO = await _pedidoService.ObtenerPedidoPorIdAsync(id);
+            if (pedidoDTO == null) return NotFound();
+
+            var proveedores = await _pedidoService.ObtenerTodosProveedoresAsync(); // Obtiene la lista de proveedores
+
+            var pedidoViewModel = new PedidoViewModel
+            {
+                Proveedores = proveedores.ToList(),
+                NuevoPedido = new PedidoDTOModel
+                {
+                    Id_pedido = pedidoDTO.Id_pedido,
+                    UserId = pedidoDTO.UserId,
+                    Fecha = pedidoDTO.Fecha,
+
+                    Id_proveedor = pedidoDTO.Id_proveedor
+                },
+
+            };
+
+            return View(pedidoViewModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Editar(int id, PedidoDTOModel pedido)
+        {
+           
+                var pedidoJson = JsonSerializer.Serialize(pedido);
+                Console.WriteLine($"JSON recibido: {pedidoJson}");
+
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
+                var pedidoActualizado = await _pedidoService.ActualizarPedidoAsync(id, pedido);
+            TempData["SuccessMessage"] = "Producto actualizado exitosamente.";
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Eliminar(int id)
+        {
+            var pedidoEliminado = await _pedidoService.EliminarPedidoAsync(id);
+            if (pedidoEliminado)
+            {
+                return Json(new { success = true });
+            }
+
+            return Json(new { success = false });
+        }
+
     }
 }

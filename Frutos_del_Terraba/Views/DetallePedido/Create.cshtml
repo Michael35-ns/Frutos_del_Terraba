@@ -1,26 +1,31 @@
-﻿<form asp-action="Create" method="post">
-    <input type="hidden" name="Id_pedido" value="@Model.Id_pedido" /> <!-- Asegurar que se pasa el Id_pedido -->
+﻿<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="card shadow p-4" style="max-width: 400px; width: 100%;">
+        <h3 class="text-center mb-4">Agregar Detalle</h3>
+        <form asp-action="Create" method="post">
+            <input type="hidden" name="Id_pedido" value="@Model.Id_pedido" />
 
-    <div class="form-group">
-        <label for="Id_producto">Producto</label>
-        <select name="Id_producto" class="form-control" required>
-            <option value="">Selecciona un producto</option>
-            @foreach (var producto in ViewBag.Productos)
-            {
-                <option value="@producto.IdProducto">@producto.Nombre</option>
-            }
-        </select>
+            <div class="mb-3">
+                <label for="Id_producto" class="form-label">Producto</label>
+                <select name="Id_producto" class="form-select" required>
+                    <option value="">Selecciona un producto</option>
+                    @foreach (var producto in ViewBag.Productos)
+                    {
+                        <option value="@producto.IdProducto">@producto.Nombre</option>
+                    }
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="Cantidad" class="form-label">Cantidad</label>
+                <input type="number" name="Cantidad" class="form-control" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="Observaciones" class="form-label">Observaciones</label>
+                <input type="text" name="Observaciones" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">Agregar Detalle</button>
+        </form>
     </div>
-
-    <div class="form-group">
-        <label for="Cantidad">Cantidad</label>
-        <input type="number" name="Cantidad" class="form-control" required />
-    </div>
-
-    <div class="form-group">
-        <label for="Observaciones">Observaciones</label>
-        <input type="text" name="Observaciones" class="form-control" />
-    </div>
-
-    <button type="submit" class="btn btn-success">Agregar Detalle</button>
-</form>
+</div>
