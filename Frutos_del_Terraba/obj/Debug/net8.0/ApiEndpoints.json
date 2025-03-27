@@ -80,43 +80,6 @@
   },
   {
     "ContainingType": "Frutos_del_Terraba_Api.Controllers.DistribucionController",
-    "Method": "ActualizarDistribucion",
-    "RelativePath": "api/Distribucion/ActualizarDistribucion/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "model",
-        "Type": "Frutos_del_Terraba_Api.Models.Distribucion",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Frutos_del_Terraba_Api.Controllers.DistribucionController",
-    "Method": "EliminarInventario",
-    "RelativePath": "api/Distribucion/EliminarInventario/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Frutos_del_Terraba_Api.Controllers.DistribucionController",
     "Method": "GetDistribucion",
     "RelativePath": "api/Distribucion/GetDistribucion/{id}",
     "HttpMethod": "GET",
@@ -135,16 +98,6 @@
     "ContainingType": "Frutos_del_Terraba_Api.Controllers.DistribucionController",
     "Method": "GetDistribuciones",
     "RelativePath": "api/Distribucion/GetDistribuciones",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Frutos_del_Terraba_Api.Controllers.DistribucionController",
-    "Method": "GetInventarioDespachado",
-    "RelativePath": "api/Distribucion/GetInventarioDespachado",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

@@ -17,6 +17,8 @@ namespace Frutos_del_Terraba_Api.Models
 
         public DateTime Fecha { get; set; }
 
+        public bool Estado { get; set; }
+
         [Required]
         [ForeignKey("Proveedor")]
         public int Id_proveedor { get; set; } 

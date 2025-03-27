@@ -9,6 +9,8 @@ namespace Frutos_del_Terraba.Models
 
         public int Id_usuario { get; set; } 
 
+        public bool Estado {  get; set; }
+
         public DateTime Fecha { get; set; }
 
         [Required]

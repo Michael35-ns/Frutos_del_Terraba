@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Frutos_del_Terraba_Api.Migrations
 {
     /// <inheritdoc />
-    public partial class DB_Creacion : Migration
+    public partial class Creacion_DB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -238,6 +238,7 @@ namespace Frutos_del_Terraba_Api.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Fecha = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Estado = table.Column<bool>(type: "bit", nullable: false),
                     Id_proveedor = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -359,9 +360,9 @@ namespace Frutos_del_Terraba_Api.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "01daa330-1e67-4302-b70e-d9ee9bc90b36", null, "Admin", "ADMIN" },
-                    { "a1f17514-3467-4b7f-9822-4e0d6a6df446", null, "Distribuidor", "DISTRIBUIDOR" },
-                    { "ab91b54e-7068-40eb-ba14-66bc140979e4", null, "Empleado", "EMPLEADO" }
+                    { "32f5c337-16be-44ad-8c87-d13d7ddeac28", null, "Admin", "ADMIN" },
+                    { "aa61e93c-ab9d-46f4-b3a7-ef5463a9237b", null, "Empleado", "EMPLEADO" },
+                    { "aa786d24-1a3f-4f57-b7f9-2a19a99d4823", null, "Distribuidor", "DISTRIBUIDOR" }
                 });
 
             migrationBuilder.InsertData(
@@ -369,9 +370,9 @@ namespace Frutos_del_Terraba_Api.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "1daa661e-c084-4685-a1c4-1691d4e409ce", 0, "3d47f076-ea6e-4935-9601-0293755833d4", "rodolfo@gmail.com", true, false, null, "RODOLFO@GMAIL.COM", "RODOLFO@GMAIL.COM", "AQAAAAIAAYagAAAAEGleacv7xd6BO9kowqulU3w3V4iiecFScBunYlii5bZC9UAnfILUAorbJPia6rNDPA==", null, false, "1ded6fd3-c729-439f-bde4-92c33d2cbb47", false, "rodolfo@gmail.com" },
-                    { "4be251a3-a379-45ab-a14d-ea1e4655f9ba", 0, "28fbe989-8286-4d9f-b6fd-30bca2ba5d5d", "cristopher@gmail.com", true, false, null, "CRISTOPHER@GMAIL.COM", "CRISTOPHER@GMAIL.COM", "AQAAAAIAAYagAAAAEHELEyS9szOe+8AOcDMOFnbG8auqOGwnY9ZVcqTsFgyIo2y5YaTyP83Q6WoXbtafPA==", null, false, "f3955dde-83f5-4e0c-9925-5366814bf1b0", false, "cristopher@gmail.com" },
-                    { "bed3f5b8-d532-4dc0-bbf2-218952642b33", 0, "a0db3c0d-1629-4d77-aa40-a6f33d5bd242", "fabian@gmail.com", true, false, null, "FABIAN@GMAIL.COM", "FABIAN@GMAIL.COM", "AQAAAAIAAYagAAAAELxbBRh4RuJlPQ4y2Gi8qqCivPLnrqsjYeAYPRzQoOFnkCDzBxEn/hbG/Q+Og9QrGA==", null, false, "5d4a10f7-3ef3-40d5-ab4d-9fe8ad500b81", false, "fabian@gmail.com" }
+                    { "121653b8-4b3f-4e40-8e00-e2ee0400f1d8", 0, "cdd61c9d-a035-42b0-824a-8113d22e3758", "rodolfo@gmail.com", true, false, null, "RODOLFO@GMAIL.COM", "RODOLFO@GMAIL.COM", "AQAAAAIAAYagAAAAENEyUSOSeok71WLp/49dnKtGDhtCn4cUoF+avEtofyHjvnE3H/Ug2sV5qZKYGhLsow==", null, false, "a9edcea7-af31-40e5-a554-c49e01bc34bd", false, "rodolfo@gmail.com" },
+                    { "97b3151c-f939-4f89-9679-1f37116740d1", 0, "16700886-8f24-4e8f-8dc7-0b99b0e9dbea", "fabian@gmail.com", true, false, null, "FABIAN@GMAIL.COM", "FABIAN@GMAIL.COM", "AQAAAAIAAYagAAAAEOvSQCwPOVrlv4h7tgyfQykjWZ2LKYISK+cfRwqyVNEV/xdfei40oyZn/VJ3aR+jYg==", null, false, "30832c51-f601-49b9-a008-416059ac6b44", false, "fabian@gmail.com" },
+                    { "f1e29e01-a4f9-4be5-8c57-9b248d16570c", 0, "6bc0da31-16fe-4688-86af-66eae89a0dde", "cristopher@gmail.com", true, false, null, "CRISTOPHER@GMAIL.COM", "CRISTOPHER@GMAIL.COM", "AQAAAAIAAYagAAAAECHmFGKBdwjui2ST5nPPXYEOLuNI3icv4zsp4/S5AVDq/koG1X5m5qu3QTrN3yeTHg==", null, false, "027d276a-61f3-458c-a820-3742225a790b", false, "cristopher@gmail.com" }
                 });
 
             migrationBuilder.InsertData(
@@ -398,9 +399,9 @@ namespace Frutos_del_Terraba_Api.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { "a1f17514-3467-4b7f-9822-4e0d6a6df446", "1daa661e-c084-4685-a1c4-1691d4e409ce" },
-                    { "ab91b54e-7068-40eb-ba14-66bc140979e4", "4be251a3-a379-45ab-a14d-ea1e4655f9ba" },
-                    { "01daa330-1e67-4302-b70e-d9ee9bc90b36", "bed3f5b8-d532-4dc0-bbf2-218952642b33" }
+                    { "aa786d24-1a3f-4f57-b7f9-2a19a99d4823", "121653b8-4b3f-4e40-8e00-e2ee0400f1d8" },
+                    { "32f5c337-16be-44ad-8c87-d13d7ddeac28", "97b3151c-f939-4f89-9679-1f37116740d1" },
+                    { "aa61e93c-ab9d-46f4-b3a7-ef5463a9237b", "f1e29e01-a4f9-4be5-8c57-9b248d16570c" }
                 });
 
             migrationBuilder.InsertData(
@@ -408,20 +409,20 @@ namespace Frutos_del_Terraba_Api.Migrations
                 columns: new[] { "Id_distribucion", "Destino", "Observaciones", "Ubicacion", "UserId" },
                 values: new object[,]
                 {
-                    { 1, "Supermercado A", "Es una cargamento que hay que transportar con cuidado", "Rúa 21", "bed3f5b8-d532-4dc0-bbf2-218952642b33" },
-                    { 2, "Supermercado ", "", "El Boule Garage", "4be251a3-a379-45ab-a14d-ea1e4655f9ba" },
-                    { 3, "Frutería C", "Un buen pedido", "Lomito's Grill - Steak House", "bed3f5b8-d532-4dc0-bbf2-218952642b33" }
+                    { 1, "Supermercado A", "Es una cargamento que hay que transportar con cuidado", "Rúa 21", "97b3151c-f939-4f89-9679-1f37116740d1" },
+                    { 2, "Supermercado ", "", "El Boule Garage", "f1e29e01-a4f9-4be5-8c57-9b248d16570c" },
+                    { 3, "Frutería C", "Un buen pedido", "Lomito's Grill - Steak House", "97b3151c-f939-4f89-9679-1f37116740d1" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Pedidos",
-                columns: new[] { "Id_pedido", "Fecha", "Id_proveedor", "UserId" },
+                columns: new[] { "Id_pedido", "Estado", "Fecha", "Id_proveedor", "UserId" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2025, 3, 11, 18, 18, 20, 428, DateTimeKind.Local).AddTicks(6142), 1, "bed3f5b8-d532-4dc0-bbf2-218952642b33" },
-                    { 2, new DateTime(2025, 3, 11, 18, 18, 20, 428, DateTimeKind.Local).AddTicks(6160), 1, "bed3f5b8-d532-4dc0-bbf2-218952642b33" },
-                    { 3, new DateTime(2025, 3, 11, 18, 18, 20, 428, DateTimeKind.Local).AddTicks(6163), 2, "bed3f5b8-d532-4dc0-bbf2-218952642b33" },
-                    { 4, new DateTime(2025, 3, 11, 18, 18, 20, 428, DateTimeKind.Local).AddTicks(6165), 2, "bed3f5b8-d532-4dc0-bbf2-218952642b33" }
+                    { 1, false, new DateTime(2025, 3, 26, 21, 10, 35, 445, DateTimeKind.Local).AddTicks(9397), 1, "97b3151c-f939-4f89-9679-1f37116740d1" },
+                    { 2, false, new DateTime(2025, 3, 26, 21, 10, 35, 445, DateTimeKind.Local).AddTicks(9414), 1, "97b3151c-f939-4f89-9679-1f37116740d1" },
+                    { 3, false, new DateTime(2025, 3, 26, 21, 10, 35, 445, DateTimeKind.Local).AddTicks(9416), 2, "97b3151c-f939-4f89-9679-1f37116740d1" },
+                    { 4, false, new DateTime(2025, 3, 26, 21, 10, 35, 445, DateTimeKind.Local).AddTicks(9418), 2, "97b3151c-f939-4f89-9679-1f37116740d1" }
                 });
 
             migrationBuilder.InsertData(

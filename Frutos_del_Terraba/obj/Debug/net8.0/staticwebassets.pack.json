@@ -37,14 +37,6 @@
       "PackagePath": "staticwebassets\\img\\avatars\\7.png"
     },
     {
-      "Id": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\8.png",
-      "PackagePath": "staticwebassets\\img\\avatars\\8.png"
-    },
-    {
-      "Id": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\avatars\\9.png",
-      "PackagePath": "staticwebassets\\img\\avatars\\9.png"
-    },
-    {
       "Id": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\backgrounds\\18.jpg",
       "PackagePath": "staticwebassets\\img\\backgrounds\\18.jpg"
     },
@@ -231,10 +223,6 @@
     {
       "Id": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\layouts\\layout-without-navbar-light.png",
       "PackagePath": "staticwebassets\\img\\layouts\\layout-without-navbar-light.png"
-    },
-    {
-      "Id": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\img\\logo.jpg",
-      "PackagePath": "staticwebassets\\img\\logo.jpg"
     },
     {
       "Id": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\config.js",

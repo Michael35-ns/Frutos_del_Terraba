@@ -10,6 +10,8 @@ namespace Frutos_del_Terraba_Api.DTO
         [Required]
         public string UserId { get; set; }
 
+        public bool Estado { get; set; }
+
         public DateTime Fecha { get; set; }
 
         [Required]

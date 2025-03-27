@@ -89,10 +89,10 @@ namespace Frutos_del_Terraba_Api.Models
 
             modelBuilder.Entity<Pedido>()
                 .HasData(
-                    new Pedido { Id_pedido = 1, Fecha=DateTime.Now, Id_proveedor = 1, UserId = usuario1Id },
-                    new Pedido { Id_pedido = 2, Fecha = DateTime.Now, Id_proveedor = 1, UserId = usuario1Id },
-                    new Pedido { Id_pedido = 3, Fecha = DateTime.Now, Id_proveedor = 2, UserId = usuario1Id },
-                    new Pedido { Id_pedido = 4, Fecha = DateTime.Now, Id_proveedor = 2, UserId = usuario1Id }
+                    new Pedido { Id_pedido = 1, Fecha=DateTime.Now, Estado = false, Id_proveedor = 1, UserId = usuario1Id },
+                    new Pedido { Id_pedido = 2, Fecha = DateTime.Now, Estado = false, Id_proveedor = 1, UserId = usuario1Id },
+                    new Pedido { Id_pedido = 3, Fecha = DateTime.Now, Estado = false, Id_proveedor = 2, UserId = usuario1Id },
+                    new Pedido { Id_pedido = 4, Fecha = DateTime.Now, Estado = false, Id_proveedor = 2, UserId = usuario1Id }
                 );
 
             modelBuilder.Entity<DetallesPedido>()
