@@ -1110,7 +1110,7 @@
         },
         "runtime": {
           "Frutos_del_Terraba_Api.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

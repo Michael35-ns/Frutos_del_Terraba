@@ -1,0 +1,28 @@
+﻿@model Frutos_del_Terraba.Models.EmpleadoModel
+
+<h2>Editar Empleado</h2>
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label>Email</label>
+        <input asp-for="Email" class="form-control" readonly />
+    </div>
+
+    <div class="form-group">
+        <label>Nombre de Usuario</label>
+        <input asp-for="UserName" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Rol</label>
+        <select asp-for="Role" class="form-control">
+            <option value="Administrador">Administrador</option>
+            <option value="Bodeguero">Bodeguero</option>
+            <option value="EncargadoPedidos">Encargado de Pedidos</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Actualizar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

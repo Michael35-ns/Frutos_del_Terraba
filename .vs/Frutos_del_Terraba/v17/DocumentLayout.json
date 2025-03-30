@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\",
+  "WorkspaceRootPath": "C:\\Users\\rcqui\\OneDrive\\Documentos\\GitHub\\Frutos_del_Terraba\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba\\views\\shared\\sections\\_scriptsincludes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0738FFC2-C2B3-4C1F-A621-701BDD2493A7}|Frutos_del_Terraba\\Frutos_del_Terraba.csproj|solutionrelative:frutos_del_terraba\\views\\shared\\sections\\_scriptsincludes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -21,6 +22,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|c:\\users\\fabia\\documents\\github\\frutos_del_terraba\\frutos_del_terraba_api\\models\\modelbuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14A01070-95E9-49E3-939E-93934D8D3BF8}|Frutos_del_Terraba_Api\\Frutos_del_Terraba_Api.csproj|solutionrelative:frutos_del_terraba_api\\models\\modelbuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rcqui\\OneDrive\\Documentos\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Views\\Empleados\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frutos_del_Terraba\\Views\\Empleados\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rcqui\\OneDrive\\Documentos\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frutos_del_Terraba\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +39,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 14,
+=======
+          "SelectedChildIndex": 11,
+>>>>>>> Stashed changes
           "Children": [
             {
               "$type": "Document",
@@ -88,6 +101,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 4,
               "Title": "ModelBuilderExtensions.cs",
               "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba_Api\\Models\\ModelBuilderExtensions.cs",
@@ -123,11 +137,23 @@
               "ViewState": "AgIAABsAAAAAAAAAAAAAACoAAACsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-06T00:50:10.114Z",
+=======
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rcqui\\OneDrive\\Documentos\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Program.cs",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba\\Program.cs",
+              "ToolTip": "C:\\Users\\rcqui\\OneDrive\\Documentos\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Program.cs",
+              "RelativeToolTip": "Frutos_del_Terraba\\Program.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAQwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T20:11:28.101Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< Updated upstream
               "Title": "_ScriptsIncludes.cshtml",
               "DocumentMoniker": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Views\\Shared\\Sections\\_ScriptsIncludes.cshtml",
               "RelativeDocumentMoniker": "Frutos_del_Terraba\\Views\\Shared\\Sections\\_ScriptsIncludes.cshtml",
@@ -136,6 +162,16 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-06T01:29:59.653Z",
+=======
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rcqui\\OneDrive\\Documentos\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Views\\Empleados\\Index.cshtml",
+              "RelativeDocumentMoniker": "Frutos_del_Terraba\\Views\\Empleados\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rcqui\\OneDrive\\Documentos\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\Views\\Empleados\\Index.cshtml",
+              "RelativeToolTip": "Frutos_del_Terraba\\Views\\Empleados\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T20:10:59.647Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             }
           ]
