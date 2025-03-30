@@ -741,4 +741,7 @@ C:\Users\rcqui\OneDrive\Documentos\GitHub\Frutos_del_Terraba\Frutos_del_Terraba\
 C:\Users\rcqui\OneDrive\Documentos\GitHub\Frutos_del_Terraba\Frutos_del_Terraba\obj\Debug\net8.0\Frutos_del_Terraba.pdb
 C:\Users\rcqui\OneDrive\Documentos\GitHub\Frutos_del_Terraba\Frutos_del_Terraba\obj\Debug\net8.0\Frutos_del_Terraba.genruntimeconfig.cache
 C:\Users\rcqui\OneDrive\Documentos\GitHub\Frutos_del_Terraba\Frutos_del_Terraba\obj\Debug\net8.0\ref\Frutos_del_Terraba.dll
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

@@ -1,7 +1,11 @@
 {
   "Version": 1,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "Hash": "UwY8dTbsNnfF89mFiSWCzS6YCTF5obTB1ZHxsIIxY0w=",
+=======
+  "Hash": "rPKgvpDJfWLeRo8xhKYRaFdzKAgTYLqbKHviNsJgkuU=",
+>>>>>>> Stashed changes
 =======
   "Hash": "rPKgvpDJfWLeRo8xhKYRaFdzKAgTYLqbKHviNsJgkuU=",
 >>>>>>> Stashed changes
@@ -1210,6 +1214,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "C:\\Users\\fabia\\Documents\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\config.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
@@ -1221,6 +1226,8 @@
       "AssetRole": "Primary",
       "AssetMergeBehavior": "PreferTarget",
 =======
+=======
+>>>>>>> Stashed changes
       "Identity": "C:\\Users\\rcqui\\OneDrive\\Documentos\\GitHub\\Frutos_del_Terraba\\Frutos_del_Terraba\\wwwroot\\js\\config.js",
       "SourceId": "Frutos_del_Terraba",
       "SourceType": "Discovered",
@@ -1231,6 +1238,9 @@
       "AssetMode": "All",
       "AssetRole": "Primary",
       "AssetMergeBehavior": "",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "AssetMergeSource": "",
       "RelatedAsset": "",
