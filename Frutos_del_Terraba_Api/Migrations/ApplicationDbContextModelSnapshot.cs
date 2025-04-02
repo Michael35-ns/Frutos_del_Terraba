@@ -272,6 +272,7 @@ namespace Frutos_del_Terraba_Api.Migrations
                             Destino = "Supermercado",
                             Observaciones = "",
                             Ubicacion = "El Boule Garage",
+
                             UserId = "7d1a5de1-a02b-4645-a370-c57008ca77c7"
                         },
                         new
@@ -357,6 +358,9 @@ namespace Frutos_del_Terraba_Api.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_pedido"));
 
+                    b.Property<bool>("Estado")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("datetime2");
 
@@ -386,23 +390,27 @@ namespace Frutos_del_Terraba_Api.Migrations
                         new
                         {
                             Id_pedido = 2,
-                            Fecha = new DateTime(2025, 4, 1, 20, 37, 47, 371, DateTimeKind.Local).AddTicks(6235),
+                            Estado = false,
+                            Fecha = new DateTime(2025, 3, 26, 21, 10, 35, 445, DateTimeKind.Local).AddTicks(9414),
                             Id_proveedor = 1,
-                            UserId = "eaebb12d-9b50-4120-9500-6662acfb6cc7"
+                            UserId = "97b3151c-f939-4f89-9679-1f37116740d1"
                         },
                         new
                         {
                             Id_pedido = 3,
-                            Fecha = new DateTime(2025, 4, 1, 20, 37, 47, 371, DateTimeKind.Local).AddTicks(6236),
+                            Estado = false,
+                            Fecha = new DateTime(2025, 3, 26, 21, 10, 35, 445, DateTimeKind.Local).AddTicks(9416),
                             Id_proveedor = 2,
-                            UserId = "eaebb12d-9b50-4120-9500-6662acfb6cc7"
+                            UserId = "97b3151c-f939-4f89-9679-1f37116740d1"
+
                         },
                         new
                         {
                             Id_pedido = 4,
-                            Fecha = new DateTime(2025, 4, 1, 20, 37, 47, 371, DateTimeKind.Local).AddTicks(6237),
+                            Estado = false,
+                            Fecha = new DateTime(2025, 3, 26, 21, 10, 35, 445, DateTimeKind.Local).AddTicks(9418),
                             Id_proveedor = 2,
-                            UserId = "eaebb12d-9b50-4120-9500-6662acfb6cc7"
+                            UserId = "97b3151c-f939-4f89-9679-1f37116740d1"
                         });
                 });
 
@@ -591,12 +599,14 @@ namespace Frutos_del_Terraba_Api.Migrations
                     b.HasData(
                         new
                         {
+
                             Id = "3b478043-606c-4ccf-8dad-fc90a50f8395",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
+
                             Id = "98b01120-cd04-4046-932e-021b28dbc7dc",
                             Name = "Empleado",
                             NormalizedName = "EMPLEADO"
@@ -701,14 +711,15 @@ namespace Frutos_del_Terraba_Api.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "eaebb12d-9b50-4120-9500-6662acfb6cc7",
+                            Id = "97b3151c-f939-4f89-9679-1f37116740d1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "65cc1ee1-34ca-43eb-8ecf-7a0debb76802",
+                            ConcurrencyStamp = "16700886-8f24-4e8f-8dc7-0b99b0e9dbea",
                             Email = "fabian@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "FABIAN@GMAIL.COM",
                             NormalizedUserName = "FABIAN@GMAIL.COM",
+
                             PasswordHash = "AQAAAAIAAYagAAAAEMwvNYcdwYKTSQksOSW0OKZqMwsYP6+EWoMPB5Vj2HNRp424gJTXZRqUA5UZlcbXRg==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "949e7787-1185-4c04-a058-0476e798ecf2",
@@ -725,6 +736,7 @@ namespace Frutos_del_Terraba_Api.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "CRISTOPHER@GMAIL.COM",
                             NormalizedUserName = "CRISTOPHER@GMAIL.COM",
+
                             PasswordHash = "AQAAAAIAAYagAAAAEOKIrIVfmmJlz+Ga0Zki0DAl9NGxl/Y2L7/QPut/NQlw/AEO5jaN9bHFyfcreRM9Yw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "d860fe4b-cffd-405f-af1e-a50f2db47375",
