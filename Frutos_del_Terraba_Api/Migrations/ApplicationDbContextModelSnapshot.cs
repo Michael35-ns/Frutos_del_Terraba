@@ -60,7 +60,7 @@ namespace Frutos_del_Terraba_Api.Migrations
                         new
                         {
                             Id_categoria = 3,
-                            Descripcion = "Todas las verduras",
+                            Descripcion = "Todas las legumbres",
                             Nombre = "Legumbres"
                         });
                 });
@@ -115,30 +115,23 @@ namespace Frutos_del_Terraba_Api.Migrations
                         new
                         {
                             Id_detalle_distribucion = 4,
-                            Cantidad = 25,
+                            Cantidad = 8,
                             Id_distribucion = 2,
-                            Id_inventario = 1
+                            Id_inventario = 4
                         },
                         new
                         {
                             Id_detalle_distribucion = 5,
-                            Cantidad = 30,
-                            Id_distribucion = 2,
+                            Cantidad = 12,
+                            Id_distribucion = 3,
                             Id_inventario = 5
                         },
                         new
                         {
                             Id_detalle_distribucion = 6,
-                            Cantidad = 40,
+                            Cantidad = 18,
                             Id_distribucion = 3,
                             Id_inventario = 6
-                        },
-                        new
-                        {
-                            Id_detalle_distribucion = 7,
-                            Cantidad = 50,
-                            Id_distribucion = 3,
-                            Id_inventario = 7
                         });
                 });
 
@@ -271,15 +264,15 @@ namespace Frutos_del_Terraba_Api.Migrations
                             Destino = "Supermercado A",
                             Observaciones = "Es una cargamento que hay que transportar con cuidado",
                             Ubicacion = "Rúa 21",
-                            UserId = "89f1dd0a-89b9-43eb-9942-0eb1ad9aa080"
+                            UserId = "eaebb12d-9b50-4120-9500-6662acfb6cc7"
                         },
                         new
                         {
                             Id_distribucion = 2,
-                            Destino = "Supermercado ",
+                            Destino = "Supermercado",
                             Observaciones = "",
                             Ubicacion = "El Boule Garage",
-                            UserId = "b944e074-7724-4999-9e2d-11835200c4ef"
+                            UserId = "7d1a5de1-a02b-4645-a370-c57008ca77c7"
                         },
                         new
                         {
@@ -287,7 +280,7 @@ namespace Frutos_del_Terraba_Api.Migrations
                             Destino = "Frutería C",
                             Observaciones = "Un buen pedido",
                             Ubicacion = "Lomito's Grill - Steak House",
-                            UserId = "89f1dd0a-89b9-43eb-9942-0eb1ad9aa080"
+                            UserId = "eaebb12d-9b50-4120-9500-6662acfb6cc7"
                         });
                 });
 
@@ -364,9 +357,6 @@ namespace Frutos_del_Terraba_Api.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_pedido"));
 
-                    b.Property<bool>("Estado")
-                        .HasColumnType("bit");
-
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("datetime2");
 
@@ -389,34 +379,30 @@ namespace Frutos_del_Terraba_Api.Migrations
                         new
                         {
                             Id_pedido = 1,
-                            Estado = false,
-                            Fecha = new DateTime(2025, 3, 25, 21, 22, 35, 895, DateTimeKind.Local).AddTicks(8965),
+                            Fecha = new DateTime(2025, 4, 1, 20, 37, 47, 371, DateTimeKind.Local).AddTicks(6217),
                             Id_proveedor = 1,
-                            UserId = "89f1dd0a-89b9-43eb-9942-0eb1ad9aa080"
+                            UserId = "eaebb12d-9b50-4120-9500-6662acfb6cc7"
                         },
                         new
                         {
                             Id_pedido = 2,
-                            Estado = false,
-                            Fecha = new DateTime(2025, 3, 25, 21, 22, 35, 895, DateTimeKind.Local).AddTicks(8987),
+                            Fecha = new DateTime(2025, 4, 1, 20, 37, 47, 371, DateTimeKind.Local).AddTicks(6235),
                             Id_proveedor = 1,
-                            UserId = "89f1dd0a-89b9-43eb-9942-0eb1ad9aa080"
+                            UserId = "eaebb12d-9b50-4120-9500-6662acfb6cc7"
                         },
                         new
                         {
                             Id_pedido = 3,
-                            Estado = false,
-                            Fecha = new DateTime(2025, 3, 25, 21, 22, 35, 895, DateTimeKind.Local).AddTicks(8988),
+                            Fecha = new DateTime(2025, 4, 1, 20, 37, 47, 371, DateTimeKind.Local).AddTicks(6236),
                             Id_proveedor = 2,
-                            UserId = "89f1dd0a-89b9-43eb-9942-0eb1ad9aa080"
+                            UserId = "eaebb12d-9b50-4120-9500-6662acfb6cc7"
                         },
                         new
                         {
                             Id_pedido = 4,
-                            Estado = false,
-                            Fecha = new DateTime(2025, 3, 25, 21, 22, 35, 895, DateTimeKind.Local).AddTicks(8989),
+                            Fecha = new DateTime(2025, 4, 1, 20, 37, 47, 371, DateTimeKind.Local).AddTicks(6237),
                             Id_proveedor = 2,
-                            UserId = "89f1dd0a-89b9-43eb-9942-0eb1ad9aa080"
+                            UserId = "eaebb12d-9b50-4120-9500-6662acfb6cc7"
                         });
                 });
 
@@ -427,6 +413,9 @@ namespace Frutos_del_Terraba_Api.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_producto"));
+
+                    b.Property<bool>("Estado")
+                        .HasColumnType("bit");
 
                     b.Property<int>("Id_categoria")
                         .HasColumnType("int");
@@ -446,42 +435,49 @@ namespace Frutos_del_Terraba_Api.Migrations
                         new
                         {
                             Id_producto = 1,
+                            Estado = false,
                             Id_categoria = 3,
                             Nombre = "Culantro Coyote"
                         },
                         new
                         {
                             Id_producto = 2,
+                            Estado = false,
                             Id_categoria = 3,
                             Nombre = "Tonillo"
                         },
                         new
                         {
                             Id_producto = 3,
+                            Estado = false,
                             Id_categoria = 3,
                             Nombre = "Apio"
                         },
                         new
                         {
                             Id_producto = 4,
+                            Estado = false,
                             Id_categoria = 1,
                             Nombre = "Papaya"
                         },
                         new
                         {
                             Id_producto = 5,
+                            Estado = false,
                             Id_categoria = 1,
                             Nombre = "Manzana Verde"
                         },
                         new
                         {
                             Id_producto = 6,
+                            Estado = false,
                             Id_categoria = 1,
                             Nombre = "Manzana Roja"
                         },
                         new
                         {
                             Id_producto = 7,
+                            Estado = false,
                             Id_categoria = 2,
                             Nombre = "Brocoli"
                         });
@@ -595,19 +591,19 @@ namespace Frutos_del_Terraba_Api.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "d9ef6f11-555d-4e1d-a904-cc79bfc6af70",
+                            Id = "3b478043-606c-4ccf-8dad-fc90a50f8395",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "5da2f21c-ddd4-4ef5-8522-87c89ab24a5b",
+                            Id = "98b01120-cd04-4046-932e-021b28dbc7dc",
                             Name = "Empleado",
                             NormalizedName = "EMPLEADO"
                         },
                         new
                         {
-                            Id = "3f3c70b6-d761-448a-8f97-e9a5656c4cfb",
+                            Id = "ee52cf1d-1dfd-403c-9215-febaf3e7ab11",
                             Name = "Distribuidor",
                             NormalizedName = "DISTRIBUIDOR"
                         });
@@ -705,49 +701,49 @@ namespace Frutos_del_Terraba_Api.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "89f1dd0a-89b9-43eb-9942-0eb1ad9aa080",
+                            Id = "eaebb12d-9b50-4120-9500-6662acfb6cc7",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "bfd180d9-2398-452e-bf5d-8451bd64fcc7",
+                            ConcurrencyStamp = "65cc1ee1-34ca-43eb-8ecf-7a0debb76802",
                             Email = "fabian@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "FABIAN@GMAIL.COM",
                             NormalizedUserName = "FABIAN@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJXxWtz2lHWt0uEiOWqIFzEwFqbVMCk2Yu9A06gt3nXJazWA1Ys7iiU3PbcmhRIdAg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMwvNYcdwYKTSQksOSW0OKZqMwsYP6+EWoMPB5Vj2HNRp424gJTXZRqUA5UZlcbXRg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "411d6224-9bbb-4bc6-984e-997622acca07",
+                            SecurityStamp = "949e7787-1185-4c04-a058-0476e798ecf2",
                             TwoFactorEnabled = false,
                             UserName = "fabian@gmail.com"
                         },
                         new
                         {
-                            Id = "b944e074-7724-4999-9e2d-11835200c4ef",
+                            Id = "7d1a5de1-a02b-4645-a370-c57008ca77c7",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "9de8deee-8941-49b7-aa4c-a0eea6455c58",
+                            ConcurrencyStamp = "156e7eaf-0fc9-47b6-ae9f-8f76cf390e02",
                             Email = "cristopher@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "CRISTOPHER@GMAIL.COM",
                             NormalizedUserName = "CRISTOPHER@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPhFqlUEKHW8oEz+VGLRdRVKGQo9UBjAK4ZEKUK4BB+kQw8GfWHtBXWC0mmAqIVOrw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOKIrIVfmmJlz+Ga0Zki0DAl9NGxl/Y2L7/QPut/NQlw/AEO5jaN9bHFyfcreRM9Yw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "a7b6c4e3-57ce-4128-9166-d69d99dffae0",
+                            SecurityStamp = "d860fe4b-cffd-405f-af1e-a50f2db47375",
                             TwoFactorEnabled = false,
                             UserName = "cristopher@gmail.com"
                         },
                         new
                         {
-                            Id = "c6bd8445-378e-4eb6-a62d-1740c14957cc",
+                            Id = "049c5264-1abd-45cd-9981-a03cc677b145",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1e8a3148-de68-41d1-8323-6a7632ba777f",
+                            ConcurrencyStamp = "b5f0622a-3f91-4883-be45-d690210025e1",
                             Email = "rodolfo@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "RODOLFO@GMAIL.COM",
                             NormalizedUserName = "RODOLFO@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAENSBZnl6drrA/ifPGAhj4KuiWGzRyTTFmS+/h7r0jFXozjz7JG365+zqLjC+Wc+OFw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEPeLlvaYsFIVz5qclgimpUKT1zM2Jtk66B7bKTNiHjhj766aKu9vmO9JzpHX6RmdOA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "ef68e0ba-0d27-4500-8249-6655b95fe43c",
+                            SecurityStamp = "3210b3b7-2020-481b-be8e-47a2cb13cd3a",
                             TwoFactorEnabled = false,
                             UserName = "rodolfo@gmail.com"
                         });
@@ -817,18 +813,18 @@ namespace Frutos_del_Terraba_Api.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "89f1dd0a-89b9-43eb-9942-0eb1ad9aa080",
-                            RoleId = "d9ef6f11-555d-4e1d-a904-cc79bfc6af70"
+                            UserId = "eaebb12d-9b50-4120-9500-6662acfb6cc7",
+                            RoleId = "3b478043-606c-4ccf-8dad-fc90a50f8395"
                         },
                         new
                         {
-                            UserId = "b944e074-7724-4999-9e2d-11835200c4ef",
-                            RoleId = "5da2f21c-ddd4-4ef5-8522-87c89ab24a5b"
+                            UserId = "7d1a5de1-a02b-4645-a370-c57008ca77c7",
+                            RoleId = "98b01120-cd04-4046-932e-021b28dbc7dc"
                         },
                         new
                         {
-                            UserId = "c6bd8445-378e-4eb6-a62d-1740c14957cc",
-                            RoleId = "3f3c70b6-d761-448a-8f97-e9a5656c4cfb"
+                            UserId = "049c5264-1abd-45cd-9981-a03cc677b145",
+                            RoleId = "ee52cf1d-1dfd-403c-9215-febaf3e7ab11"
                         });
                 });
 

@@ -14,6 +14,8 @@ namespace Frutos_del_Terraba_Api.Models
 
         [Required]
         [ForeignKey("Categoria")]
+
+        public bool Estado { get; set; }
         public int Id_categoria { get; set; }  
 
         public Categoria Categoria { get; set; }
