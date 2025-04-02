@@ -4,7 +4,10 @@ namespace Frutos_del_Terraba.Helpers.Interfaces
 {
     public interface IDetallePedidoService
     {
-        Task<IEnumerable<DetallesPedidoDTOModel>> ObtenerDetallesPedidos(int id);
         Task<DetallesPedidoDTOModel> AgregarDetallesPedido(DetallesPedidoDTOModel dettales);
+        Task<DetallesPedidoDTOModel> ActualizarDetallePedido(int id, DetallesPedidoDTOModel detalles);
+        Task<List<DetallesPedidoDTOModel>> ObtenerDetallesPedido(int id);
+        Task<DetallesPedidoDTOModel> ObtenerDetallesPedidoId(int id);
+        Task<bool> EliminarDetallesPedido(int id);
     }
 }

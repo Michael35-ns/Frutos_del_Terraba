@@ -1,6 +1,7 @@
 ﻿using Frutos_del_Terraba.Helpers.Interfaces;
 using Frutos_del_Terraba.Models;
 using Frutos_del_Terraba_Api.DTO;
+using System.Text.Json;
 
 namespace Frutos_del_Terraba.Helpers.Implementaciones
 {
@@ -13,6 +14,18 @@ namespace Frutos_del_Terraba.Helpers.Implementaciones
         {
             _httpClient = httpClient;
         }
+
+        public async Task<DetallesPedidoDTOModel> ActualizarDetallePedido(int id, DetallesPedidoDTOModel detalles)
+        {
+            var response = await _httpClient.PutAsJsonAsync($"{_baseUrl}/{id}", detalles);
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            var detalle = await response.Content.ReadFromJsonAsync<DetallesPedidoDTOModel>();
+
+            return detalle;
+        }
+
         public async Task<DetallesPedidoDTOModel> AgregarDetallesPedido(DetallesPedidoDTOModel detalles)
         {
             if (detalles.Id_pedido == 0)
@@ -39,11 +52,35 @@ namespace Frutos_del_Terraba.Helpers.Implementaciones
             }
         }
 
-
-
-        public async Task<IEnumerable<DetallesPedidoDTOModel>> ObtenerDetallesPedidos(int id)
+        public async Task<bool> EliminarDetallesPedido(int id)
         {
-            return await _httpClient.GetFromJsonAsync<IEnumerable<DetallesPedidoDTOModel>>($"{_baseUrl}/{id}");
+            var response = await _httpClient.DeleteAsync($"{_baseUrl}/{id}");
+            return response.IsSuccessStatusCode;
+
         }
+
+        public async Task<List<DetallesPedidoDTOModel>> ObtenerDetallesPedido(int id)
+        {
+            var detalles = await _httpClient.GetFromJsonAsync<List<DetallesPedidoDTOModel>>($"{_baseUrl}/todos/{id}");
+            return detalles ?? new List<DetallesPedidoDTOModel>();
+        }
+        public async Task<DetallesPedidoDTOModel> ObtenerDetallesPedidoId(int id)
+        {
+            var response = await _httpClient.GetAsync($"{_baseUrl}/{id}");
+
+            var json = await response.Content.ReadAsStringAsync();
+
+            var detalle = JsonSerializer.Deserialize<DetallesPedidoDTOModel>(json, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true 
+            });
+
+            return detalle;
+        }
+
+
+
+
+
     }
 }

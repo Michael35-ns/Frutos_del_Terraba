@@ -2,6 +2,7 @@
 using Frutos_del_Terraba.Models;
 using Frutos_del_Terraba_Api.DTO;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Net.Http;
 
 namespace Frutos_del_Terraba.Controllers
@@ -29,11 +30,9 @@ namespace Frutos_del_Terraba.Controllers
 
         public async Task<IActionResult> VerDetallesPedido(int id)
         {
-            // Obtener los detalles del pedido desde la API
-            var detallesDTO = await _detallesPedido.ObtenerDetallesPedidos(id);
+            var detallesDTO = await _detallesPedido.ObtenerDetallesPedido(id);
             var detallesViewModel = new List<DetallesPedidoViewModel>();
 
-            // Obtener los nombres de los productos
             foreach (var detalle in detallesDTO)
             {
                 var producto = await _httpClient.GetFromJsonAsync<ProductoDTOModel>($"{_productosUrl}/{detalle.Id_producto}");
@@ -57,12 +56,12 @@ namespace Frutos_del_Terraba.Controllers
         {
             var model = new DetallesPedidoDTOModel
             {
-                Id_pedido = id 
+                Id_pedido = id
             };
 
             ViewBag.Productos = await _productoService.ObtenerTodosProductosAsync();
 
-            return View(model); 
+            return View(model);
         }
 
         [HttpPost]
@@ -92,5 +91,53 @@ namespace Frutos_del_Terraba.Controllers
             return View(detallePedido);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var detalle = await _detallesPedido.ObtenerDetallesPedidoId(id);
+            ViewBag.Productos = (await _productoService.ObtenerTodosProductosAsync());
+
+            return View(detalle);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, DetallesPedidoDTOModel detalles)
+        {
+            if (!ModelState.IsValid)
+            {
+                TempData["ErrorMessage"] = "Error en la validación del formulario.";
+                ViewBag.Productos = await _productoService.ObtenerTodosProductosAsync();
+
+                return View(detalles);
+            }
+
+            var resultado = await _detallesPedido.ActualizarDetallePedido(id, detalles);
+
+            if (resultado != null)
+            {
+                TempData["SuccessMessage"] = "Detalle del pedido actualizado correctamente.";
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Hubo un problema al actualizar el detalle del pedido.";
+            }
+            ViewBag.Productos = await _productoService.ObtenerTodosProductosAsync();
+
+            return RedirectToAction("Index", "Pedido");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var detalleEliminado = await _detallesPedido.EliminarDetallesPedido(id);
+            if (detalleEliminado)
+            {
+                return Json(new { success = true });
+            }
+
+            return Json(new { success = false });
+        }
     }
+    
 }

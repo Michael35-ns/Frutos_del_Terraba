@@ -16,7 +16,7 @@ namespace Frutos_del_Terraba_Api.Controllers
             _detallesPedido = detallePedidoService ?? throw new ArgumentNullException(nameof(detallePedidoService));
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("todos/{id}")]
         public async Task<IActionResult> ObtenerDetallesPedido(int id)
         {
             var detalles = await _detallesPedido.ObtenerDetallesPedidos(id);
@@ -28,6 +28,35 @@ namespace Frutos_del_Terraba_Api.Controllers
         {
             var detallesPedido = await _detallesPedido.AgregarDetallesPedido(detalles);
             return Ok(detallesPedido);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> ObtenerDetallesId(int id)
+        {
+            var detalles = await _detallesPedido.ObtenerDetallesPedidoPorId(id);
+            return Ok(detalles);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> EditarDetallesPedido(int id, DetallesPedidoDTOModel detalles)
+        {
+            if(!ModelState.IsValid)
+            {
+                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    Console.WriteLine($"Error de validación: {error.ErrorMessage}");
+                }
+                return BadRequest(ModelState);
+            }
+            var detallesPedido = await _detallesPedido.ActualizarDetallesPedido(id, detalles);
+            return Ok(new { message = "Detalle actualizado correctamente"});
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> EliminarDetallesPedido(int id)
+        {
+            var detalles = await _detallesPedido.EliminarDetallesPedido(id);
+            return Ok(new { message = "Detalle eliminado correctamente" });
         }
     }
 }

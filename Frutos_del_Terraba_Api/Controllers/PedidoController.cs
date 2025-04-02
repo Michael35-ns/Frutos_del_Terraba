@@ -40,7 +40,6 @@ namespace Frutos_del_Terraba_Api.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> ActualizarPedido(int id, [FromBody] PedidoDTOModel pedido)
         {
-
                 if (!ModelState.IsValid)
                 {
                     foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
@@ -51,24 +50,10 @@ namespace Frutos_del_Terraba_Api.Controllers
                     return BadRequest(ModelState); 
                 }
 
-                var pedidoJson = JsonSerializer.Serialize(pedido);
-                Console.WriteLine($"JSON recibido: {pedidoJson}");
-
                 var pedidoActualizado = await _pedidoService.ActualizarPedidoAsync(id, pedido);
 
-                if (pedidoActualizado)
-                {
-                    Console.WriteLine("Pedido actualizado con éxito.");
                 return Ok(new { message = "Pedido actualizado exitosamente." });
-
-            }
-            else
-                {
-                    Console.WriteLine("No se encontró el pedido con el ID proporcionado.");
-                    return NotFound(new { mensaje = "Pedido no encontrado." });
-                }
             
-
         }
 
 

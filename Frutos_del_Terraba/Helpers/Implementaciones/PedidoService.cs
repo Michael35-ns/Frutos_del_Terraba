@@ -67,24 +67,15 @@ namespace Frutos_del_Terraba.Helpers.Implementaciones
 
         public async Task<PedidoDTOModel> ActualizarPedidoAsync(int id, PedidoDTOModel pedido)
         {
-            var pedidoJson = JsonSerializer.Serialize(pedido);
-            Console.WriteLine($"Enviando el siguiente JSON: {pedidoJson}");
-
             var response = await _httpClient.PutAsJsonAsync($"{_baseUrl}/{id}", pedido);
 
             var content = await response.Content.ReadAsStringAsync();
-            Console.WriteLine($"Respuesta del servidor: {content}");
 
-            try
-            {
-                var pedidos = await response.Content.ReadFromJsonAsync<PedidoDTOModel>();
-                return pedidos;
-            }
-            catch (JsonException ex)
-            {
-                Console.WriteLine($"Error de deserialización: {ex.Message}");
-                return null;
-            }
+            var pedidos = await response.Content.ReadFromJsonAsync<PedidoDTOModel>();
+
+            return pedidos;
+
+
         }
 
         public async Task<bool> EliminarPedidoAsync(int id)

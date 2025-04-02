@@ -96,8 +96,61 @@
   },
   {
     "ContainingType": "Frutos_del_Terraba_Api.Controllers.DetallePedidoController",
-    "Method": "ObtenerDetallesPedido",
+    "Method": "ObtenerDetallesId",
     "RelativePath": "api/detallepedido/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.DetallePedidoController",
+    "Method": "EditarDetallesPedido",
+    "RelativePath": "api/detallepedido/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "detalles",
+        "Type": "Frutos_del_Terraba_Api.DTO.DetallesPedidoDTOModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.DetallePedidoController",
+    "Method": "EliminarDetallesPedido",
+    "RelativePath": "api/detallepedido/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.DetallePedidoController",
+    "Method": "ObtenerDetallesPedido",
+    "RelativePath": "api/detallepedido/todos/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

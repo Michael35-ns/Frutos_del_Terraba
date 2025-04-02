@@ -1,0 +1,43 @@
+﻿@model Frutos_del_Terraba_Api.DTO.DetallesPedidoDTOModel
+
+@{
+    ViewData["Title"] = "Editar Detalle del Pedido";
+}
+
+<h2>Editar Detalle del Pedido</h2>
+
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id_detalle" />
+    <input type="hidden" asp-for="Id_pedido" />
+
+    <div class="form-group">
+        <label asp-for="Id_producto" class="control-label">Producto</label>
+        <select name="Id_producto" class="form-select" required>
+            <option value="">Selecciona un producto</option>
+            @foreach (var producto in ViewBag.Productos)
+            {
+                <option value="@producto.IdProducto">@producto.Nombre</option>
+            }
+        </select>
+        <span asp-validation-for="Id_producto" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Cantidad" class="control-label">Cantidad</label>
+        <input asp-for="Cantidad" class="form-control" type="number" min="1" />
+        <span asp-validation-for="Cantidad" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Observaciones" class="control-label">Observaciones</label>
+        <textarea asp-for="Observaciones" class="form-control"></textarea>
+        <span asp-validation-for="Observaciones" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-3">
+        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </div>
+</form>
+

@@ -24,6 +24,7 @@ namespace Frutos_del_Terraba_Api.Servicios.Implementaciones
 
             return detalles.Select(d => new DetallesPedidoDTOModel
             {
+                Id_detalle = d.Id_detalle,
                 Id_pedido = d.Id_pedido,
                 Cantidad = d.Cantidad,
                 Id_producto = d.Id_producto,
@@ -58,6 +59,52 @@ namespace Frutos_del_Terraba_Api.Servicios.Implementaciones
             };
         }
 
+        public async Task<DetallesPedidoDTOModel> ObtenerDetallesPedidoPorId(int id)
+        {
+            var detalle = await _context.DetallesPedidos
+                        .Where(d => d.Id_detalle == id)
+                        .Select(d => new DetallesPedidoDTOModel
+                        {
+                            Id_detalle = d.Id_detalle,
+                            Cantidad = d.Cantidad,
+                            Id_producto = d.Id_producto,
+                            Id_pedido = d.Id_pedido,
+                            Observaciones = d.Observaciones
+                        }).FirstOrDefaultAsync();  // Esto debería devolver solo un objeto o null
+            return detalle;
+        }
 
+
+        public async Task<bool> ActualizarDetallesPedido(int id, DetallesPedidoDTOModel detalles)
+        {
+            var detalle = await _context.DetallesPedidos.FindAsync(id);
+            if(detalle == null)
+            {
+                Console.WriteLine($"No se encontró el detalle con ID {id}.");
+                return false;
+            }
+
+            detalle.Cantidad = detalles.Cantidad;
+            detalle.Observaciones = detalles.Observaciones;
+            detalle.Id_producto = detalles.Id_producto;
+
+            await _context.SaveChangesAsync();
+            Console.WriteLine($"Detalle con ID {id} actualizado correctamente.");
+            return true;
+
+        }
+
+        public async Task<bool> EliminarDetallesPedido(int id)
+        {
+            var detalle = _context.DetallesPedidos.Find(id);
+            if(detalle == null)
+            {
+                Console.WriteLine($"No se encontró el detalle con ID {id}.");
+                return false;
+            }
+            _context.DetallesPedidos.Remove(detalle);
+            await _context.SaveChangesAsync();
+            return true;
+        }
     }
 }
