@@ -1,0 +1,279 @@
+﻿@model Frutos_del_Terraba.Models.DistribucionViewModel
+
+<h2 class="text-center text-info mb-4">Nueva Distribución</h2>
+
+<div class="container">
+    <form asp-action="Create" method="post">
+        <div>
+            <div class="row">
+                <!-- Sección de Inventario -->
+                <div class="col-12 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="m-4">
+                            <h3 class="text-info">Inventario</h3>
+                            @if (ViewBag.InventarioList != null && ViewBag.InventarioList.Count > 0)
+                            {
+                                <div class="accordion" id="accordionInventario">
+                                    <div class="accordion-item mt-2 hover-effect">
+                                        <h2 class="accordion-header" id="heading-inventario">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-inventario" aria-expanded="true"
+                                                    aria-controls="collapse-inventario">
+                                                <div class="d-flex flex-column w-100">
+                                                    <span class="mb-2">Inventario</span>
+                                                    <span>Presionar para ver todos los productos del inventario</span>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapse-inventario" class="accordion-collapse collapse show"
+                                             aria-labelledby="heading-inventario">
+                                            <div class="accordion-body table-responsive">
+                                                <table class="table table-striped table-hover dataTable no-footer" id="DataTables_Table_0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Nombre</th>
+                                                            <th>Cantidad</th>
+                                                            <th>Categoría</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        @foreach (var inventario in ViewBag.InventarioList)
+                                                        {
+                                                            <tr>
+                                                                <td>@inventario.Producto.Nombre</td>
+                                                                <td>@inventario.Cantidad</td>
+                                                                <td>@inventario.Producto.Categoria.Nombre</td>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-outline-dark btn-agregar-producto"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#modalAgregarProducto"
+                                                                            data-id="@inventario.Id_inventario"
+                                                                            data-nombre="@inventario.Producto.Nombre"
+                                                                            data-categoria="@inventario.Producto.Categoria.Nombre"
+                                                                            data-stock="@inventario.Cantidad">
+                                                                        <i class="ri-add-line"></i> Agregar
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                        }
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <p>No hay productos disponibles en el inventario.</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección de Distribución -->
+                <div class="col-12 col-md-6">
+                    <div class="card">
+                        <div class="m-4">
+                            <h3 class="text-info">Productos de Distribución</h3>
+                            @if (Model.DetallesDistribuciones != null && Model.DetallesDistribuciones.Any())
+                            {
+                                <div class="accordion" id="accordionDistribucion">
+                                    <div class="accordion-item mt-2 hover-effect">
+                                        <h2 class="accordion-header" id="heading-distribucion">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-distribucion" aria-expanded="true"
+                                                    aria-controls="collapse-distribucion">
+                                                <div class="d-flex flex-column w-100">
+                                                    <span class="mb-2">Distribución</span>
+                                                    <span>Presionar para ver todos los productos agregados a la distribución</span>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapse-distribucion" class="accordion-collapse collapse show"
+                                             aria-labelledby="heading-distribucion">
+                                            <div class="accordion-body table-responsive">
+                                                <table class="table table-striped table-hover dataTable no-footer" id="DataTables_Table_0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Nombre</th>
+                                                            <th>Cantidad</th>
+                                                            <th>Categoría</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        @foreach (var detalleDistribucion in Model.DetallesDistribuciones)
+                                                        {
+                                                            <tr>
+                                                                <td>@detalleDistribucion.Nombre</td>
+                                                                <td>@detalleDistribucion.Cantidad</td>
+                                                                <td>@detalleDistribucion.Categoria</td>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-outline-dark btn-editar-producto"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#modalEditarProducto"
+                                                                            data-id_inventario="@detalleDistribucion.Id_inventario"
+                                                                            data-nombre="@detalleDistribucion.Nombre"
+                                                                            data-categoria="@detalleDistribucion.Categoria"
+                                                                            data-cantidad="@detalleDistribucion.Cantidad"
+                                                                            data-stock="@detalleDistribucion.Stock">
+                                                                        <i class="ri-pencil-line me-1"></i>
+                                                                    </button>
+                                                                    <a href="#" class="btn btn-outline-danger" title="Eliminar" onclick="confirmDelete('el producto', '@detalleDistribucion.Id_inventario', '/Distribucion/DeleteProductToDistribution/{id}')">
+                                                                        <i class="ri-delete-bin-6-line me-1"></i>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        }
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <p>No hay productos agregados a la distribución.</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card de informacion general(mapa) -->
+        <div class="card mb-4 mt-5">
+            <div class="card-header">
+                <h3 class="mb-3 text-info">Información de Distribución</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <label asp-for="Destino" class="form-label">Destino</label>
+                        <input asp-for="Destino" class="form-control" placeholder="Ingrese el destino" />
+                        <span asp-validation-for="Destino" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-8 mb-3">
+                        <label asp-for="Ubicacion" class="form-label">Ubicación</label>
+                        <div class="input-group">
+                            <input asp-for="Ubicacion" id="autocomplete" class="form-control" placeholder="Ingrese la ubicacion" />
+                            <button type="button" id="loagMap" class="btn btn-primary">Cargar mapa</button>
+                        </div>
+                    </div>
+                    <div id="map" class="w-100 h-100"></div>
+                    <div class="col-md-12 mb-3 mt-5">
+                        <label asp-for="Observaciones" class="form-label">Observaciones</label>
+                        <textarea asp-for="Observaciones" class="form-control" placeholder="Observaciones adicionales"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-end mt-4">
+            <button type="submit" class="btn btn-primary">Crear Distribución</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+        </div>
+
+    </form>
+</div>
+
+<div class="modal fade" id="modalAgregarProducto" aria-hidden="true" aria-labelledby="modalAgregarProductoLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalAgregarProductoLabel">Agregar Producto a Distribución</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="AddProductToDistribution" method="post">
+                <div class="modal-body">
+                    <input type="hidden" id="inventarioID" name="inventarioID" />
+                    <input type="hidden" id="nombre" name="nombre" />
+                    <input type="hidden" id="categoria" name="categoria" />
+                    <input type="hidden" id="stock" name="stock" />
+
+                    <div class="mb-3">
+                        <h5 id="productoNombre" class="text-primary"></h5>
+                        <p>Categoría: <span id="productoCategoriaDisplay"></span></p>
+                        <p>Stock disponible: <span id="productoStockDisplay"></span></p>
+                    </div>
+
+                    <div class="form-floating">
+                        <input type="number" class="form-control" id="cantidad" name="cantidad" value="1" min="1" required />
+                        <label for="cantidad">Cantidad a agregar</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="ri-add-line"></i> Agregar a Distribución
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalEditarProducto" aria-hidden="true" aria-labelledby="modalEditarProductoLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalEditarProductoLabel">Editar Producto de la Distribución</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="EditProductToDistribution" method="post">
+                <div class="modal-body">
+                    <input type="hidden" id="edit_inventarioID" name="inventarioID" />
+
+                    <div class="mb-3">
+                        <h5 id="edit_productoNombre" class="text-primary"></h5>
+                        <p>Categoría: <span id="edit_productoCategoriaDisplay"></span></p>
+                        <p>Stock disponible: <span id="edit_productoStockDisplay"></span></p>
+                    </div>
+
+                    <div class="form-floating">
+                        <input type="number" class="form-control" id="edit_cantidad" name="cantidad" min="1" required />
+                        <label for="edit_cantidad">Cantidad a agregar</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="ri-add-line"></i> Actualizar Distribución
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section maps_script{
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDLM0h_HlOe34Xe9kerPA0grV4TcU6T0UE&callback=initAutocomplete">
+    </script>
+    <script>
+        function initAutocomplete() {
+            var input = $('#autocomplete')[0];
+            var autocomplete = new google.maps.places.Autocomplete(input);
+            const loadMap = $('#loagMap'); 
+            loadMap.on('click', function () {
+                var place = autocomplete.getPlace();
+                if (place && place.formatted_address) { 
+                    getGoogleMapsIframe(place.formatted_address);
+                }
+            });
+        }
+
+        function getGoogleMapsIframe(address) {
+            const mapUrl = `https://www.google.com/maps/embed/v1/place?q=${encodeURIComponent(address)}&key=AIzaSyDLM0h_HlOe34Xe9kerPA0grV4TcU6T0UE`; // Fixed missing = after q
+            const iframe = $('<iframe></iframe>');
+            iframe.attr('src', mapUrl);
+            iframe.attr('height', '450');
+            iframe.attr('frameborder', '0');
+            iframe.attr('style', 'border:0; width: 100%; margin-top: 15px;');
+            $('#map').empty().append(iframe); 
+        }
+    </script>
+}

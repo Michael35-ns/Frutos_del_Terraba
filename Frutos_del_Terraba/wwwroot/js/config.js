@@ -7,6 +7,8 @@
 
 'use strict';
 
+const { auto } = require("@popperjs/core");
+
 // JS global variables
 window.config = {
   colors: {
@@ -59,7 +61,7 @@ $(document).ready(function () {
 function confirmDelete(entityName, entityId, deleteUrl) {
     console.log("confirmDelete ejecutada");  // Verifica si la función se está llamando
     Swal.fire({
-        title: `Estas seguro de eliminar esta ${entityName}?`,
+        title: `Estas seguro de eliminar ${entityName}?`,
         text: "No podras revertir esto!",
         icon: 'warning',
         showCancelButton: true,
@@ -105,4 +107,5 @@ function confirmDelete(entityName, entityId, deleteUrl) {
                 });
         }
     });
-}
+} 
+

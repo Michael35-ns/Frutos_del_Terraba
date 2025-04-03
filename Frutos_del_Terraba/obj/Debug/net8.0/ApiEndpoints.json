@@ -80,6 +80,22 @@
   },
   {
     "ContainingType": "Frutos_del_Terraba_Api.Controllers.DistribucionController",
+    "Method": "DeleteDistribucion",
+    "RelativePath": "api/Distribucion/DeleteDistribucion/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.DistribucionController",
     "Method": "GetDistribucion",
     "RelativePath": "api/Distribucion/GetDistribucion/{id}",
     "HttpMethod": "GET",
@@ -105,25 +121,36 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Frutos_del_Terraba_Api.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "api/frutosterraba/WeatherForecast",
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.DistribucionController",
+    "Method": "PostDistribucion",
+    "RelativePath": "api/Distribucion/PostDistribucion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "distribucionModel",
+        "Type": "Frutos_del_Terraba_Api.DTO.DistribucionDTOModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Frutos_del_Terraba_Api.Controllers.UsuarioController",
+    "Method": "GetUsuarioPorCorreo",
+    "RelativePath": "api/frutosterraba/Usuario/por-correo/{correo}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Frutos_del_Terraba_Api.WeatherForecast, Frutos_del_Terraba_Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "correo",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Frutos_del_Terraba_Api.Controllers.InventarioController",

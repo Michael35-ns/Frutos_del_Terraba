@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Frutos_del_Terraba_Api.Models
 {
@@ -25,6 +26,8 @@ namespace Frutos_del_Terraba_Api.Models
 
         [ForeignKey("UserId")]
         public IdentityUser Usuario { get; set; }
+
+        [JsonIgnore]
         public ICollection<DetallesDistribucion> DetallesDistribuciones { get; set; }
     }
 }

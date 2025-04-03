@@ -64,17 +64,25 @@ public class AuthController : Controller
 
             if (response.IsSuccessStatusCode)
             {
-                var claims = new List<Claim>
+                HttpResponseMessage response2 = await _client.GetAsync($"https://localhost:7240/api/frutosterraba/Usuario/por-correo/{loginModel.email}");
+
+                var responseContent = await response2.Content.ReadAsStringAsync();
+                var userInfo = JsonSerializer.Deserialize<UsuarioViewModel>(responseContent,
+                    new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+                if (userInfo != null && !string.IsNullOrEmpty(userInfo.Id))
                 {
-                    new Claim(ClaimTypes.Name, loginModel.email)
-                };
+                    var claims = new List<Claim>
+                    {
+                        new Claim(ClaimTypes.Name, loginModel.email), // Include user's email as Name claim
+                        new Claim(ClaimTypes.NameIdentifier, userInfo.Id)
+                    };
 
-                var claimsIdentity = new ClaimsIdentity(claims, "CookieAuth");
-                var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
-
-                await HttpContext.SignInAsync("CookieAuth", claimsPrincipal);
-
-                return RedirectToAction("Index", "Dashboards");
+                    var claimsIdentity = new ClaimsIdentity(claims, "CookieAuth");
+                    var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+                    await HttpContext.SignInAsync("CookieAuth", claimsPrincipal);
+                    return RedirectToAction("Index", "Dashboards");
+                }
             }
             else
             {
@@ -85,6 +93,7 @@ public class AuthController : Controller
         }
         return View(loginModel);
     }
+
 
     [HttpPost]
     [ValidateAntiForgeryToken]
