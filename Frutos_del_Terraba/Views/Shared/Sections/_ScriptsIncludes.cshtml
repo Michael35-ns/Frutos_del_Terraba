@@ -39,4 +39,45 @@
             TempData["ErrorMessage"] = null;
         }
     });
+    
+    document.addEventListener('DOMContentLoaded', function () {
+        // Agregar Producto Modal
+        document.querySelectorAll('.btn-agregar-producto').forEach(button => {
+            button.addEventListener('click', function () {
+                const id = this.getAttribute('data-id');
+                const nombre = this.getAttribute('data-nombre');
+                const categoria = this.getAttribute('data-categoria');
+                const stock = this.getAttribute('data-stock');
+
+                // Using specific IDs for agregar modal
+                document.getElementById('inventarioID').value = id;
+                document.getElementById('nombre').value = nombre;
+                document.getElementById('categoria').value = categoria;
+                document.getElementById('stock').value = stock;
+                document.getElementById('productoNombre').textContent = nombre;
+                document.getElementById('productoCategoriaDisplay').textContent = categoria;
+                document.getElementById('productoStockDisplay').textContent = stock;
+                document.getElementById('cantidad').max = stock;
+            });
+        });
+
+        // Editar Producto Modal
+        document.querySelectorAll('.btn-editar-producto').forEach(button => {
+            button.addEventListener('click', function () {
+                const id_inventario = this.getAttribute('data-id_inventario');
+                const nombre = this.getAttribute('data-nombre');
+                const categoria = this.getAttribute('data-categoria');
+                const cantidad = this.getAttribute('data-cantidad');
+                const stock = this.getAttribute('data-stock');
+
+                // Using specific IDs for editar modal
+                document.getElementById('edit_inventarioID').value = id_inventario;
+                document.getElementById('edit_productoNombre').textContent = nombre;
+                document.getElementById('edit_productoCategoriaDisplay').textContent = categoria;
+                document.getElementById('edit_productoStockDisplay').textContent = stock;
+                document.getElementById('edit_cantidad').value = cantidad;
+                document.getElementById('edit_cantidad').max = stock;
+            });
+        });
+    });
 </script>

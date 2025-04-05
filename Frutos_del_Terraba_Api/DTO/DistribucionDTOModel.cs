@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
+using Frutos_del_Terraba_Api.Models;
 
 namespace Frutos_del_Terraba_Api.DTO
 {
@@ -20,7 +22,8 @@ namespace Frutos_del_Terraba_Api.DTO
 
         [Required]
         public string UserId { get; set; }
-        public List<DetallesDistribucionDTOModel> DetallesDistribuciones { get; set; }
+
+        public ICollection<DetallesDistribucionDTOModel> DetallesDistribuciones { get; set; }
 
     }
 }

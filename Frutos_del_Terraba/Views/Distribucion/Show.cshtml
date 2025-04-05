@@ -1,0 +1,95 @@
+﻿@model Frutos_del_Terraba.Models.DistribucionViewModel
+@{
+    ViewData["Title"] = "Detalles de la Distribución";
+}
+
+<h2 class="text-center text-info">Detalles de la Distribución</h2>
+
+<div class="d-flex justify-content-end mt-3">
+    <a class="btn btn-primary" asp-action="Index">
+        <i class="ri-arrow-left-line me-1"></i> Volver a Distribuciones
+    </a>
+</div>
+
+<div class="m-6">
+    <div class="card mb-4 mt-5">
+        <div class="card-header">
+            <h3 class="mb-3 text-info">Información de la Distribución</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <strong>Usuario que creó la distribución:</strong>
+                    <p>@Model.Usuario.UserName</p>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <strong>Destino:</strong>
+                    <p>@Model.Destino</p>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <strong>Ubicación:</strong>
+                    <p>@Model.Ubicacion</p>
+                    <button type="button" id="loadMap" class="btn btn-primary mt-2">Cargar mapa</button>
+                </div>
+                <div id="map-container" class="w-100 mt-3" style="display: none;">
+                    <iframe id="map-iframe" height="450" frameborder="0" style="border:0; width: 100%;"></iframe>
+                </div>
+                <div class="col-md-12 mb-3 mt-3">
+                    <strong>Observaciones:</strong>
+                    <p>@Model.Observaciones</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 class="text-center text-info mt-5">Detalles de la Distribución</h3>
+        <div class="table-responsive mt-3 m-2">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Categoría</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.DetallesDistribuciones != null && Model.DetallesDistribuciones.Any())
+                    {
+                        foreach (var detalle in Model.DetallesDistribuciones)
+                        {
+                            <tr>
+                                <td>@detalle.Inventario.Producto.Categoria.Nombre</td>
+                                <td>@detalle.Inventario.Producto.Nombre</td>
+                                <td>@detalle.Cantidad</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="3" class="text-center">No hay detalles de distribución registrados.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+@section maps_script {
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDLM0h_HlOe34Xe9kerPA0grV4TcU6T0UE&callback=initAutocomplete">
+    </script>
+    <script>
+        document.getElementById("loadMap").addEventListener("click", function () {
+            var address = "@Model.Ubicacion";
+            if (address) {
+                var mapUrl = `https://www.google.com/maps/embed/v1/place?q=${encodeURIComponent(address)}&key=AIzaSyDLM0h_HlOe34Xe9kerPA0grV4TcU6T0UE`;
+                document.getElementById("map-iframe").src = mapUrl;
+                document.getElementById("map-container").style.display = "block";
+            } else {
+                alert("Ubicación no disponible.");
+            }
+        });
+    </script>
+}

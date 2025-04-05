@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Frutos_del_Terraba_Api.Models
 {
@@ -19,6 +20,7 @@ namespace Frutos_del_Terraba_Api.Models
         [ForeignKey("Inventario")]
         public int Id_inventario { get; set; }
 
+        [JsonIgnore]
         public Distribucion Distribucion { get; set; }
         public Inventario Inventario { get; set; }
 
