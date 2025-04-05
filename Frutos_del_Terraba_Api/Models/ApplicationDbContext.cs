@@ -95,7 +95,6 @@ namespace Frutos_del_Terraba_Api.Models
 
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Seed();
         }
     }
 }

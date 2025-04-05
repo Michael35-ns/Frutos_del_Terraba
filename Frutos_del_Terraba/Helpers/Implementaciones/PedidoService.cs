@@ -83,9 +83,5 @@ namespace Frutos_del_Terraba.Helpers.Implementaciones
             var response = await _httpClient.DeleteAsync($"{_baseUrl}/{id}");
             return response.IsSuccessStatusCode;
         }
-
-
-
-
     }
 }

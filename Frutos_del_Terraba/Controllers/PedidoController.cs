@@ -3,6 +3,8 @@ using Frutos_del_Terraba.Models;
 using Frutos_del_Terraba_Api.DTO;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Text.Json;
 
 namespace Frutos_del_Terraba.Controllers
@@ -99,6 +101,20 @@ namespace Frutos_del_Terraba.Controllers
 
             return Json(new { success = false });
         }
+
+        private string GetUserIdFromCookie()
+        {
+            var token = Request.Cookies["AuthToken"];  // Obtener el token desde la cookie
+            if (string.IsNullOrEmpty(token))
+                return null;
+
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);  // Leer el JWT
+            var userId = jwtToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;  // Extraer el userID
+
+            return userId;
+        }
+
 
     }
 }
