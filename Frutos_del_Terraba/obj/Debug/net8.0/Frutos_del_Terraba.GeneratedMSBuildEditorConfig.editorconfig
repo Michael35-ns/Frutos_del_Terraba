@@ -1,19 +1,11 @@
 is_global = true
 build_property.TargetFramework = net8.0
-build_property.TargetFramework = net8.0
-build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
-build_property.UsingMicrosoftNETSdkWeb = true
-build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
-build_property.InvariantGlobalization = 
-build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
-build_property.EnforceExtendedAnalyzerRules = 
-build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Frutos_del_Terraba
 build_property.RootNamespace = Frutos_del_Terraba
@@ -46,8 +38,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Categoria/Editar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEVkaXRhci5jc2h0bWw=
+[C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Categoria/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Categoria/Index.cshtml]
@@ -70,8 +62,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVBlZGlkb1xWZXJEZXRhbGxlc1BlZGlkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Distribucion/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpYnVjaW9uXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Distribucion/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpYnVjaW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Distribucion/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpYnVjaW9uXFNob3cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Home/Index.cshtml]
@@ -102,12 +102,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Producto/Crear.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQ3JlYXIuY3NodG1s
+[C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Producto/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Producto/Editar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRWRpdGFyLmNzaHRtbA==
+[C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Producto/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Producto/Index.cshtml]
@@ -128,6 +128,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Proveedor/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXFNob3cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Reporte/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Reporte/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Reporte/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/crisn/OneDrive/Documents/GitHub/Frutos_del_Terraba/Frutos_del_Terraba/Views/Shared/Error.cshtml]

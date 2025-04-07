@@ -32,7 +32,7 @@ namespace Frutos_del_Terraba.Controllers
 
         #region Crear una nueva Categoría
         [HttpPost]
-        public async Task<IActionResult> Crear(CategoriaViewModel model)
+        public async Task<IActionResult> Create(CategoriaViewModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -52,7 +52,7 @@ namespace Frutos_del_Terraba.Controllers
 
         #region Eliminar una Categoría
         [HttpPost]
-        public async Task<IActionResult> Eliminar(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             var eliminado = await _categoriaService.EliminarCategoriaAsync(id);
             if (eliminado)
@@ -66,7 +66,7 @@ namespace Frutos_del_Terraba.Controllers
 
         #region Editar Categoría
         [HttpGet]
-        public async Task<IActionResult> Editar(int? id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
@@ -83,7 +83,7 @@ namespace Frutos_del_Terraba.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Editar(int id, Categoria categoria)
+        public async Task<IActionResult> Edit(int id, Categoria categoria)
         {
             if (!ModelState.IsValid)
             {

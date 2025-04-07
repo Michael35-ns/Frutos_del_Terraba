@@ -54,12 +54,12 @@
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a class="dropdown-item" asp-action="Editar" asp-route-id="@categoria.Id_categoria">
+                                            <a class="dropdown-item" asp-action="Edit" asp-route-id="@categoria.Id_categoria">
                                                 <i class="ri-pencil-line me-1"></i> Editar
                                             </a>
                                         </li>
                                         <li>
-                                            <form asp-action="Eliminar" asp-route-id="@categoria.Id_categoria" method="post" class="delete-form">
+                                            <form asp-action="Delete" asp-route-id="@categoria.Id_categoria" method="post" class="delete-form">
                                                 <button type="submit" class="dropdown-item text-danger" style="border: none; background: transparent; padding: 0; margin: 0;">
                                                     <i class="ri-delete-bin-6-line me-1"></i> Eliminar
                                                 </button>
@@ -90,7 +90,7 @@
     </div>
     <div class="offcanvas-body">
         <div asp-validation-summary="All" class="text-danger"></div>
-        <form asp-action="Crear" method="post">
+        <form asp-action="Create" method="post">
             <div class="mb-3">
                 <label asp-for="NuevaCategoria.Nombre" class="form-label">Nombre</label>
                 <input asp-for="NuevaCategoria.Nombre" class="form-control" />

@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Frutos_del_Terraba.Models.ReporteViewModel>
+
+@{
+    ViewData["Title"] = "Lista de Reportes";
+}
+
+<div class="card m-5">
+    <div class="card-header">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <h5 class="mb-3">Lista de Reportes</h5>
+            <a class="btn btn-primary" href="@Url.Action("Create", "Reporte")">
+                <i class="ri-add-line"></i> Crear Reporte
+            </a>
+        </div>
+    </div>
+
+    <div class="table-responsive m-2">
+        <table class="table dataTable no-footer" id="DataTables_Table_0">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad Reportada</th>
+                    <th>Motivo</th>
+                    <th>Fecha</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var reporte in Model)
+                    {
+                        <tr>
+                            <td>@reporte.Producto.Nombre</td> 
+                            <td>@reporte.Cantidad_reportada</td>
+                            <td>@reporte.Motivo</td>
+                            <td>@reporte.Fecha.ToString("dd/MM/yyyy")</td>
+                            <td class="d-flex gap-2">
+                                <a class="btn btn-outline-dark" asp-action="Edit" asp-route-id="@reporte.Id_reporte">
+                                    <i class="ri-pencil-line me-1"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-danger" title="Eliminar" onclick="confirmDelete('reporte', '@reporte.Id_reporte', '/Reporte/Delete/{id}')">
+                                    <i class="ri-delete-bin-6-line me-1"></i>
+                                </a>
+                                <a class="btn btn-outline-primary" title="Descargar PDF"
+                                   asp-action="DownloadPDF" asp-route-id="@reporte.Id_reporte">
+                                    <i class="ri-file-download-line me-1"></i> PDF
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5" class="text-center">No hay reportes registrados.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

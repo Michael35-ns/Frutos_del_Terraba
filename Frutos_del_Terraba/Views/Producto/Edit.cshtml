@@ -1,23 +1,25 @@
 ﻿@model Frutos_del_Terraba.Models.ProductoViewModel
 
 @{
-    ViewData["Title"] = "Crear Producto";
+    ViewData["Title"] = "Editar Producto";
     var categorias = ViewBag.Categorias as List<SelectListItem> ?? new List<SelectListItem>();
 }
 
 <div class="container my-5">
     <div class="card">
-        <h5 class="card-header">Crear Producto</h5>
+        <h5 class="card-header">Editar Producto</h5>
         <div class="card-body demo-vertical-spacing demo-only-element">
-            <form asp-action="Crear" method="post">
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="IdProducto" />
+
                 <div class="form-floating form-floating-outline mb-3">
-                    <input asp-for="Nombre" class="form-control" placeholder="Ingrese el nombre del producto" />
+                    <input asp-for="Nombre" class="form-control" placeholder="Ingrese el nombre del producto" required />
                     <label asp-for="Nombre">Nombre del Producto</label>
                     <span asp-validation-for="Nombre" class="text-danger"></span>
                 </div>
 
                 <div class="form-floating form-floating-outline mb-3">
-                    <select asp-for="Id_categoria" asp-items="categorias" class="form-select" required>
+                    <select asp-for="Id_categoria" asp-items="categorias" class="form-select">
                         <option value="">Seleccione una categoría</option>
                     </select>
                     <label asp-for="Id_categoria">Categoría</label>
@@ -25,7 +27,7 @@
                 </div>
 
                 <div class="text-end">
-                    <button type="submit" class="btn btn-primary">Crear Producto</button>
+                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
                     <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
                 </div>
             </form>

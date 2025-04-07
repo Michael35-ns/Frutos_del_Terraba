@@ -8,7 +8,7 @@
     <div class="card-header">
         <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
             <h5 class="mb-3">Lista de Productos</h5>
-            <a class="btn btn-primary" href="@Url.Action("Crear", "Producto")">
+            <a class="btn btn-primary" href="@Url.Action("Create", "Producto")">
                 <i class="ri-add-line"></i> Agregar Producto
             </a>
         </div>
@@ -33,10 +33,11 @@
                             <td>@producto.Nombre</td>
                             <td>@producto.NombreCategoria</td>
                             <td class="d-flex gap-2">
-                                <a class=" btn btn-outline-dark" asp-action="Editar" asp-route-id="@producto.IdProducto">
+                                <a class=" btn btn-outline-dark" asp-action="Edit" asp-route-id="@producto.IdProducto">
                                     <i class="ri-pencil-line me-1"></i>
                                 </a>
-                                <a href="#" class="btn btn-outline-danger" title="Eliminar" onclick="confirmDelete('producto', '@producto.IdProducto', '/Producto/Eliminar/{id}')">
+                                <a href="#" class="btn btn-outline-danger" title="Eliminar"
+                                   onclick="confirmDelete('producto', '@producto.IdProducto', '/Producto/Delete/@producto.IdProducto')">
                                     <i class="ri-delete-bin-6-line me-1"></i>
                                 </a>
                             </td>

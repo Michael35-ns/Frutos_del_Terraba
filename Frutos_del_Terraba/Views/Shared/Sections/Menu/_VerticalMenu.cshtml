@@ -7,7 +7,7 @@
     <div class="app-brand demo text-center">
         <a asp-controller="Dashboards" asp-action="Index" class="app-brand-link d-flex flex-column align-items-center">
             <div class="brand-container d-flex flex-column align-items-center">
-                <img src="~/img/logo.jpg" alt="Logo" class="rounded-circle brand-logo mb-3">
+                <img src="~/img/logo.png" alt="Logo" class="rounded-circle brand-logo mb-3">
                 <span class="app-brand-text fw-bold text-wrap text-center">
                     Frutos del Térraba
                 </span>
@@ -28,8 +28,8 @@
                         <div>Ver Productos</div>
                     </a>
                 </li>
-                <li class='menu-item@(currentPage == "/Producto/Crear" ? " active" : "")'>
-                    <a asp-controller="Producto" asp-action="Crear" class="menu-link">
+                <li class='menu-item@(currentPage == "/Producto/Create" ? " active" : "")'>
+                    <a asp-controller="Producto" asp-action="Create" class="menu-link">
                         <div>Agregar Productos</div>
                     </a>
                 </li>
@@ -123,14 +123,14 @@
                 <div>Reportes</div>
             </a>
             <ul class="menu-sub">
-                <li class='menu-item@(currentPage == "/Reportes/Index" ? " active" : "")'>
-                    <a href="@Url.Action("Index", "Reportes")" class="menu-link">
+                <li class='menu-item@(currentPage == "/Reporte/Index" ? " active" : "")'>
+                    <a href="@Url.Action("Index", "Reporte")" class="menu-link">
                         <div>Ver Reportes</div>
                     </a>
                 </li>
-                <li class='menu-item@(currentPage == "/Reportes/Generar" ? " active" : "")'>
-                    <a href="@Url.Action("Generar", "Reportes")" class="menu-link">
-                        <div>Generar Reporte</div>
+                <li class='menu-item@(currentPage == "/Reporte/Create" ? " active" : "")'>
+                    <a href="@Url.Action("Create", "Reporte")" class="menu-link">
+                        <div>Crear Reporte</div>
                     </a>
                 </li>
             </ul>

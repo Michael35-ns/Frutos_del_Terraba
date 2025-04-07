@@ -19,6 +19,9 @@ namespace Frutos_del_Terraba.Models
 
         [Required]
         public int Id_producto { get; set; }
+
+        public ProductoViewModel? Producto { get; set; }
+
     }
 
 }

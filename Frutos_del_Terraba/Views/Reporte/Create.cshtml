@@ -1,0 +1,46 @@
+﻿@model Frutos_del_Terraba.Models.ReporteViewModel
+
+@{
+    ViewData["Title"] = "Crear Reporte";
+}
+
+<div class="container my-5">
+    <div class="card">
+        <h5 class="card-header">Crear Reporte</h5>
+        <div class="card-body demo-vertical-spacing demo-only-element">
+            <form asp-action="Create" method="post">
+
+                <div class="form-floating form-floating-outline mb-3">
+                    <select asp-for="Id_producto" class="form-select" asp-items="ViewBag.Productos" required>
+                        <option value="0">Seleccione un producto</option> 
+                    </select>
+                    <label asp-for="Id_producto">Producto</label>
+                    <span asp-validation-for="Id_producto" class="text-danger"></span>
+                </div>
+
+                <div class="form-floating form-floating-outline mb-3">
+                    <input asp-for="Cantidad_reportada" class="form-control" type="number" placeholder="Ingrese la cantidad reportada" required />
+                    <label asp-for="Cantidad_reportada">Cantidad Reportada</label>
+                    <span asp-validation-for="Cantidad_reportada" class="text-danger"></span>
+                </div>
+
+                <div class="form-floating form-floating-outline mb-3">
+                    <textarea asp-for="Motivo" class="form-control" placeholder="Ingrese el motivo del reporte" rows="3" required></textarea>
+                    <label asp-for="Motivo">Motivo del Reporte</label>
+                    <span asp-validation-for="Motivo" class="text-danger"></span>
+                </div>
+
+                <div class="form-floating form-floating-outline mb-3">
+                    <input asp-for="Fecha" class="form-control" type="date" required />
+                    <label asp-for="Fecha">Fecha del Reporte</label>
+                    <span asp-validation-for="Fecha" class="text-danger"></span>
+                </div>
+
+                <div class="text-end">
+                    <button type="submit" class="btn btn-primary">Crear Reporte</button>
+                    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
