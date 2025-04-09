@@ -5,8 +5,11 @@ using System.Text;
 using Frutos_del_Terraba.Helpers.Interfaces;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Http.Json;
-using PdfSharpCore.Drawing;
-using PdfSharpCore.Pdf;
+using QuestPDF.Helpers;
+using QuestPDF.Fluent;
+using QuestPDF.Infrastructure;
+
+
 
 
 namespace Frutos_del_Terraba.Controllers
@@ -193,85 +196,73 @@ namespace Frutos_del_Terraba.Controllers
                 return RedirectToAction("Index");
             }
 
-            using (var stream = new MemoryStream())
+            var documento = Document.Create(container =>
             {
-                var documento = new PdfDocument();
-                var pagina = documento.AddPage();
-                var gfx = XGraphics.FromPdfPage(pagina);
-
-                // **Fuentes**
-                var fuenteFecha = new XFont("Arial", 10, XFontStyle.Regular);
-                var fuenteTitulo = new XFont("Arial", 14, XFontStyle.Bold);
-                var fuenteEncabezado = new XFont("Arial", 12, XFontStyle.Bold);
-                var fuenteTexto = new XFont("Arial", 12, XFontStyle.Regular);
-                var fuenteDescripcion = new XFont("Arial", 10, XFontStyle.Italic);
-
-                // **Margen y dimensiones**
-                int margenX = 50;
-                int margenY = 40;
-                int anchoTabla = (int)pagina.Width - 2 * margenX;
-                int altoFila = 30;
-                int columna1 = margenX;
-
-                try
+                container.Page(page =>
                 {
-                    string logoPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/logo-pdf.png");
-                    if (System.IO.File.Exists(logoPath))
+                    page.Margin(40);
+                    page.Size(PageSizes.A4);
+                    page.Background("#FFFFFF");
+
+                    // Encabezado
+                    page.Header().Column(header =>
                     {
-                        XImage logo = XImage.FromFile(logoPath);
-                        gfx.DrawImage(logo, margenX, margenY, 80, 60); 
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Error al cargar el logo: {ex.Message}");
-                }
+                        header.Item().Row(row =>
+                        {
+                            row.RelativeColumn(1).Height(60).Image("wwwroot/img/logo-pdf.png", ImageScaling.FitHeight);
+                            row.RelativeColumn(4).AlignCenter().Column(col =>
+                            {
+                                col.Item().Text("FRUTOS DEL TÉRRABA").FontSize(14).Bold();
+                                col.Item().Text("REPORTE DE INCIDENCIA EN PRODUCTOS").FontSize(12).SemiBold();
+                                col.Item().Text($"Reporte generado el {DateTime.Now:dd/MM/yyyy}").FontSize(10).Italic();
+                            });
+                            row.RelativeColumn(1).AlignRight().Text(DateTime.Now.ToString("dd/MM/yyyy"))
+                                .FontSize(9).FontColor(Colors.Grey.Darken1);
+                        });
+                        header.Item().LineHorizontal(1).LineColor("#8B5E3C");
+                    });
 
-                margenY += 70; 
-                gfx.DrawString($"Fecha de emisión: {DateTime.Now:dd/MM/yyyy}", fuenteFecha, XBrushes.Black, new XPoint(pagina.Width - 150, margenY));
+                    // Tabla
+                    page.Content().PaddingVertical(10).Table(table =>
+                    {
+                        table.ColumnsDefinition(columns =>
+                        {
+                            columns.RelativeColumn();
+                            columns.RelativeColumn();
+                            columns.RelativeColumn();
+                            columns.RelativeColumn();
+                            columns.RelativeColumn();
+                        });
 
-                margenY += 20; 
+                        table.Header(header =>
+                        {
+                            string bgColor = "#9DD295";
+                            string textColor = "#5C4033";
+                            float fontSize = 10;
 
-                // **Encabezado informativo**
-                gfx.DrawString("Reporte de Incidencias en Productos", fuenteTitulo, XBrushes.Black, new XPoint(margenX, margenY));
-                margenY += 20;
-                gfx.DrawString("Este documento contiene información detallada sobre las incidencias reportadas en los productos.",
-                    fuenteDescripcion, XBrushes.Black, new XPoint(margenX, margenY));
-                margenY += 26; 
+                            header.Cell().Background(bgColor).Padding(5).Text("ID REPORTE").Bold().FontSize(fontSize).FontColor(textColor);
+                            header.Cell().Background(bgColor).Padding(5).Text("PRODUCTO").Bold().FontSize(fontSize).FontColor(textColor);
+                            header.Cell().Background(bgColor).Padding(5).Text("CANTIDAD").Bold().FontSize(fontSize).FontColor(textColor);
+                            header.Cell().Background(bgColor).Padding(5).Text("MOTIVO").Bold().FontSize(fontSize).FontColor(textColor);
+                            header.Cell().Background(bgColor).Padding(5).Text("FECHA").Bold().FontSize(fontSize).FontColor(textColor);
+                        });
 
+                        table.Cell().Padding(5).Text(reporte.Id_reporte.ToString()).FontSize(10);
+                        table.Cell().Padding(5).Text(reporte.Producto?.Nombre ?? "Sin nombre").FontSize(10);
+                        table.Cell().Padding(5).Text(reporte.Cantidad_reportada.ToString()).FontSize(10);
+                        table.Cell().Padding(5).Text(reporte.Motivo).FontSize(10);
+                        table.Cell().Padding(5).Text(reporte.Fecha.ToString("dd/MM/yyyy")).FontSize(10);
+                    });
 
-                // **Dibujar la tabla con encabezados**
-                XPen pen = new XPen(XColors.Black, 1);
+                    // Pie de página
+                    page.Footer().AlignCenter().Text("FRUTOS DEL TÉRRABA").FontSize(10).FontColor("#5C4033");
+                });
+            });
 
-                string[] encabezados = { "ID del Reporte", "Producto", "Cantidad", "Motivo", "Fecha" };
-                string[] valores =
-                {
-                    reporte.Id_reporte.ToString(),
-                    reporte.Producto?.Nombre ?? "Sin nombre",
-                    reporte.Cantidad_reportada.ToString(),
-                    reporte.Motivo,
-                     reporte.Fecha.ToString("dd/MM/yyyy")
-                };
-
-                for (int i = 0; i < encabezados.Length; i++)
-                {
-                    gfx.DrawRectangle(pen, columna1 + (i * 100), margenY, 100, altoFila);
-                    gfx.DrawString(encabezados[i], fuenteEncabezado, XBrushes.Black, new XPoint(columna1 + (i * 100) + 10, margenY + 20));
-                }
-
-                margenY += altoFila;
-
-                for (int i = 0; i < valores.Length; i++)
-                {
-                    gfx.DrawRectangle(pen, columna1 + (i * 100), margenY, 100, altoFila);
-                    gfx.DrawString(valores[i], fuenteTexto, XBrushes.Black, new XPoint(columna1 + (i * 100) + 10, margenY + 20));
-                }
-
-                documento.Save(stream, false);
-                return File(stream.ToArray(), "application/pdf", $"Reporte_{reporte.Id_reporte}.pdf");
-            }
+            var pdfBytes = documento.GeneratePdf();
+            return File(pdfBytes, "application/pdf", $"Reporte_{reporte.Id_reporte}.pdf");
         }
-      
+
         #endregion
     }
 }
