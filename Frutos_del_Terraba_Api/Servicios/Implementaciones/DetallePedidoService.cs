@@ -86,7 +86,6 @@ namespace Frutos_del_Terraba_Api.Servicios.Implementaciones
 
             detalle.Cantidad = detalles.Cantidad;
             detalle.Observaciones = detalles.Observaciones;
-            detalle.Id_producto = detalles.Id_producto;
 
             await _context.SaveChangesAsync();
             Console.WriteLine($"Detalle con ID {id} actualizado correctamente.");

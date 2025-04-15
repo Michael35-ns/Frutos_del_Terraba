@@ -35,15 +35,9 @@ namespace Frutos_del_Terraba.Controllers
         [HttpPost]
         public async Task<IActionResult> Crear(PedidoDTOModel pedido)
         {
-            if (!ModelState.IsValid)
-            {
-                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
-                {
-                    Console.WriteLine($"Error: {error.ErrorMessage}");
-                }
-                return BadRequest(ModelState);
-            }
-
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            pedido.UserId = userId; 
+            
             var pedidoCreado = await _pedidoService.CrearPedidoAsync(pedido);
             return RedirectToAction("Index");
         }

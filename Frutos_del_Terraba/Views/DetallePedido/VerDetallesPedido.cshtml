@@ -1,7 +1,9 @@
 ﻿@model IEnumerable<Frutos_del_Terraba.Models.DetallesPedidoViewModel>
 
 <h2>Detalles del Pedido</h2>
-
+<a asp-action="DownloadPDF" asp-route-id="@ViewBag.Id_pedido" class="btn btn-outline-warning" title="Editar">
+    <i class="ri-file-pdf-line"></i>
+</a>
 <table class="table dataTable" id="DataTables_Table_0">
     <thead>
         <tr>
