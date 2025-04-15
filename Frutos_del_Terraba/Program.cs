@@ -3,6 +3,7 @@ using Frutos_del_Terraba.Helpers.Interfaces;
 
 
 var builder = WebApplication.CreateBuilder(args);
+QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
 
 // Configuración de los servicios
 builder.Services.AddControllersWithViews();
