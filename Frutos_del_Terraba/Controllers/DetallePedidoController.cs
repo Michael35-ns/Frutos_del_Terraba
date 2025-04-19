@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using PdfSharpCore.Drawing;
 using PdfSharpCore.Pdf;
+using QuestPDF.Fluent;
+using QuestPDF.Helpers;
+using QuestPDF.Infrastructure;
 using System.Net.Http;
 using System.Text.Json;
 
@@ -144,8 +147,6 @@ namespace Frutos_del_Terraba.Controllers
 
         public async Task<IActionResult> DownloadPDF(int id)
         {
-            int[] anchosColumnas = { 100, 100, 200 }; // Observaciones más ancha
-
             var detallesDTO = await _detallesPedido.ObtenerDetallesPedido(id);
             if (detallesDTO == null || detallesDTO.Count == 0)
             {
@@ -167,7 +168,6 @@ namespace Frutos_del_Terraba.Controllers
             foreach (var detalle in detallesDTO)
             {
                 var producto = await _httpClient.GetFromJsonAsync<ProductoDTOModel>($"{_productosUrl}/{detalle.Id_producto}");
-
                 detallesViewModel.Add(new DetallesPedidoViewModel
                 {
                     Id_detalle = detalle.Id_detalle,
@@ -179,92 +179,72 @@ namespace Frutos_del_Terraba.Controllers
                 });
             }
 
-            using (var stream = new MemoryStream())
+            var documento = Document.Create(container =>
             {
-                var documento = new PdfDocument();
-                var pagina = documento.AddPage();
-                var gfx = XGraphics.FromPdfPage(pagina);
-
-                var fuenteFecha = new XFont("Arial", 10, XFontStyle.Regular);
-                var fuenteTitulo = new XFont("Arial", 14, XFontStyle.Bold);
-                var fuenteEncabezado = new XFont("Arial", 12, XFontStyle.Bold);
-                var fuenteTexto = new XFont("Arial", 12, XFontStyle.Regular);
-                var fuenteDescripcion = new XFont("Arial", 10, XFontStyle.Italic);
-
-                int margenX = 50;
-                int margenY = 40;
-                int anchoTabla = (int)pagina.Width - 2 * margenX;
-                int altoFila = 30;
-                int columna1 = margenX;
-
-                try
+                container.Page(page =>
                 {
-                    string logoPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/logo-pdf.png");
-                    if (System.IO.File.Exists(logoPath))
+                    page.Size(PageSizes.A4);
+                    page.Margin(40);
+                    page.Background("#FFFFFF");
+
+                    // Header
+                    page.Header().Column(header =>
                     {
-                        XImage logo = XImage.FromFile(logoPath);
-                        gfx.DrawImage(logo, margenX, margenY, 80, 60);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Error al cargar el logo: {ex.Message}");
-                }
+                        header.Item().Row(row =>
+                        {
+                            row.RelativeColumn(1).Height(60).Image("wwwroot/img/logo-pdf.png", ImageScaling.FitHeight);
+                            row.RelativeColumn(4).AlignCenter().Column(col =>
+                            {
+                                col.Item().Text("FRUTOS DEL TÉRRABA").FontSize(14).Bold();
+                                col.Item().Text("REPORTE DE PEDIDO").FontSize(12).SemiBold();
+                                col.Item().Text($"Generado el {DateTime.Now:dd/MM/yyyy}").FontSize(10).Italic();
+                            });
+                        });
+                        header.Item().LineHorizontal(1).LineColor("#8B5E3C");
+                    });
 
-                margenY += 70;
-                gfx.DrawString($"Fecha de emisión: {DateTime.Now:dd/MM/yyyy}", fuenteFecha, XBrushes.Black, new XPoint(pagina.Width - 150, margenY));
-
-                margenY += 20;
-
-                // **Nombre del Proveedor**
-                gfx.DrawString($"Proveedor: {proveedorNombre}", fuenteTitulo, XBrushes.Black, new XPoint(margenX, margenY));
-                margenY += 20;
-
-                // **Encabezado informativo**
-                gfx.DrawString("Reporte de Pedidos", fuenteTitulo, XBrushes.Black, new XPoint(margenX, margenY));
-                margenY += 20;
-                gfx.DrawString("Este documento contiene información detallada sobre los productos a ser recibidos por los proveedores",
-                    fuenteDescripcion, XBrushes.Black, new XPoint(margenX, margenY));
-                margenY += 26;
-
-                // **Dibujar la tabla con encabezados una sola vez**
-                XPen pen = new XPen(XColors.Black, 1);
-
-                string[] encabezados = { "Producto", "Cantidad", "Observaciones" };
-
-                int xActual = columna1;
-                for (int i = 0; i < encabezados.Length; i++)
-                {
-                    gfx.DrawRectangle(pen, xActual, margenY, anchosColumnas[i], altoFila);
-                    gfx.DrawString(encabezados[i], fuenteEncabezado, XBrushes.Black, new XPoint(xActual + 10, margenY + 20));
-                    xActual += anchosColumnas[i];
-                }
-
-                margenY += altoFila;
-
-                foreach (var detalle in detallesViewModel)
-                {
-                    string[] valores =
+                    // Contenido principal
+                    page.Content().PaddingVertical(10).Column(content =>
                     {
-        detalle.nombreProducto,
-        detalle.Cantidad.ToString(),
-        detalle.Observaciones ?? "Sin observaciones"
-    };
+                        content.Item().Text($"Proveedor: {proveedorNombre}").FontSize(12).Bold().FontColor("#5C4033");
+                        content.Item().Text("Este documento contiene información detallada sobre los productos solicitados.").FontSize(10).Italic();
 
-                    xActual = columna1;
-                    for (int i = 0; i < valores.Length; i++)
-                    {
-                        gfx.DrawRectangle(pen, xActual, margenY, anchosColumnas[i], altoFila);
-                        gfx.DrawString(valores[i], fuenteTexto, XBrushes.Black, new XPoint(xActual + 10, margenY + 20));
-                        xActual += anchosColumnas[i];
-                    }
+                        content.Item().PaddingTop(10).Table(table =>
+                        {
+                            table.ColumnsDefinition(columns =>
+                            {
+                                columns.RelativeColumn(3); // Producto
+                                columns.RelativeColumn(1); // Cantidad
+                                columns.RelativeColumn(4); // Observaciones
+                            });
 
-                    margenY += altoFila;
-                }
+                            string bgColor = "#9DD295";
+                            string textColor = "#5C4033";
+                            float fontSize = 10;
 
-                documento.Save(stream, false);
-                return File(stream.ToArray(), "application/pdf", $"Reporte_{id}.pdf");
-            }
+                            table.Header(header =>
+                            {
+                                header.Cell().Background(bgColor).Padding(5).Text("PRODUCTO").Bold().FontSize(fontSize).FontColor(textColor);
+                                header.Cell().Background(bgColor).Padding(5).Text("CANTIDAD").Bold().FontSize(fontSize).FontColor(textColor);
+                                header.Cell().Background(bgColor).Padding(5).Text("OBSERVACIONES").Bold().FontSize(fontSize).FontColor(textColor);
+                            });
+
+                            foreach (var item in detallesViewModel)
+                            {
+                                table.Cell().Padding(5).Text(item.nombreProducto).FontSize(10);
+                                table.Cell().Padding(5).Text(item.Cantidad.ToString()).FontSize(10);
+                                table.Cell().Padding(5).Text(item.Observaciones ?? "Sin observaciones").FontSize(10);
+                            }
+                        });
+                    });
+
+                    // Footer
+                    page.Footer().AlignCenter().Text("FRUTOS DEL TÉRRABA").FontSize(10).FontColor("#5C4033");
+                });
+            });
+
+            var pdfBytes = documento.GeneratePdf();
+            return File(pdfBytes, "application/pdf", $"Reporte_Pedido_{id}.pdf");
         }
 
 
