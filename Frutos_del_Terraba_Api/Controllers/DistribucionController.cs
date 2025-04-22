@@ -122,7 +122,7 @@ namespace Frutos_del_Terraba_Api.Controllers
                             Id = p.UserId,
                             UserName = p.Usuario.UserName
                         },
-                        DetallesDistribucion = p.DetallesDistribuciones.Select(d => new
+                        DetallesDistribuciones = p.DetallesDistribuciones.Select(d => new
                         {
                             Id_detalle_distribucion = d.Id_detalle_distribucion,
                             Cantidad = d.Cantidad,

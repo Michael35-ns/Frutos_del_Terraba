@@ -71,9 +71,9 @@
                                     </tbody>
                                 </table>
                                 <div class="d-flex justify-content-end mt-4">
-                                    <button class="btn btn-info">
-                                        <i class="ri-eye-line me-1"></i> Reporte de Pedido
-                                    </button>
+                                    <a asp-controller="DetallePedido" asp-action="DownloadPDF" asp-route-id="@pedido.Id_pedido" class="btn btn-outline-warning" title="Reporte">
+                                        <i class="ri-file-pdf-line"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
