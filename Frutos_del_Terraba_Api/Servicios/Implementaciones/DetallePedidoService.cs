@@ -40,12 +40,24 @@ namespace Frutos_del_Terraba_Api.Servicios.Implementaciones
                 throw new ArgumentException("El ID del pedido es obligatorio.");
             }
 
+            // Buscar el inventario del producto
+            var inventario = await _context.Inventarios
+                .FirstOrDefaultAsync(i => i.Id_producto == detalles.Id_producto);
+
+            if (inventario == null)
+            {
+                throw new InvalidOperationException("No hay inventario registrado para este producto.");
+            }
+
+            // Sumar la cantidad
+            inventario.Cantidad += detalles.Cantidad;
+
             var detallePedido = new DetallesPedido
             {
                 Id_pedido = detalles.Id_pedido,
                 Id_producto = detalles.Id_producto,
                 Cantidad = detalles.Cantidad,
-                Observaciones = detalles.Observaciones ?? "" // Evita nulos en la columna Observaciones
+                Observaciones = detalles.Observaciones ?? ""
             };
 
             _context.DetallesPedidos.Add(detallePedido);
